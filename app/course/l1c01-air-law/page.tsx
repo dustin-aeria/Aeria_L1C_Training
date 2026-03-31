@@ -2,6 +2,7 @@ import CourseLayout from '@/components/CourseLayout';
 import CourseSection from '@/components/CourseSection';
 import InstructorNote from '@/components/InstructorNote';
 import TableOfContents from '@/components/TableOfContents';
+import RevealAnswer from '@/components/RevealAnswer';
 import Link from 'next/link';
 
 const tocItems = [
@@ -524,7 +525,9 @@ export default function L1C01AirLaw() {
             <InstructorNote type="activity">
               <p className="font-semibold mb-2">Practice Question:</p>
               <p className="mb-2">What are RPAS altitudes derived from?</p>
-              <p className="text-sm"><strong>Answer:</strong> Your drone is giving you true altitude. Your aircraft altitude is not a true altitude unless at are at a standard ISA temperature. Anything that deviates outside of ISA and traditional aircraft are no longer at a true altitude.</p>
+              <RevealAnswer>
+                <p className="text-sm"><strong>Answer:</strong> Your drone is giving you true altitude. Your aircraft altitude is not a true altitude unless at are at a standard ISA temperature. Anything that deviates outside of ISA and traditional aircraft are no longer at a true altitude.</p>
+              </RevealAnswer>
               <p className="font-semibold mb-2 mt-4">Discussion:</p>
               <p>What are the challenges combining RPAS (GPS) altitudes with traditional aircraft that use altimeters?</p>
             </InstructorNote>
@@ -762,7 +765,9 @@ export default function L1C01AirLaw() {
             <InstructorNote type="activity">
               <p className="font-semibold mb-2">Practice Question:</p>
               <p className="mb-2">Can you find the Designated Airspace Handbook?</p>
-              <p className="text-sm"><strong>Answer:</strong> All participants can locate the handbook online.</p>
+              <RevealAnswer>
+                <p className="text-sm"><strong>Answer:</strong> All participants can locate the handbook online.</p>
+              </RevealAnswer>
             </InstructorNote>
 
             <div className="bg-white p-6 rounded-lg border border-gray-200 mb-4">
@@ -909,7 +914,9 @@ export default function L1C01AirLaw() {
             <InstructorNote type="activity">
               <p className="font-semibold mb-2">Practice Question:</p>
               <p className="mb-2">What is the definition of a built-up area?</p>
-              <p className="text-sm"><strong>Answer:</strong> There is no official definition of what a built-up area is in the CARs. This is a known gap in the regulations. For RPAS operations, we use population density classifications from NRCAN instead, which provides objective data on populated vs sparsely populated areas.</p>
+              <RevealAnswer>
+                <p className="text-sm"><strong>Answer:</strong> There is no official definition of what a built-up area is in the CARs. This is a known gap in the regulations. For RPAS operations, we use population density classifications from NRCAN instead, which provides objective data on populated vs sparsely populated areas.</p>
+              </RevealAnswer>
             </InstructorNote>
           </div>
 
@@ -1953,10 +1960,14 @@ export default function L1C01AirLaw() {
             <InstructorNote type="activity">
               <p className="font-semibold mb-2">Practice Question:</p>
               <p className="mb-2">What is the definition of an unpopulated area and a sparsely populated area?</p>
-              <p className="text-sm mb-4"><strong>Answer:</strong> There is no &quot;unpopulated area&quot; definition in L1C regulations. The terms are <strong>populated area</strong> (≥ 1 person per 5,000 m²) and <strong>sparsely populated area</strong> (&lt; 1 person per 5,000 m²). Data comes from Statistics Canada Census.</p>
+              <RevealAnswer>
+                <p className="text-sm mb-4"><strong>Answer:</strong> There is no &quot;unpopulated area&quot; definition in L1C regulations. The terms are <strong>populated area</strong> (≥ 1 person per 5,000 m²) and <strong>sparsely populated area</strong> (&lt; 1 person per 5,000 m²). Data comes from Statistics Canada Census.</p>
+              </RevealAnswer>
               <p className="font-semibold mb-2">Practice Question:</p>
               <p className="mb-2">Whose data set is used to determine these populated areas?</p>
-              <p className="text-sm"><strong>Answer:</strong> Statistics Canada most recent Census data, as referenced in the definitions in Part IX Division I.</p>
+              <RevealAnswer>
+                <p className="text-sm"><strong>Answer:</strong> Statistics Canada most recent Census data, as referenced in the definitions in Part IX Division I.</p>
+              </RevealAnswer>
             </InstructorNote>
           </div>
 
@@ -1997,37 +2008,49 @@ export default function L1C01AirLaw() {
                 <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
                   <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 1: Age Requirement</p>
                   <p className="text-sm mb-2"><strong>Situation:</strong> A 17-year-old pilot holds a valid L1C certificate, has completed recency requirements, and will operate under an RPAS Operator Certificate with a compliant platform.</p>
-                  <p className="text-sm"><strong>Result: FAIL</strong> - Missing PILOT requirement (must be 18+ years old per CAR 901.89)</p>
+                  <RevealAnswer buttonText="Show Result">
+                    <p className="text-sm"><strong>Result: FAIL</strong> - Missing PILOT requirement (must be 18+ years old per CAR 901.89)</p>
+                  </RevealAnswer>
                 </div>
 
                 <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
                   <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 2: Platform Modification</p>
                   <p className="text-sm mb-2"><strong>Situation:</strong> An 18-year-old L1C pilot with current recency, operating under an RPAS Operator Certificate, using a DJI M350 with modified propeller guards (not manufacturer-approved modifications) without demonstrating Standard 922 compliance.</p>
-                  <p className="text-sm"><strong>Result: FAIL</strong> - Missing PLATFORM requirement (modifications require manufacturer instructions OR Standard 922 demonstration per CAR 901.95)</p>
+                  <RevealAnswer buttonText="Show Result">
+                    <p className="text-sm"><strong>Result: FAIL</strong> - Missing PLATFORM requirement (modifications require manufacturer instructions OR Standard 922 demonstration per CAR 901.95)</p>
+                  </RevealAnswer>
                 </div>
 
                 <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
                   <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 3: No ROM</p>
                   <p className="text-sm mb-2"><strong>Situation:</strong> An 18-year-old L1C pilot with current recency wants to conduct BVLOS operations using a compliant platform, but hasn&apos;t applied for or received an RPAS Operator Certificate.</p>
-                  <p className="text-sm"><strong>Result: FAIL</strong> - Missing PROCEDURE requirement (must have RPAS Operator Certificate with ROM per CAR 901.88)</p>
+                  <RevealAnswer buttonText="Show Result">
+                    <p className="text-sm"><strong>Result: FAIL</strong> - Missing PROCEDURE requirement (must have RPAS Operator Certificate with ROM per CAR 901.88)</p>
+                  </RevealAnswer>
                 </div>
 
                 <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
                   <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 4: Expired Recency</p>
                   <p className="text-sm mb-2"><strong>Situation:</strong> A 25-year-old pilot holds an L1C certificate obtained 30 months ago, hasn&apos;t completed recency requirements, operates under an RPAS Operator Certificate with a compliant platform.</p>
-                  <p className="text-sm"><strong>Result: FAIL</strong> - Missing PILOT requirement (recency must be demonstrated within 24 months per CAR 901.89)</p>
+                  <RevealAnswer buttonText="Show Result">
+                    <p className="text-sm"><strong>Result: FAIL</strong> - Missing PILOT requirement (recency must be demonstrated within 24 months per CAR 901.89)</p>
+                  </RevealAnswer>
                 </div>
 
                 <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
                   <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 5: Incomplete ROM</p>
                   <p className="text-sm mb-2"><strong>Situation:</strong> An 18-year-old L1C pilot with current recency, using a compliant platform, has an RPAS Operator Certificate but the ROM doesn&apos;t include emergency procedures or a site survey process.</p>
-                  <p className="text-sm"><strong>Result: FAIL</strong> - Missing PROCEDURE requirement (ROM must include all required elements per CAR 901.217)</p>
+                  <RevealAnswer buttonText="Show Result">
+                    <p className="text-sm"><strong>Result: FAIL</strong> - Missing PROCEDURE requirement (ROM must include all required elements per CAR 901.217)</p>
+                  </RevealAnswer>
                 </div>
 
                 <div className="bg-white p-4 rounded-lg border-l-4 border-green-500">
                   <p className="font-semibold text-green-700 mb-2">✅ SCENARIO 6: All Requirements Met</p>
                   <p className="text-sm mb-2"><strong>Situation:</strong> A 22-year-old pilot holds a valid L1C certificate with recency completed 6 months ago, operates under an RPAS Operator Certificate (DMP-issued) with a complete ROM including all required sections, using a DJI M300 RTK with manufacturer&apos;s declaration for BVLOS operations (no modifications).</p>
-                  <p className="text-sm"><strong>Result: PASS</strong> - All 3 Ps met! ✓ Pilot (18+, L1C cert, current recency) ✓ Procedure (RPAS Operator Certificate with compliant ROM) ✓ Platform (manufacturer declaration, no unauthorized mods)</p>
+                  <RevealAnswer buttonText="Show Result">
+                    <p className="text-sm"><strong>Result: PASS</strong> - All 3 Ps met! ✓ Pilot (18+, L1C cert, current recency) ✓ Procedure (RPAS Operator Certificate with compliant ROM) ✓ Platform (manufacturer declaration, no unauthorized mods)</p>
+                  </RevealAnswer>
                 </div>
               </div>
 
@@ -2223,7 +2246,9 @@ export default function L1C01AirLaw() {
                     <li>• Sun: 25° above horizon (outside quadrant)</li>
                     <li>• Drone position: 3 NM from pilot, 1.5 NM from VO</li>
                   </ul>
-                  <p className="text-sm"><strong>Decision: NO FLY</strong> - Visibility must be at least 3 SM. Even though all other conditions are met, failing one requirement means the operation cannot proceed under Standard 923.</p>
+                  <RevealAnswer buttonText="Show Decision">
+                    <p className="text-sm"><strong>Decision: NO FLY</strong> - Visibility must be at least 3 SM. Even though all other conditions are met, failing one requirement means the operation cannot proceed under Standard 923.</p>
+                  </RevealAnswer>
                 </div>
 
                 <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
@@ -2235,7 +2260,9 @@ export default function L1C01AirLaw() {
                     <li>• Sun: 5° above horizon</li>
                     <li>• Drone position: 2 NM from pilot, 1 NM from VO</li>
                   </ul>
-                  <p className="text-sm"><strong>Decision: NO FLY</strong> - Two failures: (1) Ceiling must be at least 1,000 ft AGL, (2) Sun must be at least 6° above horizon or below horizon. Even if ceiling was compliant, the sun position alone would prevent the operation.</p>
+                  <RevealAnswer buttonText="Show Decision">
+                    <p className="text-sm"><strong>Decision: NO FLY</strong> - Two failures: (1) Ceiling must be at least 1,000 ft AGL, (2) Sun must be at least 6° above horizon or below horizon. Even if ceiling was compliant, the sun position alone would prevent the operation.</p>
+                  </RevealAnswer>
                 </div>
 
                 <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
@@ -2247,7 +2274,9 @@ export default function L1C01AirLaw() {
                     <li>• Sun: Below horizon (night operations not allowed, but sun position OK)</li>
                     <li>• Drone position: 4.5 NM from pilot, 2.5 NM from VO</li>
                   </ul>
-                  <p className="text-sm"><strong>Decision: NO FLY</strong> - Two distance violations: (1) Drone must be within 4 NM of pilot/GCS (currently 4.5 NM), (2) Drone must be within 2 NM of VO (currently 2.5 NM). Both limits exceeded.</p>
+                  <RevealAnswer buttonText="Show Decision">
+                    <p className="text-sm"><strong>Decision: NO FLY</strong> - Two distance violations: (1) Drone must be within 4 NM of pilot/GCS (currently 4.5 NM), (2) Drone must be within 2 NM of VO (currently 2.5 NM). Both limits exceeded.</p>
+                  </RevealAnswer>
                 </div>
 
                 <div className="bg-white p-4 rounded-lg border-l-4 border-yellow-500">
@@ -2260,7 +2289,9 @@ export default function L1C01AirLaw() {
                     <li>• Drone position: 3 NM from pilot, 1.5 NM from VO</li>
                   </ul>
                   <p className="text-sm mb-2"><strong>15 minutes into mission:</strong> TAF forecast shows thunderstorm approaching, visibility expected to drop to 1 SM within 30 minutes, ceiling dropping to 500 ft.</p>
-                  <p className="text-sm"><strong>Decision: ABORT MISSION</strong> - While current conditions are compliant, you must continuously monitor weather. If conditions will deteriorate below minimums before mission completion, abort and return to base. Pre-flight planning must include weather monitoring and escape routes.</p>
+                  <RevealAnswer buttonText="Show Decision">
+                    <p className="text-sm"><strong>Decision: ABORT MISSION</strong> - While current conditions are compliant, you must continuously monitor weather. If conditions will deteriorate below minimums before mission completion, abort and return to base. Pre-flight planning must include weather monitoring and escape routes.</p>
+                  </RevealAnswer>
                 </div>
 
                 <div className="bg-white p-4 rounded-lg border-l-4 border-green-500">
@@ -2274,7 +2305,9 @@ export default function L1C01AirLaw() {
                     <li>• VO has clear line of sight, scanning airspace continuously</li>
                     <li>• Radio communication established between pilot and VO</li>
                   </ul>
-                  <p className="text-sm"><strong>Decision: GO FOR FLIGHT</strong> - All Standard 923 requirements met: ✓ Visibility (5 SM &gt; 3 SM min) ✓ Ceiling (3,000 ft &gt; 1,000 ft min) ✓ Sun position (60° &gt; 45° and outside quadrant) ✓ Distance (3.5 NM &lt; 4 NM from pilot, 1.8 NM &lt; 2 NM from VO)</p>
+                  <RevealAnswer buttonText="Show Decision">
+                    <p className="text-sm"><strong>Decision: GO FOR FLIGHT</strong> - All Standard 923 requirements met: ✓ Visibility (5 SM &gt; 3 SM min) ✓ Ceiling (3,000 ft &gt; 1,000 ft min) ✓ Sun position (60° &gt; 45° and outside quadrant) ✓ Distance (3.5 NM &lt; 4 NM from pilot, 1.8 NM &lt; 2 NM from VO)</p>
+                  </RevealAnswer>
                 </div>
 
                 <div className="bg-white p-4 rounded-lg border-l-4 border-green-500">
@@ -2286,8 +2319,10 @@ export default function L1C01AirLaw() {
                     <li>• Sun: Exactly 45° above horizon and directly in VO&apos;s scan area</li>
                     <li>• Drone position: 4.0 NM from pilot, 2.0 NM from VO</li>
                   </ul>
-                  <p className="text-sm mb-2"><strong>Decision: TECHNICALLY LEGAL but NOT RECOMMENDED</strong> - All minimums are exactly met, which is technically compliant. However, any slight deterioration puts you out of compliance. Professional practice: Add personal minimums above regulatory minimums (e.g., 3.5 SM visibility, 1,200 ft ceiling) to account for uncertainty and provide safety margins.</p>
-                  <p className="text-xs mt-2 text-yellow-700 font-semibold">⚠️ Best Practice: Your ROM should specify personal minimums higher than regulatory minimums to account for measurement uncertainty and safety margins!</p>
+                  <RevealAnswer buttonText="Show Decision">
+                    <p className="text-sm mb-2"><strong>Decision: TECHNICALLY LEGAL but NOT RECOMMENDED</strong> - All minimums are exactly met, which is technically compliant. However, any slight deterioration puts you out of compliance. Professional practice: Add personal minimums above regulatory minimums (e.g., 3.5 SM visibility, 1,200 ft ceiling) to account for uncertainty and provide safety margins.</p>
+                    <p className="text-xs mt-2 text-yellow-700 font-semibold">⚠️ Best Practice: Your ROM should specify personal minimums higher than regulatory minimums to account for measurement uncertainty and safety margins!</p>
+                  </RevealAnswer>
                 </div>
               </div>
 
