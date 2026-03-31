@@ -1,7 +1,7 @@
 # Aeria L1C Training - Migration Progress Tracker
 
 **Last Updated:** 2026-03-31
-**Current Status:** L1C00 Complete ✅ | Working on L1C01 Air Law
+**Current Status:** L1C00 Complete ✅ | L1C01 Air Law Complete ✅ | Ready for User Review
 
 ---
 
@@ -48,18 +48,41 @@
 6. Mandatory Links & Software
 7. After This Course
 
+#### ✅ L1C01: Air Law (86 slides)
+- **Location:** `app/course/l1c01-air-law/page.tsx`
+- **Images Extracted:** 18 (all diagrams and reference images)
+- **Status:** Complete and ready for review
+- **Content Preserved:** 100% - All 86 slides converted
+- **Duration:** 4 hours
+- **URL:** https://aeria-l1-c-training.vercel.app/course/l1c01-air-law (pending deployment)
+
+**Sections (12 major divisions):**
+1. Objectives & L1C Context (3P Approach)
+2. Aviation Regulations (Aeronautics Act, Agencies, CARs Structure)
+3. Part I - General Provisions (Definitions, Document Inspection, Records, Accountable Executive)
+4. Part VI - Flight Rules (VFR/IFR, Airspace Classes, Aerodrome Operations, Minimum Altitudes)
+5. Part IX Division I - Definitions (All key RPAS terms)
+6. Part IX Division II & III - General Operating Rules (Emergency perimeter, Registration, Fitness, Pre-flight, Site Survey, Weather)
+7. Part IX Division V - Extended VLOS & Sheltered Operations
+8. Part IX Division VI - BVLOS Operations (3P Approach, Standard 923 Vision-Based DAA, CRITICAL for L1C)
+9. Part IX Division X - Training & Flight Review (Standard 921, Flight Reviewer Requirements)
+10. Part IX Division XI - RPAS Declarations (Manufacturer responsibilities)
+11. Part IX Division XII - RPAS Operator Certificate (Eligibility, ROM requirements, Organizational Hierarchy)
+12. Subpart III & References (SFOC requirements, all regulatory citations)
+
+**Key Features:**
+- Complete table of contents with anchor navigation
+- All instructor notes preserved (info/keypoint/activity)
+- All 18 images included from PowerPoint
+- Comprehensive coverage of Standard 923 Vision-Based DAA
+- 3P approach (Pilot/Procedure/Platform) fully documented
+- All CARs citations with proper formatting
+
 ---
 
 ## In Progress 🚧
 
-### L1C01: Air Law (86 slides)
-- **Duration:** 4 hours
-- **Slides:** 86 slides covering CARs Part IX, airspace, regulations
-- **Status:** Ready to extract and build
-- **Next Steps:**
-  1. Extract PowerPoint content and images
-  2. Build module sections
-  3. Add interactive elements
+*No modules currently in progress - ready to start L1C02 Systems after L1C01 review*
 
 ---
 
@@ -109,19 +132,24 @@ Aeria_L1C_Training/
 │   ├── api/
 │   │   └── test/route.ts
 │   ├── course/
-│   │   └── l1c00-introduction/page.tsx
+│   │   ├── l1c00-introduction/page.tsx
+│   │   └── l1c01-air-law/page.tsx ✅ NEW
 │   ├── favicon.ico
 │   ├── globals.css
 │   ├── layout.tsx
 │   └── page.tsx
 ├── components/
 │   ├── CourseLayout.tsx
-│   ├── CourseSection.tsx
-│   └── InstructorNote.tsx
+│   ├── CourseSection.tsx (updated with id prop)
+│   ├── InstructorNote.tsx
+│   └── TableOfContents.tsx
 ├── public/
 │   ├── images/
-│   │   └── l1c00/
-│   │       ├── images/slide08_img01.jpg
+│   │   ├── l1c00/
+│   │   │   ├── slide08_img01.jpg
+│   │   │   └── slides_data.json
+│   │   └── l1c01/ ✅ NEW
+│   │       ├── slide03_img01.jpg ... slide76_img01.jpg (18 images)
 │   │       └── slides_data.json
 │   └── favicon.png
 ├── scripts/
@@ -200,16 +228,18 @@ git add -A && git commit -m "message" && git push  # Auto-deploys to Vercel
 
 ## Next Session Tasks
 
-1. **Extract L1C01 Air Law PowerPoint**
-   - 86 slides, largest module
-   - Multiple major sections (regulatory framework, airspace, Part IX)
+1. **User Review of L1C01 Air Law**
+   - Deployed at: https://aeria-l1-c-training.vercel.app/course/l1c01-air-law
+   - Full 86 slides completed
+   - Verify content accuracy and completeness
+   - Identify any enhancement opportunities
 
-2. **Build L1C01 Module Structure**
-   - Break into logical sections
-   - Add navigation between sections
-   - Implement instructor notes
+2. **Start L1C02: Systems (74 slides)**
+   - Extract PowerPoint content and images
+   - Build module sections
+   - 2 hour duration, RPAS configurations and Standard 922
 
-3. **Enhancement Opportunities** (discuss with user)
+3. **Enhancement Opportunities** (discuss with user after L1C01 review)
    - Interactive regulatory reference lookup
    - Airspace diagrams with clickable layers
    - CARs Part IX navigation tree
@@ -266,5 +296,5 @@ git add -A && git commit -m "message" && git push  # Auto-deploys to Vercel
 
 ---
 
-**Last Commit:** `babf83e` - Add API test route to debug Vercel deployment
-**Next Milestone:** L1C01 Air Law module complete
+**Last Commit:** Complete L1C01 Air Law module (86 slides, all content preserved)
+**Next Milestone:** User review L1C01, then start L1C02 Systems
