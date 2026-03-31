@@ -819,41 +819,53 @@ export default function L1C01AirLaw() {
           </div>
 
           <div className="mb-6">
-            <h3 className="text-xl font-semibold mb-4">CAR 601.96 Operations at or in the Vicinity of an Aerodrome</h3>
+            <h3 className="text-xl font-semibold mb-4">CAR 602.96 Operations at or in the Vicinity of an Aerodrome</h3>
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <ul className="space-y-3">
-                <li>• Left-hand pattern 1,000 ft AGL, except if published in the CFS or authorized by ATC</li>
-                <li>• Maintain listening watch on appropriate frequency</li>
-                <li>• Transient aircraft will remain 2,000 ft AGL above unless for public safety, aerial inspection, etc. (full list at 602.96(5))</li>
-              </ul>
+              <p className="font-semibold mb-3">602.96(3) The pilot-in-command of an aircraft operating at or in the vicinity of an aerodrome shall:</p>
+              <p className="font-mono text-sm ml-4 mb-3">(a) maintain a continuous listening watch on the appropriate frequency for aerodrome control communications or, if this is not possible and an air traffic control unit is in operation at the aerodrome, keep a watch for such instructions as may be issued by visual means by the air traffic control unit; and</p>
+              <p className="font-mono text-sm ml-4 mb-4">(b) where the aerodrome is a controlled aerodrome, obtain from the appropriate air traffic control unit, either by radio communication or by visual signal, clearance to taxi, take off from or land at the aerodrome.</p>
+
+              <p className="font-semibold mb-3">602.96(4) Traffic Pattern:</p>
+              <p className="font-mono text-sm ml-4 mb-4">Unless otherwise authorized by the appropriate air traffic control unit or unless specified otherwise in the Canada Flight Supplement, no pilot-in-command shall operate an aircraft in the traffic pattern at an altitude that differs from the altitude specified in the Canada Flight Supplement for that aerodrome.</p>
+
+              <p className="font-semibold mb-3">602.96(5) Altitude Restrictions:</p>
+              <p className="font-mono text-sm ml-4">Subject to subsection (6), no pilot-in-command of an aircraft shall operate the aircraft over an aerodrome at an altitude of less than 2,000 feet above aerodrome elevation unless the pilot-in-command is granted a clearance to do so by the appropriate air traffic control unit or the operation is conducted for one of the following purposes: take-off, approach and landing, conducting a practice approach, conducting an instrument approach procedure, aerial inspection, search and rescue operations, firefighting operations, police operations, ambulance flights, or military operations.</p>
             </div>
 
             <InstructorNote type="keypoint">
-              <p className="mb-2">You must fly a left-hand traffic pattern of 1,000 ft AGL, unless published otherwise in the Canada Flight Supplement or authorized by air traffic control.</p>
-              <p>Transient aircraft over air drones must fly 2,000 ft AGL, so they don&apos;t conflict with traffic patterns. Altitudes are one criteria used in traffic separation.</p>
+              <p className="mb-2"><strong>Why does this matter for RPAS operations?</strong></p>
+              <p className="mb-2">When conducting RPAS operations near an aerodrome, you need to understand manned aircraft traffic patterns. The standard traffic pattern is 1,000 feet AGL in a left-hand circuit (unless the CFS or ATC specifies otherwise). This is why RPAS typically operate at 400 feet AGL - well below the traffic pattern.</p>
+              <p className="mb-2">The 2,000 ft AGL rule for transient (passing through) aircraft means that any manned aircraft just flying over the aerodrome area must stay high to avoid conflicts with aircraft in the circuit. This creates a protected airspace layer (500-2,000 ft AGL) around aerodromes.</p>
+              <p><strong>Real-world example:</strong> If you&apos;re flying a drone near an uncontrolled aerodrome at 300 ft AGL, manned aircraft will either be in the circuit at 1,000 ft AGL or transiting above 2,000 ft AGL - creating natural separation. However, you still need to monitor the appropriate frequency and watch for aircraft on approach or departure.</p>
             </InstructorNote>
           </div>
 
           <div className="mb-6">
-            <h3 className="text-xl font-semibold mb-4">CAR 601.97 Uncontrolled Aerodromes within an MF Area</h3>
+            <h3 className="text-xl font-semibold mb-4">CAR 602.97 Uncontrolled Aerodromes within an MF Area</h3>
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <p className="font-semibold mb-3">Reporting on departure (602.100):</p>
-              <ul className="space-y-2 mb-4">
-                <li>• <strong>Before:</strong> Broadcast intentions and look and listen</li>
-                <li>• <strong>After:</strong> Broadcast leaving</li>
-              </ul>
-              <p className="font-semibold mb-3">Reporting on arrival (602.101):</p>
-              <ul className="space-y-2">
-                <li>• Broadcast 5 minutes prior to arrival</li>
-                <li>• Broadcast traffic pattern location</li>
-                <li>• Broadcast clear on the ground</li>
-              </ul>
+              <p className="font-semibold mb-3">602.97(1) Equipment Requirement:</p>
+              <p className="font-mono text-sm ml-4 mb-4">Subject to subsection (3), no pilot-in-command shall operate a VFR or IFR aircraft within an MF area unless the aircraft is equipped with radiocommunication equipment pursuant to Subpart 5.</p>
+
+              <p className="font-semibold mb-3">602.97(2) Listening Watch:</p>
+              <p className="font-mono text-sm ml-4 mb-4">The pilot-in-command of a VFR or IFR aircraft operating within an MF area shall maintain a listening watch on the mandatory frequency specified for use in the MF area.</p>
+
+              <p className="font-semibold mb-3">CAR 602.100 - MF Reporting Procedures on Departure:</p>
+              <p className="font-mono text-sm ml-4 mb-2">The pilot-in-command of an aircraft operating at an uncontrolled aerodrome within an MF area shall</p>
+              <p className="font-mono text-sm ml-8 mb-2">(a) before conducting a take-off at the aerodrome, broadcast the aircraft identification, location, intentions and the type of operation to be conducted on the mandatory frequency; and</p>
+              <p className="font-mono text-sm ml-8 mb-4">(b) after conducting a take-off at the aerodrome, broadcast on the mandatory frequency that the aircraft is clear of the circuit.</p>
+
+              <p className="font-semibold mb-3">CAR 602.101 - MF Reporting Procedures on Arrival:</p>
+              <p className="font-mono text-sm ml-4 mb-2">The pilot-in-command of an aircraft intending to land at an uncontrolled aerodrome within an MF area shall broadcast the following information on the mandatory frequency:</p>
+              <p className="font-mono text-sm ml-8 mb-2">(a) when the aircraft is at a distance of approximately five nautical miles from the aerodrome, the aircraft identification, location, altitude, intentions and estimated time of arrival at the aerodrome;</p>
+              <p className="font-mono text-sm ml-8 mb-2">(b) when joining the aerodrome traffic circuit, the aircraft identification and the position in the circuit; and</p>
+              <p className="font-mono text-sm ml-8">(c) after landing at the aerodrome, the aircraft identification and the location on the aerodrome.</p>
             </div>
 
-            <InstructorNote type="activity">
-              <p className="font-semibold mb-2">Practice Question:</p>
-              <p className="mb-2">How low can a traditional aircraft fly legally?</p>
-              <p className="text-sm"><strong>Answer:</strong> As low as needed if there is a requirement to be that low. See CAR 602.15 for low altitude flight exceptions.</p>
+            <InstructorNote type="keypoint">
+              <p className="mb-2"><strong>MF (Mandatory Frequency) Areas - What RPAS Pilots Need to Know:</strong></p>
+              <p className="mb-2">An MF area is designated airspace around an uncontrolled aerodrome where all aircraft must monitor a specific radio frequency. For manned aircraft, this means broadcasting their position and intentions at specific times (5 miles out, entering circuit, taking off, landing, etc.).</p>
+              <p className="mb-2"><strong>Why this matters for drones:</strong> While RPAS are not required to make radio calls, if you&apos;re operating near an MF area, monitoring the frequency gives you situational awareness of manned aircraft activity. You&apos;ll hear pilots announcing their positions and can plan accordingly.</p>
+              <p><strong>Example:</strong> You&apos;re flying a drone 3 NM from an aerodrome within the MF area. You hear a pilot broadcast &quot;5 miles north, inbound for landing.&quot; This tells you a plane is approaching your area and you should prepare to land your drone or ensure you&apos;re well clear of their approach path.</p>
             </InstructorNote>
           </div>
 
@@ -904,24 +916,32 @@ export default function L1C01AirLaw() {
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 602.15 Permissible Low Altitude Flight</h3>
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <p className="mb-3">Altitudes can be flown lower than those listed in 602.14 for:</p>
-              <div className="grid md:grid-cols-2 gap-2">
-                <ul className="space-y-1 text-sm">
-                  <li>• Police</li>
-                  <li>• Saving human life</li>
-                  <li>• Firefighting/ambulance</li>
-                  <li>• Fisheries Act</li>
-                  <li>• Administration of national or provincial parks</li>
-                </ul>
-                <ul className="space-y-1 text-sm">
-                  <li>• Flight inspection</li>
-                  <li>• Aerial application</li>
-                  <li>• Aerial photography</li>
-                  <li>• Helicopter external loads</li>
-                  <li>• Flight training</li>
-                </ul>
+              <p className="font-semibold mb-3">602.15(1) A person may operate an aircraft at altitudes and distances less than those specified in subsection 602.14(2) where the aircraft is operated</p>
+              <div className="ml-4 space-y-2 mb-4">
+                <p className="font-mono text-sm">(a) for the purpose of a police operation that is conducted in the service of a police authority;</p>
+                <p className="font-mono text-sm">(b) for the purpose of saving human life;</p>
+                <p className="font-mono text-sm">(c) for the purpose of a firefighting operation or an ambulance flight;</p>
+                <p className="font-mono text-sm">(d) for the purpose of the administration of the Fisheries Act or the Coastal Fisheries Protection Act;</p>
+                <p className="font-mono text-sm">(e) for the purpose of the administration of the national or provincial parks;</p>
+                <p className="font-mono text-sm">(f) for the purpose of a flight inspection authorized by the Minister;</p>
+                <p className="font-mono text-sm">(g) for the purpose of flight training, aerial application, aerial inspection, aerial photography or aerial surveying, where the aircraft is operated in accordance with an air operator certificate, a flight training unit operator certificate or a private operator certificate;</p>
+                <p className="font-mono text-sm">(h) in respect of a helicopter, for the purpose of transporting, hoisting or depositing an external load;</p>
+                <p className="font-mono text-sm">(i) in respect of a helicopter, for the purpose of flight training, where the aircraft is operated at an aerodrome;</p>
               </div>
+              <p className="font-semibold mb-2">Key Conditions:</p>
+              <p className="font-mono text-sm ml-4">The aircraft must be operated at altitudes and distances that are no less than necessary for the purposes of the operation, and the aircraft must be operated without creating a hazard to persons or property on the surface.</p>
             </div>
+
+            <InstructorNote type="keypoint">
+              <p className="mb-2"><strong>Why Traditional Aircraft Can Fly Lower Than 500 ft AGL:</strong></p>
+              <p className="mb-2">While CAR 602.14 sets minimum altitudes (500 ft AGL over open areas, 1,000 ft over built-up areas), CAR 602.15 provides exceptions for specific operations. This is critical for understanding why you might encounter low-flying aircraft even when you&apos;re operating your drone well below 500 feet.</p>
+              <p className="mb-2"><strong>Common scenarios RPAS pilots encounter:</strong></p>
+              <p className="mb-2">1. <strong>Police helicopters</strong> conducting surveillance can legally fly at low altitudes in your area</p>
+              <p className="mb-2">2. <strong>Agricultural aircraft</strong> (crop dusters) flying below 500 ft are operating legally under subsection (g)</p>
+              <p className="mb-2">3. <strong>Search and rescue</strong> or <strong>firefighting aircraft</strong> have priority and can fly very low</p>
+              <p className="mb-2">4. <strong>Helicopters with external loads</strong> (construction, forestry) operating at low altitudes</p>
+              <p><strong>Key takeaway:</strong> Just because you&apos;re flying your drone at 200 ft doesn&apos;t mean you have that airspace to yourself. Always maintain visual observers and be prepared to yield to manned aircraft, which may legally be operating at the same altitude for legitimate purposes.</p>
+            </InstructorNote>
           </div>
 
           <div className="mb-6">
@@ -1337,37 +1357,49 @@ export default function L1C01AirLaw() {
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 901.19 Fitness of Crew Members</h3>
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <ul className="space-y-2">
-                <li>• No fatigued or unfit crew</li>
-                <li>• No RPAS operation until <strong>12 hours after consumption of alcohol</strong>, or under the influence of alcohol</li>
-                <li>• No using any drug that impairs judgement</li>
-              </ul>
+              <p className="font-semibold mb-3">901.19(1) General Fitness:</p>
+              <p className="font-mono text-sm ml-4 mb-4">No person shall act as a crew member of a remotely piloted aircraft system if the person (a) is suffering or is likely to suffer from fatigue; or (b) is otherwise unfit to perform properly the person&apos;s duties.</p>
+
+              <p className="font-semibold mb-3">901.19(2) Alcohol and Drugs:</p>
+              <p className="font-mono text-sm ml-4 mb-2">No person shall act as a crew member of a remotely piloted aircraft system</p>
+              <p className="font-mono text-sm ml-8 mb-2">(a) within 12 hours after consuming an alcoholic beverage;</p>
+              <p className="font-mono text-sm ml-8 mb-2">(b) while under the influence of alcohol; or</p>
+              <p className="font-mono text-sm ml-8">(c) while using any drug that impairs the person&apos;s faculties to the extent that aviation safety or the safety of any person is endangered or likely to be endangered.</p>
             </div>
 
             <InstructorNote type="keypoint">
-              <p className="mb-2">This applies to all CARs 901 operations: basic, advanced, L1C. Even if a crew member has a prescription, they cannot be under the influence of drugs that impair judgement (e.g., medicinal marijuana).</p>
-              <p>There is no medical license required to be a L1C pilot; however, they must complete a self-declaration stating they are fit to fly and not under the influence. Crew members are responsible for knowing and following their organizations drug and alcohol policy, including applicable testing that may apply.</p>
+              <p className="mb-2"><strong>The &quot;12-Hour Bottle-to-Throttle&quot; Rule:</strong></p>
+              <p className="mb-2">This regulation is identical to manned aviation rules. The 12-hour minimum waiting period applies regardless of how much you drank. Had one beer? 12 hours. Had several drinks? Still minimum 12 hours (but likely need more time).</p>
+              <p className="mb-2"><strong>Common Misconceptions:</strong></p>
+              <p className="mb-2">1. <strong>&quot;It&apos;s just a drone, not a real aircraft&quot;</strong> - Wrong. RPAS crew members are held to the same fitness standards as manned aircraft pilots.</p>
+              <p className="mb-2">2. <strong>&quot;I have a prescription, so it&apos;s okay&quot;</strong> - Wrong. If the medication impairs your judgment or reaction time (e.g., opioid painkillers, medicinal cannabis, sedating antihistamines), you cannot act as a crew member, prescription or not.</p>
+              <p className="mb-2">3. <strong>&quot;I feel fine&quot;</strong> - Fatigue and impairment reduce your ability to recognize that you&apos;re impaired. If you worked a 12-hour shift and someone calls you for an &quot;emergency&quot; drone flight, you must decline.</p>
+              <p className="mb-2"><strong>Real-world scenario:</strong> Your company has a Friday evening team event where alcohol is served. You have a drone operation scheduled for Saturday at 8 AM. If you have a drink at 9 PM Friday, you cannot legally fly until 9 AM Saturday (12 hours later). Plan accordingly.</p>
+              <p><strong>No medical certificate required:</strong> Unlike traditional pilots, RPAS pilots don&apos;t need a Transport Canada medical. However, this places greater responsibility on YOU to self-assess fitness before every flight. Many operators use a IMSAFE checklist: Illness, Medication, Stress, Alcohol, Fatigue, Emotion.</p>
             </InstructorNote>
 
             <InstructorNote type="activity">
               <p className="font-semibold mb-2">Discussion:</p>
-              <p>What are the current organizational policies towards drugs and alcohol? Do they meet the above regulation?</p>
+              <p>What are the current organizational policies towards drugs and alcohol? Do they meet the above regulation? Does your organization have a formal fitness-to-fly policy that crew members must follow? Are there specific medications that are prohibited in your industry?</p>
             </InstructorNote>
           </div>
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 901.24 Pre-Flight Information</h3>
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <p className="mb-3">Pilot to be familiar with:</p>
-              <ul className="space-y-2">
-                <li>• Site survey</li>
-                <li>• RPAS declaration</li>
-                <li>• Qualification of all crew members</li>
-              </ul>
+              <p className="font-semibold mb-3">A pilot of a remotely piloted aircraft shall, before commencing a flight, be familiar with the information that is relevant to the intended flight, including:</p>
+              <p className="font-mono text-sm ml-4 mb-3">(a) the results of the site survey conducted under section 901.27;</p>
+              <p className="font-mono text-sm ml-4 mb-3">(b) any declaration referred to in section 901.194 made in respect of the model of remotely piloted aircraft system to be used for the flight; and</p>
+              <p className="font-mono text-sm ml-4">(c) the qualifications of all crew members.</p>
             </div>
 
             <InstructorNote type="keypoint">
-              <p>When accepting an operation under CARs 901, ensure the site survey is valid (even if operators do not do it themselves), the RPAS has a safety assurance and declaration, and all crew members are qualified.</p>
+              <p className="mb-2"><strong>The Pilot&apos;s Pre-Flight Responsibility - &quot;Familiar With&quot; Means More Than Just Reading:</strong></p>
+              <p className="mb-2">This regulation places direct responsibility on the pilot-in-command to be familiar with three critical pieces of information before every flight. Notice it says &quot;familiar with,&quot; not just &quot;have access to.&quot; You must understand the content, not just have it in your flight bag.</p>
+              <p className="mb-2"><strong>(a) Site Survey Results:</strong> Even if someone else conducted the site survey, YOU as the pilot must review and understand it. What are the hazards? Where are the obstacles? What&apos;s the emergency landing area? If the site survey is 6 months old and a new cell tower has been built, you need an updated survey.</p>
+              <p className="mb-2"><strong>(b) RPAS Declaration (Safety Assurance):</strong> Know what your drone is declared for. If your DJI M300 has a declaration for BVLOS operations, but you&apos;ve added a third-party payload that wasn&apos;t tested by the manufacturer, your declaration may no longer be valid. Check Transport Canada&apos;s public list of declarations before flight.</p>
+              <p className="mb-2"><strong>(c) Crew Qualifications:</strong> Verify that all crew members (visual observers, other pilots, technical crew) hold valid certificates and current recency. Don&apos;t assume your VO&apos;s basic certificate is still current - check the date.</p>
+              <p><strong>Common mistake:</strong> Pilots sometimes accept a job and show up to fly without reviewing the site survey first. The operations manager did the survey, so the pilot assumes it&apos;s fine. Then they arrive and discover the site is near a hospital helipad (prohibited) or has power lines not marked on the map. By regulation, this is the PILOT&apos;S responsibility to verify before flight, not after arrival.</p>
             </InstructorNote>
           </div>
 
@@ -1800,42 +1832,50 @@ export default function L1C01AirLaw() {
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 901.74 Extended VLOS</h3>
             <div className="bg-green-50 p-6 rounded-lg border border-green-300 mb-4">
-              <p className="font-semibold mb-3">Requirements:</p>
-              <ul className="space-y-2">
-                <li>• Pilot and control station are located at the site for take-off and recovery</li>
-                <li>• RPA within <strong>2 NM</strong> of pilot, VO, and control station</li>
-                <li>• RPA is always greater than <strong>100 ft (30 m) horizontally from any person</strong></li>
-                <li>• VO maintains unaided visual contact with the airspace</li>
-                <li>• Below 400 ft AGL</li>
-                <li>• VO has basic RPAS certificate or better</li>
-              </ul>
+              <p className="font-semibold mb-3">901.74(1) No pilot shall operate a remotely piloted aircraft system under this Division to conduct an extended VLOS operation unless:</p>
+              <p className="font-mono text-sm ml-4 mb-2">(a) the pilot and control station are located at the site set aside for take-off, launch, landing or recovery at the time of those activities;</p>
+              <p className="font-mono text-sm ml-4 mb-2">(b) the remotely piloted aircraft is at a distance of not more than two nautical miles from the pilot, the control station and the visual observer at any time during the flight; and</p>
+              <p className="font-mono text-sm ml-4 mb-4">(c) the operation is conducted at a distance of at least 100 feet (30 m), measured horizontally and at any altitude, from any person not involved in the operation.</p>
+
+              <p className="font-semibold mb-3">901.74(2) Visual Observer Requirement:</p>
+              <p className="font-mono text-sm ml-4">No pilot shall operate a remotely piloted aircraft system under this Division to conduct an extended VLOS operation unless a visual observer maintains unaided visual contact with the airspace in which the remotely piloted aircraft is operating in a manner sufficient to detect conflicting air traffic and other hazards and take action to avoid them.</p>
             </div>
 
             <InstructorNote type="keypoint">
-              <p className="mb-2"><strong>Extended VLOS is not the same as BVLOS.</strong></p>
-              <p className="mb-2">Extended VLOS: Drone must be within 2 NM of the pilot, visual observer, and the ground station. People planning to run drones in boxes remotely will not be able to do Extended VLOS, because the drone will not be within 2 NM of the ground station.</p>
-              <p className="mb-2">RPAS must stay more than 30m horizontally from any person not involved in the operation, even if your drone has a safety assurance to fly over people. The CAR supersedes that safety assurance.</p>
-              <p>Extended VLOS is very good for site surveys in unpopulated areas, but BVLOS is better for flying in a public area.</p>
+              <p className="mb-2"><strong>Extended VLOS is NOT BVLOS - Critical Differences:</strong></p>
+              <p className="mb-2">Extended VLOS allows you to fly the drone beyond your visual line of sight, but NOT beyond the visual observer&apos;s line of sight of the AIRSPACE. The VO is not watching the drone - they&apos;re scanning the airspace for conflicting traffic (helicopters, planes, other drones).</p>
+              <p className="mb-2"><strong>The 2 NM Triangle Rule:</strong> The drone must remain within 2 NM of three points simultaneously: (1) the pilot, (2) the control station, and (3) the visual observer. This means if you&apos;re doing a remote operation where the pilot is in a different location from the control station, extended VLOS won&apos;t work - you need full BVLOS.</p>
+              <p className="mb-2"><strong>Real-world application - Pipeline Inspection:</strong> You&apos;re inspecting a 10 km pipeline in a remote area. You set up at the midpoint with your pilot, ground control station, and visual observer all co-located. Your drone can fly 2 NM (3.7 km) in each direction along the pipeline. The VO stands on elevated terrain with binoculars, scanning the sky for incoming aircraft while you focus on flying the inspection. This is extended VLOS.</p>
+              <p className="mb-2"><strong>Why not use it in populated areas?</strong> The 100 ft (30 m) horizontal distance requirement from ANY person not involved in the operation is hard to maintain in public spaces. If someone walks into the area, you must ensure your drone stays 30 m away. BVLOS operations under Standard 923 have more flexibility for public areas.</p>
+              <p><strong>Common mistake:</strong> Thinking the VO watches the drone. No - the VO scans the AIRSPACE for threats. The pilot flies the drone using FPV or instruments. The VO&apos;s job is to yell &quot;MANNED AIRCRAFT, 2 O&apos;CLOCK!&quot; so the pilot can take evasive action.</p>
             </InstructorNote>
           </div>
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 901.74 Sheltered Operations</h3>
             <div className="bg-blue-50 p-6 rounded-lg border border-blue-300 mb-4">
-              <p className="font-semibold mb-3">Requirements:</p>
-              <ul className="space-y-2">
-                <li>• Pilot and control station are located at the site for take-off and landing</li>
-                <li>• RPA within 2 NM of pilot and control station</li>
-                <li>• RPA is always greater than 100 ft (30 m) horizontally from any person</li>
-                <li>• Below 400 ft AGL</li>
-                <li>• Aircraft remains at <strong>less than 200 ft horizontally</strong> from a building or structure</li>
-                <li>• Aircraft at altitude <strong>no greater than 100 ft above</strong> that building or structure</li>
-              </ul>
+              <p className="font-semibold mb-3">901.74(1) No pilot shall operate a remotely piloted aircraft system under this Division to conduct a sheltered operation unless:</p>
+              <p className="font-mono text-sm ml-4 mb-2">(a) the pilot and control station are located at the site set aside for take-off, launch, landing or recovery at the time of those activities;</p>
+              <p className="font-mono text-sm ml-4 mb-2">(b) the remotely piloted aircraft is at a distance of not more than two nautical miles from the pilot and the control station at any time during the flight; and</p>
+              <p className="font-mono text-sm ml-4 mb-4">(c) the operation is conducted at a distance of at least 100 feet (30 m), measured horizontally and at any altitude, from any person not involved in the operation.</p>
+
+              <p className="font-semibold mb-3">901.74(3) Sheltered Operation Definition:</p>
+              <p className="font-mono text-sm ml-4 mb-2">No pilot shall operate a remotely piloted aircraft system under this Division to conduct a sheltered operation unless:</p>
+              <p className="font-mono text-sm ml-8 mb-2">(a) the remotely piloted aircraft remains within 200 feet, measured horizontally, of a building or structure; and</p>
+              <p className="font-mono text-sm ml-8">(b) the remotely piloted aircraft does not fly more than 100 feet above the building or structure.</p>
             </div>
 
             <InstructorNote type="keypoint">
-              <p className="mb-2">A sheltered operation may or may not be considered a BVLOS operation. The drone must be within 100 ft vertically and 200 ft horizontally from a building, because there is almost no chance that a helicopter will also be in that airspace.</p>
-              <p>This gives the pilot the ability to inspect roofs, bridges, power lines, etc. The pilot does not need a visual observer.</p>
+              <p className="mb-2"><strong>Sheltered Operations - The &quot;Building Hug&quot; Technique:</strong></p>
+              <p className="mb-2">A sheltered operation is a specific type of BVLOS operation designed for infrastructure inspection. The concept is simple: if your drone stays very close to a building or structure (within 200 ft horizontally and 100 ft above), you&apos;re &quot;sheltered&quot; from conflicting air traffic because manned aircraft won&apos;t be flying that close to obstacles.</p>
+              <p className="mb-2"><strong>Perfect use cases:</strong></p>
+              <p className="mb-2">1. <strong>Roof inspections</strong> - Fly around a commercial building at 50 ft above the roof to inspect HVAC systems, looking for damage</p>
+              <p className="mb-2">2. <strong>Bridge inspections</strong> - Inspect the underside of a bridge, staying within 200 ft of the bridge structure</p>
+              <p className="mb-2">3. <strong>Cell tower inspections</strong> - Fly up the tower inspecting antennas, staying within 100 ft of the tower vertically</p>
+              <p className="mb-2">4. <strong>Building facade inspections</strong> - Inspect windows, cladding, or structural elements on tall buildings</p>
+              <p className="mb-2"><strong>Key advantage:</strong> NO visual observer required. Unlike Extended VLOS which requires a VO scanning the airspace, sheltered operations don&apos;t need one because the structure itself provides protection from conflicting traffic. A helicopter won&apos;t be flying 50 ft from a building.</p>
+              <p className="mb-2"><strong>The 200/100 rule visualized:</strong> Imagine a building is 300 ft tall. You can fly up to 400 ft AGL (100 ft above the roof). Horizontally, you can move 200 ft away from any face of the building. If you go 201 ft away, you&apos;re no longer sheltered - you&apos;re in BVLOS and need different procedures.</p>
+              <p><strong>Common question:</strong> &quot;What counts as a structure?&quot; Buildings, bridges, towers, industrial equipment - solid, substantial structures. A fence or a small shed wouldn&apos;t provide meaningful shelter from air traffic, so use judgment. The intent is structures that manned aircraft would actively avoid.</p>
             </InstructorNote>
           </div>
         </CourseSection>
@@ -1996,34 +2036,37 @@ export default function L1C01AirLaw() {
           </div>
 
           <div className="mb-6">
-            <h3 className="text-xl font-semibold mb-4">1️⃣ L1C Pilot Requirements (901.89)</h3>
+            <h3 className="text-xl font-semibold mb-4">CAR 901.89 L1C Pilot Requirements</h3>
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <span className="text-green-600 mr-2 mt-1">✓</span>
-                  <span><strong>18 years of age</strong></span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-600 mr-2 mt-1">✓</span>
-                  <span>Hold a <strong>L1C certificate</strong></span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-600 mr-2 mt-1">✓</span>
-                  <span>Meet the <strong>recency requirements (24 months)</strong></span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-600 mr-2 mt-1">✓</span>
-                  <span>Pilot certificate and recency demonstration are <strong>easily accessible during operations</strong></span>
-                </li>
-              </ul>
-              <div className="mt-4 p-3 bg-blue-50 border-l-4 border-blue-400 rounded">
-                <p className="font-semibold">Note: There is no requirement for a medical certificate</p>
-              </div>
+              <p className="font-semibold mb-3">901.89(1) Certificate Requirement:</p>
+              <p className="font-mono text-sm ml-4 mb-4">No person shall operate a remotely piloted aircraft system under this Division unless the person holds a pilot certificate — remotely piloted aircraft — level 1 complex operations issued under section 901.90.</p>
+
+              <p className="font-semibold mb-3">901.89(2) Training Exception:</p>
+              <p className="font-mono text-sm ml-4 mb-4">Subsection (1) does not apply if the operation of the remotely piloted aircraft system is for the purpose of training and is conducted under the direct supervision of a person who is 18 years of age or older and who is permitted to operate a remotely piloted aircraft system under this Division.</p>
+
+              <p className="font-semibold mb-3">901.89(3) Age Requirement:</p>
+              <p className="font-mono text-sm ml-4 mb-4">No person shall operate a remotely piloted aircraft system under this Division unless the person is 18 years of age or older.</p>
+
+              <p className="font-semibold mb-3">901.89(4) Certificate Accessibility:</p>
+              <p className="font-mono text-sm ml-4 mb-4">The pilot-in-command of a remotely piloted aircraft operated under this Division shall keep the pilot certificate and evidence of compliance with the applicable recency requirements set out in section 901.91 readily available for inspection during the flight.</p>
+
+              <p className="font-semibold mb-3">Recency Requirements (from 901.91):</p>
+              <p className="font-mono text-sm ml-4">No holder of a pilot certificate — remotely piloted aircraft — level 1 complex operations shall operate a remotely piloted aircraft system under this Division unless the holder has, within the 24 months preceding the flight, been issued a pilot certificate or completed the recurrent training requirements.</p>
+            </div>
+
+            <div className="mt-4 p-3 bg-blue-50 border-l-4 border-blue-400 rounded">
+              <p className="font-semibold">Note: There is no requirement for a medical certificate</p>
             </div>
 
             <InstructorNote type="keypoint">
-              <p className="mb-2">People often forget the recency requirement: Transport Canada needs to know operators are up-to-date on the regulations.</p>
-              <p>This L1C course requalifies participants for the recurrence. The easiest way to get requalified is the self-paced study from Transport Canada that comes with a study guide telling participants where to find the answers. When they fill out the questionnaire and keep it with them, they&apos;re considered current.</p>
+              <p className="mb-2"><strong>The Four Pillars of L1C Pilot Qualification:</strong></p>
+              <p className="mb-2">1. <strong>Age 18+:</strong> Unlike basic operations (14+) or advanced (16+), L1C requires you to be an adult. No exceptions, even with parental consent. Why? L1C operations involve BVLOS in complex environments with significant liability exposure.</p>
+              <p className="mb-2">2. <strong>Hold L1C Certificate:</strong> You must pass the L1C knowledge exam and complete a flight review with an L1C flight reviewer. The Advanced certificate is NOT sufficient for L1C operations, even if you have years of experience.</p>
+              <p className="mb-2">3. <strong>24-Month Recency:</strong> You must demonstrate recency within 24 months by either (a) obtaining a new certificate, or (b) completing recurrent training. Many operators fail this - they got their L1C in 2023, haven&apos;t done recurrency training, and are now illegal to fly in 2026.</p>
+              <p className="mb-2">4. <strong>Readily Available:</strong> Your certificate and recency proof must be &quot;readily available&quot; during flight. This means on your person, in your flight bag, or on your phone. Leaving it at the office 50 km away doesn&apos;t count. Transport Canada inspectors can request to see it at any time during operations.</p>
+              <p className="mb-2"><strong>Training Exception Explained:</strong> Subsection (2) allows student pilots without L1C certificates to fly under supervision for training purposes. The supervisor must be 18+ and L1C-qualified. This is how you get your required flight experience before the flight review.</p>
+              <p className="mb-3"><strong>Real-world failure scenario:</strong> A pilot holds an L1C certificate issued in January 2023. They haven&apos;t completed recurrent training. In March 2025 (25 months later), they conduct a BVLOS flight. This is illegal under 901.89 - their recency expired in January 2025 (24 months). The penalty? Potential certificate suspension and fines up to $5,000 for individuals or $25,000 for corporations.</p>
+              <p className="text-sm"><strong>Recency Reminder:</strong> People often forget the recency requirement - Transport Canada needs to know operators are up-to-date on the regulations. This L1C course requalifies participants for recurrence. The easiest way to get requalified is the self-paced study from Transport Canada that comes with a study guide. When you complete the questionnaire and keep it with you, you&apos;re considered current.</p>
             </InstructorNote>
           </div>
 
@@ -2052,18 +2095,36 @@ export default function L1C01AirLaw() {
           </div>
 
           <div className="mb-6">
-            <h3 className="text-xl font-semibold mb-4">3️⃣ L1C Platform - Declarations (901.95)</h3>
+            <h3 className="text-xl font-semibold mb-4">CAR 901.95 Declarations (L1C Platform Requirements)</h3>
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <p className="mb-4">After November 4th, 2025, Transport Canada updated the public list of safety assurances from manufacturers to include BVLOS operations.</p>
-              <p className="mb-3 font-semibold">Three Operational Categories:</p>
-              <ul className="space-y-2">
-                <li>• <strong>901.87(a):</strong> Standard L1C operations</li>
-                <li>• <strong>901.87(b):</strong> Operations requiring Pre-Validated Declarations</li>
-              </ul>
+              <p className="font-semibold mb-3">901.95 Declaration Requirement:</p>
+              <p className="font-mono text-sm ml-4 mb-4">No pilot shall operate a remotely piloted aircraft system under this Division unless a declaration to the Minister has been made in accordance with section 901.194 in respect of that model of system and in respect of each of the technical requirements set out in Standard 922 that is applicable to the operation.</p>
+
+              <p className="font-semibold mb-3">901.96 Modifications:</p>
+              <p className="font-mono text-sm ml-4 mb-2">No pilot shall operate a remotely piloted aircraft system under this Division if the system has been modified in any way unless</p>
+              <p className="font-mono text-sm ml-8 mb-2">(a) the pilot is able to demonstrate to the Minister that, despite the modification, the system continues to meet the technical requirements set out in Standard 922 that are applicable to the operation; and</p>
+              <p className="font-mono text-sm ml-8 mb-4">(b) if applicable, the modification was performed according to the instructions of the manufacturer of the part or equipment used to modify the system.</p>
+
+              <p className="font-semibold mb-3">901.97 Maintenance:</p>
+              <p className="font-mono text-sm ml-4">The remotely piloted aircraft system must have been maintained, and all mandatory actions must have been completed, in accordance with the instructions of the manufacturer or of the person who has made a declaration in respect of that model of system.</p>
             </div>
 
+            <InstructorNote type="keypoint">
+              <p className="mb-2"><strong>Platform Declarations - The Manufacturer&apos;s Promise:</strong></p>
+              <p className="mb-2">After November 4th, 2025, Transport Canada implemented a new declaration system where manufacturers declare their RPAS models meet Standard 922 requirements for BVLOS operations. This shifts some of the compliance burden from operators to manufacturers.</p>
+              <p className="mb-2"><strong>What&apos;s in a declaration?</strong> The manufacturer is declaring to Transport Canada that their drone meets specific safety standards (Standard 922), including: reliability, environmental envelope, communication systems, detect and avoid capability (or procedures), emergency procedures, and operational limitations.</p>
+              <p className="mb-2"><strong>Two operational pathways:</strong></p>
+              <p className="mb-2">• <strong>Standard L1C (901.87a):</strong> Operations using drones with standard manufacturer declarations in sparsely populated areas, uncontrolled airspace, Air Risk Class A/B/C, below 400 ft AGL</p>
+              <p className="mb-2">• <strong>Pre-Validated Declarations (901.87b):</strong> More complex operations that may involve different airspace or operational conditions - requires additional manufacturer validation</p>
+              <p className="mb-2"><strong>The Modification Problem - CAR 901.96:</strong> This is where many operators get into trouble. You buy a DJI M300 with a valid BVLOS declaration. Then you add a third-party LiDAR sensor, change the propellers, or modify the landing gear. STOP. Your declaration is now potentially void unless:</p>
+              <p className="mb-2">1. The modification follows manufacturer instructions (e.g., DJI says &quot;you can use this third-party payload&quot;), OR</p>
+              <p className="mb-2">2. You demonstrate to Transport Canada that the modified system still meets Standard 922</p>
+              <p className="mb-2"><strong>Real failure case:</strong> An operator had a valid DJI M350 declaration. They swapped out the stock propellers for &quot;quieter&quot; third-party props not approved by DJI. During an inspection, Transport Canada asked about the props. The operator couldn&apos;t demonstrate Standard 922 compliance with the modified props. Result: Grounded until they either (a) reinstalled OEM props, or (b) hired an engineering firm to demonstrate Standard 922 compliance (expensive).</p>
+              <p><strong>Check the public list:</strong> Transport Canada maintains a public list of manufacturer declarations at tc.canada.ca. Before you buy a drone for L1C operations, verify it&apos;s on the list. Popular models include DJI M300/M350, M30 series, and Matrice 30T with manufacturer declarations for BVLOS.</p>
+            </InstructorNote>
+
             <InstructorNote type="info">
-              <p>Reference the list using this link: https://tc.canada.ca/en/aviation/drone-safety/learn-rules-you-fly-your-drone/choosing-right-drone-advanced-operations</p>
+              <p>Reference the official Transport Canada declaration list: https://tc.canada.ca/en/aviation/drone-safety/learn-rules-you-fly-your-drone/choosing-right-drone-advanced-operations</p>
             </InstructorNote>
           </div>
 
@@ -2268,26 +2329,69 @@ export default function L1C01AirLaw() {
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 901.176 Flight Reviewer Requirements</h3>
             <div className="bg-green-50 p-6 rounded-lg border border-green-300">
-              <p className="mb-3 font-semibold">Flight reviewer must:</p>
-              <ul className="space-y-2">
-                <li>• Hold <strong>Advanced or L1C certificate</strong> endorsed with flight reviewer rating (as appropriate)</li>
-                <li>• Be affiliated with a <strong>&apos;declared&apos; training provider</strong></li>
-              </ul>
+              <p className="font-semibold mb-3">The Minister shall endorse the applicant&apos;s pilot certificate with a flight reviewer rating if the applicant demonstrates to the Minister that the applicant meets the following requirements:</p>
+
+              <div className="ml-4 space-y-3 mb-4">
+                <div>
+                  <p className="font-semibold">Experience:</p>
+                  <p className="font-mono text-sm ml-4">Must have a minimum of 6 months advanced or complex level 1 RPA pilot experience</p>
+                </div>
+
+                <div>
+                  <p className="font-semibold">Examination:</p>
+                  <p className="font-mono text-sm ml-4">Must have successfully completed the Remotely Piloted Aircraft System – Flight Reviewer (RPASFR) exam in accordance with the document entitled Knowledge Requirements for Pilots of Remotely Piloted Aircraft Systems, 250 g up to and including 150 kg, Basic and Advanced Operations, TP 15263</p>
+                </div>
+
+                <div>
+                  <p className="font-semibold">Training:</p>
+                  <p className="font-mono text-sm ml-4">Must be trained to TP 15263E for conduct of Advanced flight reviews, and TP 15530E for conduct of Level 1 Complex flight reviews</p>
+                </div>
+
+                <div>
+                  <p className="font-semibold">Affiliation:</p>
+                  <p className="font-mono text-sm ml-4">Must be directly affiliated with a TP 15263E Self-Declared RPAS Training provider for conduct of Advanced flight reviews, or a TP 15530E Self-Declared RPAS Training provider for conduct of Level 1 Complex flight reviews</p>
+                </div>
+
+                <div>
+                  <p className="font-semibold">Recency:</p>
+                  <p className="font-mono text-sm ml-4">Every 2 years, to maintain the flight reviewer role, must complete recency requirements as per CAR 901.65 or CAR 901.91</p>
+                </div>
+
+                <div>
+                  <p className="font-semibold">Clean Record:</p>
+                  <p className="font-mono text-sm ml-4">The candidate must have no enforcement action against them, past or pending</p>
+                </div>
+
+                <div>
+                  <p className="font-semibold">Family Member Restriction:</p>
+                  <p className="font-mono text-sm ml-4">Flight reviewer – RPAS shall not conduct flight reviews for immediate family members, including parents, spouses, children, grandchildren or stepchildren, unless a Transport Canada Inspector monitors the flight review or written authorization has been granted by Transport Canada</p>
+                </div>
+              </div>
             </div>
 
             <InstructorNote type="keypoint">
-              <p>To be a flight reviewer for L1C, reviewers must have the L1C pilot certificate and be affiliated with a declared training provider.</p>
+              <p className="mb-2"><strong>Becoming an L1C Flight Reviewer - The Gatekeeper Role:</strong></p>
+              <p className="mb-2">Flight reviewers are the practical gatekeepers for L1C certification. While the knowledge exam tests theory, the flight reviewer ensures candidates can actually fly safely in BVLOS scenarios.</p>
+              <p className="mb-2"><strong>Why 6 months experience?</strong> Transport Canada wants reviewers to have real-world operational experience before they evaluate others. Someone who just passed their L1C exam last month shouldn&apos;t be evaluating other pilots. You need time to encounter real situations, make mistakes, and learn.</p>
+              <p className="mb-2"><strong>The Training Provider Requirement:</strong> You can&apos;t be an independent flight reviewer. You must be affiliated with a declared training organization. This ensures oversight, standardization, and accountability. If a reviewer is signing off unqualified pilots, Transport Canada can address it through the training provider.</p>
+              <p className="mb-2"><strong>Two-year recency for reviewers:</strong> Even flight reviewers must maintain currency. If you haven&apos;t conducted a flight within 24 months or completed recurrency training, you can&apos;t review others. This prevents outdated reviewers from perpetuating old practices.</p>
+              <p className="mb-2"><strong>Family member restriction - why?</strong> Conflict of interest. It&apos;s hard to objectively fail your own child or spouse on a flight review. The regulation allows it only with TC inspector oversight or written authorization to prevent bias.</p>
+              <p><strong>Real-world scenario:</strong> You want to become a flight reviewer. Steps: (1) Obtain L1C certificate, (2) Fly for 6 months gaining experience, (3) Pass the RPASFR exam, (4) Complete reviewer training per TP 15530E, (5) Affiliate with a declared training provider, (6) Apply to Transport Canada for flight reviewer endorsement. Now you can conduct flight reviews, but you must maintain your own recency every 24 months.</p>
             </InstructorNote>
           </div>
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 901.178 Retaking of Exam</h3>
             <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-300">
-              <p><strong>24-hour period</strong> to review before retaking exam</p>
+              <p className="font-semibold mb-2">901.178:</p>
+              <p className="font-mono text-sm ml-4">No person who fails an examination referred to in paragraph 901.176(d) shall retake the examination for a period of 24 hours after the examination.</p>
             </div>
 
             <InstructorNote type="keypoint">
-              <p>Participants must wait 24 hours to take the L1C exam again if they fail on the first attempt.</p>
+              <p className="mb-2"><strong>The 24-Hour Cooling-Off Period:</strong></p>
+              <p className="mb-2">This regulation applies specifically to the flight reviewer exam (RPASFR), not the L1C pilot knowledge exam. If you fail the flight reviewer exam, you must wait 24 hours before attempting it again.</p>
+              <p className="mb-2"><strong>Why the waiting period?</strong> Transport Canada wants candidates to review material, identify knowledge gaps, and study properly rather than immediately re-attempting through trial and error. The flight reviewer role is critical - these individuals will be certifying other pilots, so they need to truly understand the material.</p>
+              <p><strong>Practical impact:</strong> If you fail the RPASFR exam on Monday at 10 AM, you cannot retake it until Tuesday at 10 AM (24 hours later). Use this time to review the areas where you struggled and ensure you&apos;re properly prepared for the second attempt.</p>
             </InstructorNote>
           </div>
 
@@ -2367,60 +2471,134 @@ export default function L1C01AirLaw() {
           </div>
 
           <div className="mb-6">
-            <h3 className="text-xl font-semibold mb-4">CAR 901.213 Eligibility to Hold</h3>
+            <h3 className="text-xl font-semibold mb-4">CAR 901.213 Eligibility to Hold RPAS Operator Certificate</h3>
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <ul className="space-y-2">
-                <li>• Canadian citizen or permanent resident of Canada</li>
-                <li>• Government of Canada or &apos;agent of&apos;</li>
-                <li>• Corporation or entity formed under laws of Canada or a province</li>
-                <li>• Commercial air service or not?</li>
-              </ul>
+              <p className="font-semibold mb-3">A person is eligible to hold an RPAS operator certificate if:</p>
+
+              <p className="font-mono text-sm ml-4 mb-3">(a) with respect to a person who proposes to provide a commercial air service, the person is Canadian; or</p>
+
+              <p className="font-mono text-sm ml-4 mb-2">(b) in any other case, the person is:</p>
+              <p className="font-mono text-sm ml-8 mb-2">(i) a Canadian citizen or a permanent resident of Canada,</p>
+              <p className="font-mono text-sm ml-8 mb-2">(ii) a government in Canada or an agent or mandatary of such a government, or</p>
+              <p className="font-mono text-sm ml-8">(iii) a corporation or entity that is incorporated or formed under the laws of Canada or a province.</p>
+
+              <div className="mt-4 p-3 bg-blue-50 border-l-4 border-blue-400 rounded">
+                <p className="font-semibold mb-2">Definition - Canadian:</p>
+                <p className="text-sm">For commercial air service: means a Canadian citizen or permanent resident, a government or agent/mandatary of government, or a corporation/entity where Canadians beneficially own and control at least 51% voting interests</p>
+              </div>
             </div>
 
             <InstructorNote type="keypoint">
-              <p className="mb-2">Everyone that wants to exercise L1C privileges has to do so under an RPAS Operator Certificate. You apply for an RPAS Operator Certificate through the drone management portal as an individual or corporation.</p>
-              <p>When you apply for this certificate, you are making a declaration to Transport Canada that you have the policies and processes in place to be an RPAS operator.</p>
+              <p className="mb-2"><strong>Who Can Hold an RPAS Operator Certificate? The Canadian Control Requirement:</strong></p>
+              <p className="mb-2">This regulation has two different pathways depending on whether you&apos;re providing commercial air service (flying for hire) or not (internal operations, research, etc.).</p>
+              <p className="mb-2"><strong>Path (b) - Non-Commercial Air Service (Most L1C Operators):</strong></p>
+              <p className="mb-2">If you&apos;re NOT providing commercial air service (e.g., a mining company flying drones for their own site surveys, a university research project, a government mapping project), you can be:</p>
+              <p className="mb-2">• A Canadian citizen or permanent resident (individuals)</p>
+              <p className="mb-2">• A Canadian government or government agency</p>
+              <p className="mb-2">• ANY corporation formed under Canadian law (no ownership restrictions)</p>
+              <p className="mb-2"><strong>Path (a) - Commercial Air Service (Drone Service Providers):</strong></p>
+              <p className="mb-2">If you&apos;re selling drone services to clients (commercial air service), you must be &quot;Canadian&quot; which means 51%+ Canadian ownership and control. A foreign company cannot obtain an RPAS operator certificate to provide commercial drone services in Canada.</p>
+              <p className="mb-2"><strong>Examples:</strong></p>
+              <p className="mb-2">✓ <strong>PASSES:</strong> ABC Mining Ltd. (incorporated in Ontario, owned by Australian parent company) wants L1C operations for their own mining surveys. This is NOT commercial air service - they&apos;re flying for themselves. They qualify under path (b)(iii).</p>
+              <p className="mb-2">✗ <strong>FAILS:</strong> SkyDrone Services Inc. (incorporated in Delaware, USA) wants to provide commercial drone inspection services to Canadian clients. This IS commercial air service. They fail under path (a) because they&apos;re not &quot;Canadian&quot; (not 51%+ Canadian-owned).</p>
+              <p className="mb-2">✓ <strong>PASSES:</strong> John Smith (permanent resident, not citizen) wants to start a commercial drone photography business. He qualifies as &quot;Canadian&quot; under the definition because permanent residents are included.</p>
+              <p><strong>How to apply:</strong> You apply through the Drone Management Portal (DMP) at tc.canada.ca. The application requires you to declare your organizational structure, ROM, training program, and maintenance procedures. As of 2025, the typical processing time is 4-8 weeks. Plan ahead - you cannot legally conduct L1C operations without an approved RPAS Operator Certificate.</p>
             </InstructorNote>
 
             <InstructorNote type="info">
-              <p>If the organization to which the students belong already has an RPAS Operator Certificate, the instructor can show the operating certificate to the students.</p>
+              <p>If the organization to which the students belong already has an RPAS Operator Certificate, the instructor can show the operating certificate to the students as a reference example.</p>
             </InstructorNote>
           </div>
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 901.216 General Conditions</h3>
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <p className="mb-3 font-semibold">To obtain an RPAS Operator Certificate, you must:</p>
-              <ul className="space-y-2">
-                <li>• Define an <strong>organizational structure</strong></li>
-                <li>• Maintain a <strong>training program</strong></li>
-                <li>• Have an RPAS that is <strong>proper for the type of operation</strong></li>
-                <li>• RPAS maintenance <strong>in accordance with manufacturer&apos;s instructions</strong></li>
-                <li>• Notify Minister of <strong>organizational changes</strong></li>
-              </ul>
+              <p className="font-semibold mb-3">901.216 The general conditions of an RPAS operator certificate are the following:</p>
+
+              <p className="font-mono text-sm ml-4 mb-3">(a) the RPAS operator shall maintain an adequate organizational structure;</p>
+
+              <p className="font-mono text-sm ml-4 mb-3">(b) the RPAS operator shall establish and maintain a training program and shall ensure that all persons involved in the operation and maintenance of a remotely piloted aircraft system receive the training necessary to perform their duties;</p>
+
+              <p className="font-mono text-sm ml-4 mb-3">(c) the RPAS operator shall use only remotely piloted aircraft systems that are suitable for the type of operation;</p>
+
+              <p className="font-mono text-sm ml-4 mb-3">(d) the RPAS operator shall ensure that remotely piloted aircraft systems are maintained in accordance with the instructions of the manufacturer or of the person who has made a declaration in respect of that model of system; and</p>
+
+              <p className="font-mono text-sm ml-4">(e) the RPAS operator shall notify the Minister of any change in the organizational structure referred to in paragraph (a).</p>
             </div>
 
             <InstructorNote type="keypoint">
-              <p>These general conditions ensure operators have proper structure, training (including annual recurrency training with record keeping), appropriate RPAS for their operations, maintenance plans, and processes to notify the Minister of organizational changes.</p>
+              <p className="mb-2"><strong>The Five Pillars of RPAS Operator Certificate Compliance:</strong></p>
+              <p className="mb-2">These conditions are ongoing obligations that continue for the entire time you hold the certificate. It&apos;s not a one-time application - you must maintain these conditions or risk certificate suspension or revocation.</p>
+              <p className="mb-2"><strong>(a) Organizational Structure:</strong></p>
+              <p className="mb-3 ml-4">You must have a defined org chart with named positions: Accountable Executive (must be named), Person Responsible for Maintenance (must be named), pilots, visual observers, and other crew. The &quot;adequate&quot; test means: Can your organization safely conduct the operations you&apos;re approved for? A one-person operation flying occasionally may be adequate. A 24/7 national operation needs more structure.</p>
+
+              <p className="mb-2"><strong>(b) Training Program:</strong></p>
+              <p className="mb-3 ml-4">This is where operators commonly fail. You need a documented training program for ALL personnel - pilots, VOs, maintenance crew, and operations staff. This includes initial training AND annual recurrent training. Transport Canada can audit your training records at any time. Many operators train their pilots well but forget to train visual observers or maintenance personnel, then fail an inspection.</p>
+
+              <p className="mb-2"><strong>(c) Suitable RPAS:</strong></p>
+              <p className="mb-3 ml-4">&quot;Suitable&quot; means appropriate for the job. You can&apos;t use a toy drone for industrial inspections. You can&apos;t use a racing drone for precision mapping. The RPAS must have the appropriate declaration (Standard 922) for your operation type. If you&apos;re doing BVLOS, the drone must have a BVLOS declaration.</p>
+
+              <p className="mb-2"><strong>(d) Manufacturer Maintenance:</strong></p>
+              <p className="mb-3 ml-4">Follow the manufacturer&apos;s maintenance instructions exactly. DJI says inspect props every 50 hours? You must do it and document it. Keep maintenance logs for every aircraft. Include pre-flight inspections, post-flight inspections, scheduled maintenance, and any repairs. This is your proof of compliance.</p>
+
+              <p className="mb-2"><strong>(e) Notify Changes:</strong></p>
+              <p className="mb-3 ml-4">If your Accountable Executive leaves and is replaced, you must notify Transport Canada. If you change your organizational structure (merge departments, create new roles), notify TC. This ensures they have current contact information and understand your current structure.</p>
+
+              <p><strong>Enforcement reality:</strong> Transport Canada conducts periodic surveillance of RPAS operators. They may request your training records, maintenance logs, organizational chart, and ROM at any time. Operators who cannot produce these documents face enforcement action ranging from warnings to certificate suspension. One operator lost their certificate because they couldn&apos;t demonstrate they had trained their visual observers in the past 24 months - violating condition (b).</p>
             </InstructorNote>
           </div>
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 901.217 RPAS Operations Manual</h3>
             <div className="bg-yellow-50 p-6 rounded-lg border border-yellow-300">
-              <p className="mb-3 font-semibold">Required Contents:</p>
-              <ul className="space-y-2">
-                <li>• Roles and responsibilities of crew</li>
-                <li>• Roles and responsibilities of all operational and maintenance personnel</li>
-                <li>• Safety program/processes</li>
-                <li>• Normal and emergency procedures</li>
-                <li>• Training program and personnel qualifications</li>
-              </ul>
+              <p className="font-semibold mb-3">901.217(1) Contents of RPAS Operations Manual:</p>
+              <p className="font-mono text-sm ml-4 mb-2">Every RPAS operator shall establish and maintain an RPAS operations manual that consists of</p>
+
+              <p className="font-mono text-sm ml-8 mb-2">(a) a description of the roles and responsibilities of crew members before, during and after a flight;</p>
+
+              <p className="font-mono text-sm ml-8 mb-2">(b) a description of the roles and responsibilities of other required persons, including the accountable executive and the person responsible for the maintenance of remotely piloted aircraft systems;</p>
+
+              <p className="font-mono text-sm ml-8 mb-2">(c) instructions and methods necessary to enable operations personnel, including pilots and visual observers, to perform their duties;</p>
+
+              <p className="font-mono text-sm ml-8 mb-2">(d) a safety program that includes procedures for risk management and for maintaining safety standards;</p>
+
+              <p className="font-mono text-sm ml-8 mb-2">(e) the normal and emergency procedures to be followed by crew members;</p>
+
+              <p className="font-mono text-sm ml-8 mb-2">(f) the emergency response plan required by section 901.23;</p>
+
+              <p className="font-mono text-sm ml-8 mb-2">(g) a description of the training program referred to in paragraph 901.216(b), including a description of the qualifications required for each type of person involved in the operation and maintenance of remotely piloted aircraft systems;</p>
+
+              <p className="font-mono text-sm ml-8 mb-2">(h) the process for conducting the site survey required by section 901.27; and</p>
+
+              <p className="font-mono text-sm ml-8">(i) the risk mitigation measures for persons on the surface, including risk assessment procedures and mitigation measures applicable to different types of operations.</p>
+
+              <p className="font-semibold mt-4 mb-2">901.217(2) Availability:</p>
+              <p className="font-mono text-sm ml-4 mb-2">The RPAS operator shall provide a copy of its RPAS operations manual to the Minister on request.</p>
+
+              <p className="font-semibold mt-4 mb-2">901.217(3) Amendments:</p>
+              <p className="font-mono text-sm ml-4 mb-2">If there is a change in any aspect of an RPAS operator&apos;s operations, the RPAS operator shall amend its operations manual.</p>
+
+              <p className="font-semibold mt-4 mb-2">901.217(4) Distribution:</p>
+              <p className="font-mono text-sm ml-4">The operations manual must be distributed to all operations personnel.</p>
             </div>
 
             <InstructorNote type="keypoint">
-              <p className="mb-2">Operators are required by law to have an RPAS Operations Manual before applying for an RPAS Operator Certificate. They don&apos;t have to have an SMS, but they do have to have a safety program.</p>
-              <p>Visual observers must be trained under their training program.</p>
+              <p className="mb-2"><strong>The RPAS Operations Manual (ROM) - Your Organization&apos;s Operating Instructions:</strong></p>
+              <p className="mb-2">The ROM is the single most important document for L1C operations. It&apos;s essentially your company&apos;s rulebook for how you safely conduct drone operations. Without an approved ROM, you cannot obtain or maintain an RPAS Operator Certificate.</p>
+              <p className="mb-2"><strong>What makes a good ROM?</strong> It must be specific to YOUR operations, not a generic template. Transport Canada can spot copy-pasted ROMs. Your ROM should reflect your actual aircraft, your actual operational areas, your actual crew structure, and your actual procedures.</p>
+              <p className="mb-2"><strong>The 9 Mandatory Components Explained:</strong></p>
+              <p className="mb-2">(a) <strong>Crew Roles:</strong> Before flight (briefing, planning), during flight (pilot flies, VO scans, who has authority to abort), after flight (debriefing, incident reporting)</p>
+              <p className="mb-2">(b) <strong>Organizational Roles:</strong> Who is the Accountable Executive? Who is responsible for maintenance? Include names and contact information</p>
+              <p className="mb-2">(c) <strong>Instructions & Methods:</strong> HOW do pilots perform their duties? Step-by-step procedures. HOW do VOs scan for traffic? Sector scanning techniques?</p>
+              <p className="mb-2">(d) <strong>Safety Program:</strong> You don&apos;t need a full SMS (Safety Management System), but you need a safety program. How do you identify hazards? How do you assess risk? How do you track safety performance?</p>
+              <p className="mb-2">(e) <strong>Normal & Emergency Procedures:</strong> Checklists for startup, pre-flight, flight, post-flight. Emergency procedures for loss of link, flyaway, injury, crash, airspace incursion</p>
+              <p className="mb-2">(f) <strong>Emergency Response Plan:</strong> Who do you call if something goes wrong? Local emergency services numbers, Transport Canada contacts, internal escalation procedures</p>
+              <p className="mb-2">(g) <strong>Training Program:</strong> What training does each role require? Initial training curriculum, recurrent training schedule (annual minimum), record-keeping procedures</p>
+              <p className="mb-2">(h) <strong>Site Survey Process:</strong> How do you conduct site surveys? What tools do you use? What information do you collect? How long are surveys valid?</p>
+              <p className="mb-2">(i) <strong>Risk Mitigation for Persons on Surface:</strong> How do you protect people on the ground? Different procedures for sparsely populated vs populated areas, emergency landing site selection</p>
+              <p className="mb-2"><strong>Living Document Requirement:</strong> Subsection (3) is critical - if ANYTHING changes (new aircraft, new procedures, new personnel, different operation types), you must update the ROM. Many operators create a ROM for their initial application and never update it. Three years later, half the named personnel are gone, they&apos;re flying different drones, and their procedures have evolved. This is a violation.</p>
+              <p className="mb-2"><strong>Distribution Requirement:</strong> All operations personnel must have access to the ROM. This doesn&apos;t mean everyone memorizes it, but everyone must know where to find it and how to reference it. Many operators use a shared drive or cloud storage with version control.</p>
+              <p><strong>Common failure scenario:</strong> An operator applies for their RPAS Operator Certificate with a minimal ROM - just enough to get approved. They start operations. Six months later, Transport Canada conducts an inspection and asks to see their current ROM. The operator hands over the original version from the application. TC asks about their new procedure for night operations (which they&apos;ve started conducting). It&apos;s not in the ROM. TC asks about the training records for three new pilots hired in the past 4 months. The training program in the ROM doesn&apos;t match what they actually did. Result: Enforcement action and potential certificate suspension. The ROM must reflect current reality, not initial intentions.</p>
             </InstructorNote>
           </div>
 
