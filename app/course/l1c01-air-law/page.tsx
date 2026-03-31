@@ -533,6 +533,96 @@ export default function L1C01AirLaw() {
             </InstructorNote>
           </div>
 
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold mb-4">Altitude References in RPAS</h3>
+
+            <InstructorNote type="info">
+              <p className="mb-2"><strong>Understanding Different Altitude References:</strong></p>
+              <p className="mb-2">This section discusses the many different altitude references that exist in RPAS operations and how they differ from traditional aviation altitude systems.</p>
+            </InstructorNote>
+
+            <InstructorNote type="keypoint">
+              <p className="font-semibold mb-3">Critical Altitude Concepts for RPAS Operations:</p>
+
+              <div className="space-y-3 text-sm">
+                <div className="bg-white p-4 rounded-lg border-l-4 border-blue-500">
+                  <p className="font-semibold mb-2">1. Home Altitude (Drone Default)</p>
+                  <ul className="ml-4 space-y-1">
+                    <li>• Most drones use GPS-based altitude referenced to the takeoff point</li>
+                    <li>• &quot;Home&quot; = 0 ft, regardless of actual elevation above sea level</li>
+                    <li>• <strong>Example:</strong> Taking off from a hilltop at 1,500 ft ASL - drone shows 0 ft at launch</li>
+                    <li>• <strong>Problem:</strong> Doesn&apos;t match traditional aircraft altitude references</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-yellow-500">
+                  <p className="font-semibold mb-2">2. Above Ground Level (AGL)</p>
+                  <ul className="ml-4 space-y-1">
+                    <li>• Height above the terrain directly below the aircraft</li>
+                    <li>• RPAS altitude limits (400 ft) are typically referenced to AGL</li>
+                    <li>• <strong>Example:</strong> Flying 300 ft AGL over flat farmland - straightforward</li>
+                    <li>• <strong>Challenge:</strong> Terrain changes - flying 300 ft over a valley means different AGL than over a hill</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-green-500">
+                  <p className="font-semibold mb-2">3. Above Sea Level (ASL) / Mean Sea Level (MSL)</p>
+                  <ul className="ml-4 space-y-1">
+                    <li>• Traditional aircraft use altimeters referenced to sea level with pressure corrections</li>
+                    <li>• Requires altimeter setting (QNH) from weather station</li>
+                    <li>• <strong>Example:</strong> Calgary airport elevation is 3,557 ft ASL - aircraft on ground shows ~3,557 ft</li>
+                    <li>• <strong>RPAS Issue:</strong> Most drones don&apos;t use altimeter settings - they use GPS altitude</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-purple-500">
+                  <p className="font-semibold mb-2">4. GPS Altitude (WGS84 Ellipsoid)</p>
+                  <ul className="ml-4 space-y-1">
+                    <li>• RPAS typically use GPS-derived altitude from satellites</li>
+                    <li>• Referenced to WGS84 ellipsoid model, not mean sea level</li>
+                    <li>• <strong>Difference:</strong> Can vary by 30-50 meters from MSL depending on location (geoid undulation)</li>
+                    <li>• <strong>Accuracy:</strong> GPS vertical accuracy is ±10-30 ft in ideal conditions</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-4 bg-red-50 p-4 rounded-lg border border-red-200">
+                <p className="font-semibold mb-2 text-red-700">⚠️ Why This Matters for L1C Operations:</p>
+                <ul className="text-sm space-y-1">
+                  <li><strong>1. Know Your System:</strong> Understand what altitude reference your drone&apos;s GCS (Ground Control Station) is using and what units it displays</li>
+                  <li><strong>2. Develop Procedures:</strong> Create standard operating procedures that account for altitude reference differences</li>
+                  <li><strong>3. Future Interoperability:</strong> Eventually, drones will need to &quot;speak the same language&quot; as traditional aircraft for UTM (UAS Traffic Management) integration</li>
+                  <li><strong>4. Site Survey:</strong> Document takeoff elevation ASL and understand terrain variations in your operational volume</li>
+                  <li><strong>5. Safety Buffers:</strong> Account for GPS altitude uncertainty when calculating ground risk buffers and obstacle clearances</li>
+                </ul>
+              </div>
+
+              <div className="mt-4 bg-blue-50 p-4 rounded-lg">
+                <p className="font-semibold mb-2">Practical Example - Agricultural Operation:</p>
+                <p className="text-sm mb-2">Site: Farm field at 1,200 ft ASL, planning to fly BVLOS at 300 ft AGL</p>
+                <div className="text-sm space-y-1 ml-3">
+                  <li>• <strong>Drone Display:</strong> 0 ft at takeoff (home reference), 300 ft during flight</li>
+                  <li>• <strong>AGL Altitude:</strong> 300 ft above the field surface</li>
+                  <li>• <strong>GPS/ASL Altitude:</strong> Approximately 1,500 ft ASL (1,200 + 300)</li>
+                  <li>• <strong>Manned Aircraft Altimeter:</strong> Would show ~1,500 ft ASL (with correct altimeter setting)</li>
+                  <li>• <strong>Coordination:</strong> Tell ATC &quot;operating at 1,500 ft ASL&quot; not &quot;300 ft&quot;</li>
+                </div>
+              </div>
+
+              <div className="mt-4 bg-gray-50 p-4 rounded-lg">
+                <p className="font-semibold mb-2 text-sm">Step One: Understanding Your GCS</p>
+                <p className="text-sm mb-2">Before developing procedures, RPAS operators must:</p>
+                <ul className="text-sm space-y-1 ml-3">
+                  <li>✓ Identify what altitude reference the GCS uses (home, AGL, GPS, ASL)</li>
+                  <li>✓ Confirm the units (feet or meters)</li>
+                  <li>✓ Understand how the system calculates altitude</li>
+                  <li>✓ Know the accuracy limitations of the altitude sensor</li>
+                  <li>✓ Document this in the RPAS Operations Manual (ROM)</li>
+                </ul>
+              </div>
+            </InstructorNote>
+          </div>
+
           <div className="mb-6" id="controlled-airspace">
             <h3 className="text-xl font-semibold mb-4">Airspace Classes</h3>
             <InstructorNote type="keypoint">
@@ -695,15 +785,549 @@ export default function L1C01AirLaw() {
           </div>
 
           <div className="mb-6">
+            <h3 className="text-xl font-semibold mb-4">Requirements by Airspace Class (IFR)</h3>
+
+            <div className="bg-white p-6 rounded-lg border border-gray-200 mb-4 overflow-x-auto">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="bg-gray-100">
+                    <th className="border border-gray-300 p-2 text-left font-bold">IFR</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">Requirement</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">A</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">B</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">C</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">D</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">E</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">F</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">G</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold" rowSpan={8}>IFR</td>
+                    <td className="border border-gray-300 p-2 font-semibold">Conflict Resolution</td>
+                    <td className="border border-gray-300 p-2 text-center bg-red-50">No drone operations</td>
+                    <td className="border border-gray-300 p-2 text-center bg-red-50">No drone operations</td>
+                    <td className="border border-gray-300 p-2 text-center">Provided between IFR and VFR</td>
+                    <td className="border border-gray-300 p-2 text-center">Equipment and workload permitting</td>
+                    <td className="border border-gray-300 p-2 text-center">No</td>
+                    <td className="border border-gray-300 p-2 text-center">Defer to the rules published in the Designated Airspace Handbook (TP 1820).</td>
+                    <td className="border border-gray-300 p-2 text-center">There are several rules that apply to uncontrolled traffic. Defer to CARs.</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">Traffic Information</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center">Yes</td>
+                    <td className="border border-gray-300 p-2 text-center">Yes</td>
+                    <td className="border border-gray-300 p-2 text-center">Workload permitting</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">Separation</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center">IFR from IFR</td>
+                    <td className="border border-gray-300 p-2 text-center">IFR from IFR</td>
+                    <td className="border border-gray-300 p-2 text-center">IFR from IFR</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">Speed Limitation</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center">250 kt below 10,000 ft MSL<br/>200 kt below 3,000 ft AGL within 10 NM of a controlled airport</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">Radio</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center">Mandatory</td>
+                    <td className="border border-gray-300 p-2 text-center">Mandatory</td>
+                    <td className="border border-gray-300 p-2 text-center">Mandatory</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">Transponder</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center">Yes</td>
+                    <td className="border border-gray-300 p-2 text-center">Yes, in designated areas</td>
+                    <td className="border border-gray-300 p-2 text-center">Yes, in designated areas</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">Clearance</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center">ATC</td>
+                    <td className="border border-gray-300 p-2 text-center">ATC</td>
+                    <td className="border border-gray-300 p-2 text-center">ATC</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <InstructorNote type="keypoint">
+              <p className="mb-2">For the RPAS Operator Certificate/L1C operations, drones will be operating in the Class F and Class G airspace for the most part.</p>
+              <p className="mb-2">Drone operators do not need to understand the nuances of Class A, B, C, D, and E.</p>
+              <p>It is more important to understand if the airspace is controlled or uncontrolled.</p>
+            </InstructorNote>
+          </div>
+
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold mb-4">Requirements by Airspace Class (VFR)</h3>
+
+            <div className="bg-white p-6 rounded-lg border border-gray-200 mb-4 overflow-x-auto">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="bg-gray-100">
+                    <th className="border border-gray-300 p-2 text-left font-bold">VFR</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">Requirement</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">A</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">B</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">C</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">D</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">D</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">E</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">E</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">F</th>
+                    <th className="border border-gray-300 p-2 text-center font-bold">G</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold" rowSpan={9}>VFR</td>
+                    <td className="border border-gray-300 p-2 font-semibold">Conflict Resolution</td>
+                    <td className="border border-gray-300 p-2 text-center bg-red-50">No drone operations</td>
+                    <td className="border border-gray-300 p-2 text-center bg-red-50">No drone operations</td>
+                    <td className="border border-gray-300 p-2 text-center">Upon request</td>
+                    <td className="border border-gray-300 p-2 text-center">Upon request – equipment and workload permitting</td>
+                    <td className="border border-gray-300 p-2 text-center">Upon request – equipment and workload permitting</td>
+                    <td className="border border-gray-300 p-2 text-center">No</td>
+                    <td className="border border-gray-300 p-2 text-center">No</td>
+                    <td className="border border-gray-300 p-2 text-center">Defer to the rules published in the Designated Airspace Handbook (TP 1820).</td>
+                    <td className="border border-gray-300 p-2 text-center">There are several rules that apply to uncontrolled traffic. Defer to CARs.</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">Traffic Information</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center">Yes</td>
+                    <td className="border border-gray-300 p-2 text-center">Yes</td>
+                    <td className="border border-gray-300 p-2 text-center">Yes</td>
+                    <td className="border border-gray-300 p-2 text-center">Workload permitting</td>
+                    <td className="border border-gray-300 p-2 text-center">Workload permitting</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">Separation</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">VMC Minima</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center">Flight visibility is not less than 3 miles<br/>The distance of the aircraft from cloud is not less than 500 ft vertically and 1 mile horizontally</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">SVFR</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center">Yes</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center">Yes</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center">Yes</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">Speed Limitation</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center">250 kt below 10,000 ft MSL<br/>200 kt below 3,000 ft AGL within 10 NM of a controlled airport</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">Radio</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center">Mandatory</td>
+                    <td className="border border-gray-300 p-2 text-center">Mandatory</td>
+                    <td className="border border-gray-300 p-2 text-center">Mandatory</td>
+                    <td className="border border-gray-300 p-2 text-center">Not required</td>
+                    <td className="border border-gray-300 p-2 text-center">Not required</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">Transponder</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center">Yes</td>
+                    <td className="border border-gray-300 p-2 text-center">Yes, in designated areas</td>
+                    <td className="border border-gray-300 p-2 text-center">Yes, in designated areas</td>
+                    <td className="border border-gray-300 p-2 text-center">Yes, in designated areas</td>
+                    <td className="border border-gray-300 p-2 text-center">Yes, in designated areas</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 p-2 font-semibold">Clearance</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center">ATC</td>
+                    <td className="border border-gray-300 p-2 text-center">Establish radio contact</td>
+                    <td className="border border-gray-300 p-2 text-center">Establish radio contact</td>
+                    <td className="border border-gray-300 p-2 text-center">Not required</td>
+                    <td className="border border-gray-300 p-2 text-center">Not required</td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <InstructorNote type="info">
+              <p>Speak about weather limitations.</p>
+            </InstructorNote>
+
+            <InstructorNote type="keypoint">
+              <p className="font-semibold mb-3">Understanding VFR Weather Minimums in Class G Airspace:</p>
+
+              <p className="mb-3">It is important to understand the ceiling and visibility requirements for helicopters when flying in Class G uncontrolled airspace. These requirements have a lot to do with reaction time (see and be seen principle).</p>
+
+              <div className="bg-white p-4 rounded-lg border-l-4 border-blue-500 mb-3">
+                <p className="font-semibold mb-2">Class G Airspace - Two Options for VFR Flight:</p>
+                <div className="space-y-2 text-sm">
+                  <div>
+                    <p className="font-semibold">Option 1: Standard VFR</p>
+                    <ul className="ml-4 mt-1">
+                      <li>• <strong>Visibility:</strong> 2 statute miles</li>
+                      <li>• <strong>Cloud clearance:</strong> Clear of cloud (no cloud contact)</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="font-semibold">Option 2: Reduced VFR (Lower minimums)</p>
+                    <ul className="ml-4 mt-1">
+                      <li>• <strong>Visibility:</strong> 1 statute mile</li>
+                      <li>• <strong>Vertical cloud separation:</strong> 500 ft (above or below cloud)</li>
+                      <li>• <strong>Horizontal cloud separation:</strong> 2,000 ft (distance from cloud)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                <p className="font-semibold mb-2 text-sm">Why These Minimums Exist:</p>
+                <ul className="text-sm space-y-1">
+                  <li>• <strong>Reaction Time:</strong> Pilots need time to see and avoid other aircraft</li>
+                  <li>• <strong>&quot;See and Be Seen&quot;:</strong> In Class G, there&apos;s no ATC separation - pilots are responsible for avoiding collisions visually</li>
+                  <li>• <strong>RPAS Implication:</strong> When flying BVLOS, you must ensure your DAA system can meet or exceed the equivalent visual detection capability that manned aircraft would have in these conditions</li>
+                </ul>
+              </div>
+            </InstructorNote>
+          </div>
+
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold mb-4">Airspace Structure - Vertical Profile</h3>
+
+            <InstructorNote type="info">
+              <p className="mb-2">The airspace is sometimes referred to as an &quot;upside-down wedding cake.&quot;</p>
+              <p>This is what the vertical profile of airspace looks like around airports and in different regions of Canadian airspace.</p>
+            </InstructorNote>
+
+            <div className="bg-white p-6 rounded-lg border border-gray-200 mb-4">
+              <p className="text-sm mb-4 text-gray-600 italic">The diagram below shows a cross-sectional view of Canadian airspace structure, illustrating how different airspace classes are layered vertically and extend horizontally at different distances from airports.</p>
+
+              <div className="bg-gray-50 p-4 rounded-lg border border-gray-300 overflow-x-auto">
+                <div className="text-xs font-mono space-y-2 min-w-max">
+                  <div className="flex items-center">
+                    <div className="w-32 text-right pr-4"></div>
+                    <div className="border-t-2 border-l-2 border-r-2 border-blue-400 bg-blue-50 p-2 flex-1 text-center">Class E</div>
+                    <div className="w-32"></div>
+                    <div className="border-t-2 border-l-2 border-r-2 border-blue-400 bg-blue-50 p-2 flex-1 text-center">Class E</div>
+                    <div className="w-32 text-left pl-4"></div>
+                  </div>
+
+                  <div className="flex items-center">
+                    <div className="w-32 text-right pr-4"></div>
+                    <div className="border-l-2 border-r-2 border-red-400 bg-red-50 p-3 flex-1 text-center font-bold">Class A</div>
+                    <div className="w-32 text-center font-semibold">FL 600</div>
+                    <div className="border-l-2 border-r-2 border-red-400 bg-red-50 p-3 flex-1 text-center font-bold">Class A</div>
+                    <div className="w-32 text-left pl-4"></div>
+                  </div>
+
+                  <div className="flex items-center">
+                    <div className="w-32 bg-purple-50 border border-purple-300 p-2 text-center">Class B<br/>Terminal<br/>Control Area<br/>9,500 ft AGL</div>
+                    <div className="border-l-2 border-r-2 border-red-400 bg-red-100 p-2 flex-1 text-center"></div>
+                    <div className="w-32 text-center font-semibold border-t-2 border-blue-400">FL 180</div>
+                    <div className="bg-purple-100 border border-purple-300 p-2 flex-1 text-center">Class B<br/>Low Level Airway</div>
+                    <div className="w-32 bg-purple-50 border border-purple-300 p-2 text-center">Class B<br/>Control Area<br/>Extension</div>
+                  </div>
+
+                  <div className="flex items-center">
+                    <div className="w-32"></div>
+                    <div className="border-l-2 border-r-2 border-purple-400 bg-purple-50 p-2 flex-1 text-center"></div>
+                    <div className="w-32 text-center">12,500 ft ASL</div>
+                    <div className="border-l-2 border-r-2 border-blue-300 bg-blue-50 p-2 flex-1 text-center">Class E</div>
+                    <div className="w-32"></div>
+                  </div>
+
+                  <div className="flex items-center">
+                    <div className="w-32 bg-green-100 border-2 border-green-500 p-3 text-center font-bold">Uncontrolled<br/>Class G</div>
+                    <div className="border-l-2 border-r-2 border-gray-400 p-2 flex-1 text-center"></div>
+                    <div className="w-32 text-center">3,000 ft AAE</div>
+                    <div className="bg-blue-50 border border-blue-300 p-2 flex-1 text-center">Class E</div>
+                    <div className="w-32 bg-green-100 border-2 border-green-500 p-3 text-center font-bold">Uncontrolled<br/>Class G</div>
+                  </div>
+
+                  <div className="flex items-center">
+                    <div className="w-32"></div>
+                    <div className="bg-yellow-50 border-2 border-yellow-500 p-3 flex-1 text-center font-semibold">Control Zone<br/>(Class B, C, D, or E)</div>
+                    <div className="w-32 text-center">2,200 ft AGL</div>
+                    <div className="border-l-2 border-r-2 border-gray-300 p-2 flex-1 text-center"></div>
+                    <div className="w-32 bg-yellow-50 border border-yellow-400 p-2 text-center">Control Zone<br/>2,200 ft AGL</div>
+                  </div>
+
+                  <div className="flex items-center">
+                    <div className="w-32"></div>
+                    <div className="border-l-2 border-r-2 border-yellow-400 bg-yellow-50 p-2 flex-1 text-center">Transition<br/>Area<br/>700 ft AGL</div>
+                    <div className="w-32 text-center">1,200 ft AGL</div>
+                    <div className="bg-green-100 border border-green-400 p-3 flex-1 text-center">Class G</div>
+                    <div className="w-32 bg-blue-50 border border-blue-300 p-2 text-center">Class E<br/>Transition<br/>700 ft AGL</div>
+                  </div>
+
+                  <div className="flex items-center border-t-4 border-gray-700 pt-2">
+                    <div className="w-32 text-center text-gray-600">Ground Level</div>
+                    <div className="flex-1"></div>
+                    <div className="w-32 text-center bg-orange-100 p-1">Class F<br/>(Special Use)</div>
+                    <div className="flex-1"></div>
+                    <div className="w-32"></div>
+                  </div>
+
+                  <div className="mt-4 pt-2 border-t border-gray-300 text-center text-gray-600">
+                    <p>Distance from Airport: 45 NM → 35 NM → 12 NM → 7 NM → (Airport) → 7 NM → 12 NM → 35 NM → 45 NM</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-4 text-sm space-y-2">
+                <p className="font-semibold">Key Abbreviations:</p>
+                <ul className="ml-4 space-y-1 text-xs">
+                  <li>• <strong>FL:</strong> Flight Level (pressure altitude in hundreds of feet, e.g., FL 600 = 60,000 ft)</li>
+                  <li>• <strong>AGL:</strong> Above Ground Level</li>
+                  <li>• <strong>ASL:</strong> Above Sea Level</li>
+                  <li>• <strong>AAE:</strong> Above Aerodrome Elevation</li>
+                  <li>• <strong>NM:</strong> Nautical Miles</li>
+                </ul>
+              </div>
+            </div>
+
+            <InstructorNote type="keypoint">
+              <p className="font-semibold mb-3">Understanding the &quot;Upside-Down Wedding Cake&quot; Structure:</p>
+
+              <div className="space-y-3 text-sm">
+                <p>This vertical profile shows how airspace is structured around airports, with multiple layers that expand or contract based on altitude:</p>
+
+                <div className="bg-white p-3 rounded-lg border-l-4 border-red-500">
+                  <p className="font-semibold mb-2">Class A (FL 180 to FL 600)</p>
+                  <ul className="ml-4 space-y-1">
+                    <li>• High-altitude IFR traffic only</li>
+                    <li>• No VFR operations permitted</li>
+                    <li>• <strong>RPAS:</strong> No drone operations - completely restricted</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-3 rounded-lg border-l-4 border-purple-500">
+                  <p className="font-semibold mb-2">Class B (Low Level Airways, Terminal Areas)</p>
+                  <ul className="ml-4 space-y-1">
+                    <li>• Terminal control areas near major airports (typically 9,500 ft AGL and up)</li>
+                    <li>• Low level airways connecting airports (above 12,500 ft ASL)</li>
+                    <li>• <strong>RPAS:</strong> SFOC required - highly restricted</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-3 rounded-lg border-l-4 border-yellow-500">
+                  <p className="font-semibold mb-2">Control Zones (Class B/C/D/E near surface)</p>
+                  <ul className="ml-4 space-y-1">
+                    <li>• Extends from surface to 2,200-3,000 ft AGL around controlled airports</li>
+                    <li>• Typically 7 NM radius from airport</li>
+                    <li>• <strong>RPAS:</strong> SFOC and ATC coordination required</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-3 rounded-lg border-l-4 border-blue-500">
+                  <p className="font-semibold mb-2">Class E (Transition Areas, Controlled Airspace)</p>
+                  <ul className="ml-4 space-y-1">
+                    <li>• Transition areas start at 700 ft AGL near airports, expanding outward</li>
+                    <li>• Controlled airspace for IFR traffic above 2,200 ft AGL in most areas</li>
+                    <li>• <strong>RPAS:</strong> May require coordination depending on altitude and location</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-3 rounded-lg border-l-4 border-orange-500">
+                  <p className="font-semibold mb-2">Class F (Special Use Airspace)</p>
+                  <ul className="ml-4 space-y-1">
+                    <li>• Advisory (CYA), Restricted (CYR), Danger (CYD) areas</li>
+                    <li>• May occasionally become Class G airspace when not active</li>
+                    <li>• <strong>RPAS:</strong> Check Designated Airspace Handbook and NOTAMs for status</li>
+                  </ul>
+                </div>
+
+                <div className="bg-green-50 p-4 rounded-lg border-2 border-green-500">
+                  <p className="font-semibold mb-2 text-green-700">✓ Class G (Uncontrolled Airspace) - YOUR TARGET FOR L1C</p>
+                  <ul className="ml-4 space-y-1">
+                    <li>• <strong>Where:</strong> From surface to 2,200 ft AGL in most rural areas</li>
+                    <li>• <strong>Where:</strong> Below transition areas and away from control zones</li>
+                    <li>• <strong>Distance:</strong> Typically more than 10-12 NM from controlled aerodromes</li>
+                    <li>• <strong>RPAS Operations:</strong> In the L1C world, drones will be operating in this GREEN area</li>
+                    <li>• <strong>No ATC Required:</strong> Uncontrolled airspace - operators self-manage separation</li>
+                    <li>• <strong>Your Responsibility:</strong> Site survey, NOTAMs, weather minimums, DAA procedures</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-4 bg-yellow-50 p-4 rounded-lg border border-yellow-300">
+                <p className="font-semibold mb-2 text-sm">Practical Application - Site Selection:</p>
+                <p className="text-sm mb-2">When selecting a site for L1C BVLOS operations, look for Class G airspace by:</p>
+                <ul className="text-sm space-y-1 ml-3">
+                  <li>1. Finding rural areas well away from airports (typically &gt;10-12 NM)</li>
+                  <li>2. Staying below 400 ft AGL to remain well clear of transition airspace (700+ ft AGL)</li>
+                  <li>3. Avoiding areas under terminal control zones and Class B/C/D/E controlled airspace</li>
+                  <li>4. Checking VFR charts to confirm Class G from surface to your operating altitude</li>
+                  <li>5. Using NRCAN DSST-2 tool to verify no airspace restrictions</li>
+                </ul>
+              </div>
+            </InstructorNote>
+          </div>
+
+          <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">AC 903-001 7.0 Air Risk Determination</h3>
+
             <InstructorNote type="info">
               <p>This was not reviewed in Advanced RPAS training.</p>
             </InstructorNote>
 
+            <div className="bg-white p-6 rounded-lg border border-gray-200 mb-4">
+              <p className="font-semibold mb-4">Air Risk Class (ARC) Levels</p>
+
+              <p className="text-sm mb-4 text-gray-600">Advisory Circular 903-001 defines four Air Risk Classes (ARC-A through ARC-D) that determine the level of risk to manned aviation and the corresponding DAA (Detect and Avoid) performance requirements for RPAS operations.</p>
+
+              <div className="space-y-3">
+                <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                  <p className="font-semibold text-green-700 mb-2">ARC-A: Atypical Airspace (Lowest Risk)</p>
+                  <ul className="text-sm space-y-1 ml-4">
+                    <li>• <strong>Definition:</strong> Airspace with extremely low manned aircraft traffic</li>
+                    <li>• <strong>Location:</strong> Northern Domestic Airspace (NDA) below 400 ft AGL</li>
+                    <li>• <strong>DAA Requirements:</strong> Minimal - almost no requirement for onboard DAA systems</li>
+                    <li>• <strong>L1C Operations:</strong> Rare - most operations in Southern Domestic Airspace</li>
+                  </ul>
+                </div>
+
+                <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                  <p className="font-semibold text-blue-700 mb-2">ARC-B: Low Air Risk (Common for L1C)</p>
+                  <ul className="text-sm space-y-1 ml-4">
+                    <li>• <strong>Definition:</strong> Airspace with low but present manned aircraft traffic</li>
+                    <li>• <strong>Location:</strong> Class G uncontrolled airspace, remote areas, low-traffic regions</li>
+                    <li>• <strong>DAA Requirements:</strong> Standard 923 Vision-Based DAA procedures required</li>
+                    <li>• <strong>L1C Operations:</strong> PRIMARY TARGET - most L1C operations will be ARC-B</li>
+                  </ul>
+                </div>
+
+                <div className="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-500">
+                  <p className="font-semibold text-yellow-700 mb-2">ARC-C: Moderate Air Risk (Occasional L1C)</p>
+                  <ul className="text-sm space-y-1 ml-4">
+                    <li>• <strong>Definition:</strong> Airspace with moderate manned aircraft traffic</li>
+                    <li>• <strong>Location:</strong> Near smaller aerodromes, moderate traffic areas, Class G near controlled airspace</li>
+                    <li>• <strong>DAA Requirements:</strong> Enhanced DAA procedures, may require additional mitigations</li>
+                    <li>• <strong>L1C Operations:</strong> OCCASIONAL - requires careful site survey and enhanced procedures</li>
+                  </ul>
+                </div>
+
+                <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
+                  <p className="font-semibold text-red-700 mb-2">ARC-D: High Air Risk (SFOC Required)</p>
+                  <ul className="text-sm space-y-1 ml-4">
+                    <li>• <strong>Definition:</strong> Airspace with significant manned aircraft traffic or near controlled airspace</li>
+                    <li>• <strong>Location:</strong> Near major airports, controlled airspace (Class B/C/D/E), high-traffic corridors</li>
+                    <li>• <strong>DAA Requirements:</strong> Robust technical DAA systems, ATC coordination required</li>
+                    <li>• <strong>L1C Operations:</strong> ⚠️ NOT PERMITTED under L1C - requires SFOC process</li>
+                    <li>• <strong>NAV CANADA Involvement:</strong> Almost all ARC-D airspace is regulated by NAV CANADA</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
             <InstructorNote type="keypoint">
-              <p className="mb-2">ARC stands for Air Risk Class. In BVLOS under the L1C, you will be operating under ARC-A, -B, and occasionally -C.</p>
-              <p className="mb-2">ARC-D airspace is going to be handled under the SFOC process. NAV CANADA will get involved, because almost all ARC-D airspace is regulated by NAV CANADA.</p>
-              <p>ARC-A performance requirements for DAA are almost nonexistent. There is almost no requirement to have an onboard DAA to meet the requirements for ARC-A.</p>
+              <p className="font-semibold mb-3">What This Means for L1C Operators:</p>
+
+              <div className="space-y-3 text-sm">
+                <p><strong>ARC stands for Air Risk Class.</strong> In BVLOS operations under the L1C, you will be operating under ARC-A, ARC-B, and occasionally ARC-C.</p>
+
+                <p><strong>ARC-D airspace is going to be handled under the SFOC process.</strong> NAV CANADA will get involved, because almost all ARC-D airspace is regulated by NAV CANADA and requires coordination with air traffic control.</p>
+
+                <p><strong>ARC-A performance requirements for DAA are almost nonexistent.</strong> There is almost no requirement to have an onboard DAA to meet the requirements for ARC-A, because manned aircraft traffic is extremely rare in these remote northern regions.</p>
+
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200 mt-3">
+                  <p className="font-semibold mb-2">Site Selection Strategy Based on ARC:</p>
+                  <ul className="space-y-1 ml-3">
+                    <li>1. <strong>Identify airspace class:</strong> Use VFR charts and NRCAN DSST-2 to find Class G uncontrolled airspace</li>
+                    <li>2. <strong>Assess air risk:</strong> Distance from aerodromes, traffic patterns, typical aircraft activity</li>
+                    <li>3. <strong>Target ARC-B:</strong> Look for rural areas, agricultural sites, remote industrial locations away from airports</li>
+                    <li>4. <strong>Avoid ARC-D:</strong> Stay well clear of controlled airspace and major airport vicinities (requires SFOC)</li>
+                    <li>5. <strong>Document in site survey:</strong> Include ARC determination and justification in your ROM</li>
+                  </ul>
+                </div>
+
+                <div className="bg-green-50 p-4 rounded-lg border border-green-200 mt-3">
+                  <p className="font-semibold mb-2">Example ARC Determinations:</p>
+                  <div className="space-y-2 ml-3">
+                    <div>
+                      <p className="font-semibold">✓ ARC-B (Good for L1C):</p>
+                      <p className="text-xs ml-2">Farm field 25 NM from nearest aerodrome, Class G from surface, minimal flight training activity, documented in site survey with NRCAN DSST-2 confirmation</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold">⚠️ ARC-C (Proceed with Caution):</p>
+                      <p className="text-xs ml-2">Pipeline inspection 8 NM from small municipal airport, Class G airspace, but occasional helicopter traffic documented - enhanced DAA procedures required</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold">✗ ARC-D (SFOC Required - NOT L1C):</p>
+                      <p className="text-xs ml-2">Industrial site 5 NM from Class C airport, under Class E transition airspace, regular commercial traffic - requires SFOC and NAV CANADA coordination</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </InstructorNote>
           </div>
 
@@ -760,14 +1384,6 @@ export default function L1C01AirLaw() {
 
             <InstructorNote type="keypoint">
               <p>Find information on this in the Designated Airspace Handbook, which is free to download. This handbook is the ultimate authority and law for the regulations when building programs and looking at a new site assessment, because it is regularly updated.</p>
-            </InstructorNote>
-
-            <InstructorNote type="activity">
-              <p className="font-semibold mb-2">Practice Question:</p>
-              <p className="mb-2">Can you find the Designated Airspace Handbook?</p>
-              <RevealAnswer>
-                <p className="text-sm"><strong>Answer:</strong> All participants can locate the handbook online.</p>
-              </RevealAnswer>
             </InstructorNote>
 
             <div className="bg-white p-6 rounded-lg border border-gray-200 mb-4">
