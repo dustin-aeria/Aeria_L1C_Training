@@ -859,14 +859,45 @@ export default function L1C01AirLaw() {
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 601.14 Minimum Altitudes & Distances</h3>
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <p className="font-semibold mb-3">Subject to subsections (2) to (5), no person shall operate an aircraft</p>
+              <p className="font-mono text-sm ml-4 mb-3">(a) over a built-up area at an altitude less than 1,000 feet above the highest obstacle located within a horizontal distance of 2,000 feet from the aircraft;</p>
+              <p className="font-mono text-sm ml-4 mb-3">(b) over any place other than a built-up area at an altitude less than 500 feet above the surface; or</p>
+              <p className="font-mono text-sm ml-4">(c) over an open-air assembly of persons at an altitude less than 1,000 feet above that assembly, unless the pilot-in-command is taking off, cruising, landing or conducting a police operation and does so in accordance with the Canadian Aviation Regulations.</p>
+            </div>
+
             <InstructorNote type="keypoint">
-              <p>Drones must fly higher when above a built-up area/open-air assembly.</p>
+              <p className="font-semibold mb-2">Why This Matters for RPAS Operations:</p>
+              <p className="text-sm mb-3">CAR 601.14 applies to ALL aircraft including RPAS. However, Part IX regulations (CARs 900-series) provide specific RPAS rules that work alongside these general minimums.</p>
+
+              <p className="font-semibold mb-2">Understanding the Altitudes:</p>
+              <ul className="space-y-2 text-sm mb-3">
+                <li><strong>Built-up area:</strong> 1,000 ft above highest obstacle within 2,000 ft horizontal radius. This high minimum exists because manned aircraft need clearance for emergency engine-out glides to clear landing areas.</li>
+
+                <li><strong>Non-built-up area:</strong> 500 ft AGL minimum. Provides separation from terrain, wildlife, and allows aircraft to maneuver safely.</li>
+
+                <li><strong>Open-air assembly:</strong> 1,000 ft above the assembly. Protects crowds (concerts, festivals, sporting events) from aircraft overhead.</li>
+              </ul>
+
+              <p className="font-semibold mb-2">The &quot;Built-Up Area&quot; Definition Problem:</p>
+              <p className="text-sm mb-3">There is <strong>no official definition</strong> of what constitutes a &quot;built-up area&quot; in the CARs - this is a known gap. Practically, it means areas with concentrated buildings/structures (cities, towns, subdivisions), but the boundary is subjective.</p>
+
+              <p className="font-semibold mb-2">How RPAS Part IX Addresses This:</p>
+              <ul className="space-y-2 text-sm">
+                <li><strong>Population density approach:</strong> Part IX uses NRCAN population density classifications (populated vs sparsely populated) instead of &quot;built-up area,&quot; providing more objective criteria.</li>
+
+                <li><strong>RPAS operating below 400 ft AGL:</strong> Most L1C operations stay well below the 500-1,000 ft minimums in CAR 601.14, so they&apos;re compliant by altitude alone. However, you still must respect Part IX population/distance requirements.</li>
+
+                <li><strong>Manned aircraft flying above you:</strong> CAR 601.14 ensures manned aircraft maintain altitude separation. When you operate RPAS below 400 ft, manned aircraft should be 500+ ft above you (100+ ft vertical separation).</li>
+              </ul>
+
+              <p className="text-sm mt-3 font-semibold">Bottom Line: As an RPAS operator, you&apos;re typically operating well below these minimums. Your responsibility is to stay low (≤400 ft AGL) and follow Part IX population density rules, while manned aircraft maintain CAR 601.14 altitude minimums above you.</p>
             </InstructorNote>
 
             <InstructorNote type="activity">
               <p className="font-semibold mb-2">Practice Question:</p>
               <p className="mb-2">What is the definition of a built-up area?</p>
-              <p className="text-sm"><strong>Answer:</strong> There is no official definition of what a built-up area is. This is a gap in the regulations.</p>
+              <p className="text-sm"><strong>Answer:</strong> There is no official definition of what a built-up area is in the CARs. This is a known gap in the regulations. For RPAS operations, we use population density classifications from NRCAN instead, which provides objective data on populated vs sparsely populated areas.</p>
             </InstructorNote>
           </div>
 
@@ -1295,20 +1326,82 @@ export default function L1C01AirLaw() {
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 901.26 Horizontal Distances (VLOS)</h3>
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <p className="font-semibold mb-3">No person shall operate a remotely piloted aircraft in VLOS:</p>
+              <p className="font-mono text-sm ml-4 mb-3">(a) in the case of a small remotely piloted aircraft, over a person unless the aircraft remains, during the operation, at least 30 m horizontally and at least 5 m vertically from that person;</p>
+              <p className="font-mono text-sm ml-4 mb-3">(b) in the case of a medium remotely piloted aircraft, over or near a person unless the aircraft remains, during the operation, at least 152 m horizontally from that person; or</p>
+              <p className="font-mono text-sm ml-4">(c) in the case of a large remotely piloted aircraft, over or near a person.</p>
+            </div>
+
             <InstructorNote type="keypoint">
-              <p className="mb-2">To be near a person/over a person means different things depending on the size of the RPAS:</p>
-              <ul className="list-disc ml-5">
-                <li><strong>Small RPAS:</strong> 30 m horizontally and 5 m vertically</li>
-                <li><strong>Medium RPAS:</strong> 152 m horizontally</li>
+              <p className="font-semibold mb-2">Understanding &quot;Over&quot; vs &quot;Near&quot; a Person:</p>
+              <ul className="space-y-2 text-sm mb-3">
+                <li><strong>Small RPAS (250 g - 25 kg):</strong> Can operate over people if maintaining 30 m horizontal AND 5 m vertical separation. This means if your drone is at 20 m altitude, you can be directly over someone, but if it&apos;s only 3 m up, you need 30 m horizontal distance.</li>
+
+                <li><strong>Medium RPAS (25 kg - 150 kg):</strong> Cannot operate &quot;over OR near&quot; people. Must maintain 152 m (500 ft) horizontal distance at all times. No vertical separation option - it&apos;s absolute horizontal distance.</li>
+
+                <li><strong>Large RPAS (over 150 kg):</strong> Prohibited from operating over or near people under basic VLOS rules. Requires SFOC for any operations near people.</li>
               </ul>
+
+              <p className="font-semibold mb-2">Practical Measurement:</p>
+              <ul className="space-y-2 text-sm mb-3">
+                <li><strong>30 m horizontal:</strong> About 100 feet, or roughly 10-12 paces. Typical residential lot width is 15-20 m, so 30 m is about 1.5-2 lot widths.</li>
+
+                <li><strong>5 m vertical:</strong> About 16 feet. A typical single-story house is ~3-4 m tall, so 5 m is slightly higher than a one-story building.</li>
+
+                <li><strong>152 m horizontal:</strong> About 500 feet or 1.5 football fields. This is significant separation - most medium RPAS operations will be BVLOS (L1C) due to this requirement pushing beyond visual range.</li>
+              </ul>
+
+              <p className="font-semibold mb-2">Common Scenarios:</p>
+              <ul className="space-y-2 text-sm">
+                <li><strong>Mapping a construction site (small RPAS):</strong> Workers on site must stay 30+ m away OR your drone must stay 5+ m above them. Pre-brief workers to clear the flight area or designate safe zones.</li>
+
+                <li><strong>Pipeline inspection (medium RPAS like M300):</strong> Cannot fly if hikers/workers within 152 m. Must have site control or spotters to ensure area is clear before operations.</li>
+
+                <li><strong>City operations:</strong> Even small RPAS can&apos;t maintain 30 m from all people in busy urban areas. This is why most city operations require SFOC or operate in controlled areas (rooftops, closed streets).</li>
+              </ul>
+
+              <p className="text-sm mt-3 font-semibold">Key Takeaway: These distances are measured during the entire operation. If someone walks into your operational area mid-flight, you must immediately maneuver to maintain required separation or land.</p>
             </InstructorNote>
           </div>
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 901.27 Site Survey</h3>
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <p className="font-semibold mb-3">The pilot-in-command of a remotely piloted aircraft shall, before conducting an operation, conduct or review a site survey of the area of the operation to identify</p>
+              <p className="font-mono text-sm ml-4 mb-2">(a) any potential hazards to persons, property or other aircraft;</p>
+              <p className="font-mono text-sm ml-4 mb-2">(b) any persons at or near the area who may be affected by the operation;</p>
+              <p className="font-mono text-sm ml-4 mb-2">(c) any aviation activities near the area; and</p>
+              <p className="font-mono text-sm ml-4">(d) the population density of areas in or near the area of the operation.</p>
+            </div>
+
             <InstructorNote type="keypoint">
-              <p className="mb-2">The site survey requirements have changed under the new regulations. For BVLOS operations, pilots are required to know their lateral distances from populated areas (population density).</p>
-              <p>Find these densities in the NRCAN Drone Site Selection Tool or the Statistics Canada population density by dissemination area.</p>
+              <p className="font-semibold mb-2">What Changed in the New Regulations:</p>
+              <p className="text-sm mb-3">Subsection (d) - population density - is NEW. Previously, site surveys focused on hazards, people present, and aviation activity. Now BVLOS operators must identify and document population density using objective data sources.</p>
+
+              <p className="font-semibold mb-2">How to Determine Population Density:</p>
+              <ul className="space-y-2 text-sm mb-3">
+                <li><strong>NRCAN Drone Site Selection Tool (DSST-2):</strong> Official government tool showing populated vs sparsely populated areas on a map. Available at: https://natural-resources.canada.ca/drones</li>
+
+                <li><strong>Statistics Canada Population Density Data:</strong> Provides people per square kilometer by dissemination area. Allows precise calculation for specific locations.</li>
+
+                <li><strong>Definitions:</strong>
+                  <ul className="ml-4 mt-1">
+                    <li>• <strong>Populated Area:</strong> 1 or more persons per 5,000 m² (population density ≥ 200 per km²)</li>
+                    <li>• <strong>Sparsely Populated Area:</strong> Less than 1 person per 5,000 m² (population density &lt; 200 per km²)</li>
+                  </ul>
+                </li>
+              </ul>
+
+              <p className="font-semibold mb-2">Site Survey Timing:</p>
+              <p className="text-sm mb-3">&quot;Before conducting an operation&quot; means either:
+                <ul className="ml-4 mt-1">
+                  <li>• <strong>Conduct:</strong> Physically visit the site, observe conditions, document findings (recommended for new sites)</li>
+                  <li>• <strong>Review:</strong> Use previously conducted site survey if site hasn&apos;t changed (must verify currency before each mission series)</li>
+                </ul>
+              </p>
+
+              <p className="text-sm font-semibold">Best Practice: Site surveys should be reviewed/updated annually OR whenever significant changes occur (new buildings, changed land use, new aviation activity).</p>
             </InstructorNote>
 
             <InstructorNote type="info">
