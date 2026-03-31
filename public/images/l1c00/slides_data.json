@@ -1,0 +1,105 @@
+[
+  {
+    "slide_number": 1,
+    "title": "L1C00 Introduction",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nN/A\n\nActivities\nN/A"
+  },
+  {
+    "slide_number": 2,
+    "title": "Course Administration",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nUse the first hour for course administration. Students will require:\nAccess to the internet\nAccess to any content the instructor plans to send (most is referenced in the L1C Training Student Handout)\nA laptop with certain software installed (most is referenced in the L1C Training Student Handout)\n\nKey Points\nHow to access/register for the [insert name of student portal, LMS, etc. here], introductions, and the curriculum and schedule.\n\nActivities\nN/A"
+  },
+  {
+    "slide_number": 3,
+    "title": "Student Portal",
+    "content": [
+      {
+        "type": "text",
+        "text": "The student portal [LINK]:\nContains all course resources and links\nServes as confirmation that you have taken the training\nEnsures course certificate is issued after the completion of exams and assignment\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nEdit this slide to include instructions or links to any shared drives/student portals/LMS that your organization uses.\n\nKey Points\nIntroduction to the student portal and other resources. \nParticipants will receive a certificate after the course exams and assignments are completed. \n\nActivities\nDemonstration: How to access and navigate the student portal.  \n"
+  },
+  {
+    "slide_number": 4,
+    "title": "Instructor:\u000b[Name]",
+    "content": [
+      {
+        "type": "text",
+        "text": "[Insert background, credentials, etc. here.]\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nIntroduce yourself.\n\nKey Points\nN/A\n\nActivities\nGroup Activity: If the class is small enough, allow the students to introduce themselves and give a brief bio of their drone experience.\n\n"
+  },
+  {
+    "slide_number": 5,
+    "title": "What to Expect",
+    "content": [
+      {
+        "type": "text",
+        "text": "Level 1 Complex (L1C) Ground Training\nL1C privileges \nGuidance on building your BVLOS program\n20-hour instructor course with TP 15530 content\nTwo quizzes\nNote: This is not a review of the Advanced RPAS course.\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nKnowledge Requirements for Pilots of Remotely Piloted Aircraft Systems – Level 1 Complex Operations - TP 15530 provides all course requirements and can be accessed online at: https://tc.canada.ca/en/aviation/publications/knowledge-requirements-pilots-remotely-piloted-aircraft-systems-level-1-complex-operations-tp-15530\nAll participants must have completed the advanced RPAS online exam prior to commencing this training, but having the advanced RPAS pilot certificate is not a requirement.\nLet participants know how and when the quizzes will be administered.\n\nKey Points\nThis information is in your L1C Training Student Handout.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 6,
+    "title": "Curriculum & Schedule",
+    "content": [
+      {
+        "type": "text",
+        "text": "The course curriculum covers: Air Law, Systems, Human Factors, Meteorology, Navigation, Flight Operations, Theory of Flight, Radiotelephony, and Flight Review Preparation\nThis curriculum meets the “Knowledge Requirements for Pilots of Remotely Piloted Aircraft Systems – Level 1 Complex Operations - TP 15530” (Transport Canada, 2025)\nThe course schedule can be found in your L1C Training Student Handout\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nSee your L1C Training Student Handout for the course schedule.\n\nActivities\nN/A"
+  },
+  {
+    "slide_number": 7,
+    "title": "Mandatory Links & Software",
+    "content": [
+      {
+        "type": "text",
+        "text": "Links"
+      },
+      {
+        "type": "text",
+        "text": "See the table of links in your L1C Training Student Handout \nThese will need to be accessed frequently throughout the course\n"
+      },
+      {
+        "type": "text",
+        "text": "Software"
+      },
+      {
+        "type": "text",
+        "text": "During the course, you will be required to access this software:\nFltPlan.com (web) \nFltPlan Go or FltPlan Go (iOS)\nNAV Drone \nGoogle Earth Pro\nSee your L1C Training Student Handout for more information"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nThis course makes use of freely available software (Google Earth Pro, FltPlan GO).  If the participants’ organization uses different software or services, then they may be substituted here. For example:\nIf participants’ organization uses ForeFlight paid service, references to FltPlanGO may be substituted with ForeFlight.\nIf participants’ organization uses a GCS with accurate terrain databases, references to Google Earth Pro may be replaced with the GCS.\nNote: Given the widespread use of Google Earth Pro, it is recommended to train the participants on its use.\nParticipants should already have downloaded the required software. If not, ensure they do it now.\nThis course shows participants how to access many of these online resources.\n\nKey Points\nSee L1C Training Student Handout for the software and links required for this course.\n\nActivities\nDemonstration: Show participants how to access and ensure they can use: \nThe internet\nNAV Drone and the Drone Management Portal\nFltPlan GO or a suitable alternative on a portable device\nGoogle Earth Pro on a Windows or MacOS laptop (not on their cellular device)\n"
+  },
+  {
+    "slide_number": 8,
+    "title": "After This Course",
+    "content": [
+      {
+        "type": "text",
+        "text": "Write online L1C course on Drone Management Portal\nComplete in-person L1C flight review\nApply for your L1C pilot certificate"
+      }
+    ],
+    "images": [
+      {
+        "filename": "slide08_img01.jpg",
+        "path": "/images/l1c00/slide08_img01.jpg"
+      }
+    ],
+    "notes": "Instructor Notes\nExplain what the participant should expect after this course.\nDiscuss the schedules for the in-person L1C flight review.\n\nKey Points\nThe L1C online exam (from the DMP) must be completed prior to admittance to the in-person flight review.\n\nActivities\nN/A"
+  }
+]
