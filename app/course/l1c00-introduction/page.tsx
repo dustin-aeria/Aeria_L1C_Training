@@ -2,6 +2,7 @@ import CourseLayout from '@/components/CourseLayout';
 import CourseSection from '@/components/CourseSection';
 import InstructorNote from '@/components/InstructorNote';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function L1C00Introduction() {
   return (
@@ -134,7 +135,7 @@ export default function L1C00Introduction() {
               <div className="p-3 bg-gray-50 rounded border border-gray-200 md:col-span-2">Flight Review Preparation</div>
             </div>
             <p className="text-sm text-gray-600 mt-4">
-              This curriculum meets the <strong>"Knowledge Requirements for Pilots of Remotely Piloted Aircraft Systems – Level 1 Complex Operations - TP 15530"</strong> (Transport Canada, 2025)
+              This curriculum meets the <strong>&quot;Knowledge Requirements for Pilots of Remotely Piloted Aircraft Systems – Level 1 Complex Operations - TP 15530&quot;</strong> (Transport Canada, 2025)
             </p>
             <p className="mt-3">The course schedule can be found in your L1C Training Student Handout</p>
           </div>
@@ -176,10 +177,10 @@ export default function L1C00Introduction() {
 
           <InstructorNote type="info">
             <p className="font-semibold mb-2">Instructor Notes:</p>
-            <p>This course makes use of freely available software (Google Earth Pro, FltPlan GO). If the participants' organization uses different software or services, then they may be substituted here. For example:</p>
+            <p>This course makes use of freely available software (Google Earth Pro, FltPlan GO). If the participants&apos; organization uses different software or services, then they may be substituted here. For example:</p>
             <ul className="list-disc ml-5 mt-2">
-              <li>If participants' organization uses ForeFlight paid service, references to FltPlanGO may be substituted with ForeFlight.</li>
-              <li>If participants' organization uses a GCS with accurate terrain databases, references to Google Earth Pro may be replaced with the GCS.</li>
+              <li>If participants&apos; organization uses ForeFlight paid service, references to FltPlanGO may be substituted with ForeFlight.</li>
+              <li>If participants&apos; organization uses a GCS with accurate terrain databases, references to Google Earth Pro may be replaced with the GCS.</li>
             </ul>
             <p className="mt-2"><strong>Note:</strong> Given the widespread use of Google Earth Pro, it is recommended to train the participants on its use.</p>
             <p className="mt-2">Participants should already have downloaded the required software. If not, ensure they do it now.</p>
@@ -249,18 +250,18 @@ export default function L1C00Introduction() {
 
         {/* Navigation Buttons */}
         <div className="flex justify-between items-center mt-12 pt-6 border-t border-gray-200">
-          <a
+          <Link
             href="/"
             className="px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition"
           >
             ← Back to Home
-          </a>
-          <a
+          </Link>
+          <Link
             href="/course/l1c01-air-law"
             className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
           >
             Next: L1C01 Air Law →
-          </a>
+          </Link>
         </div>
       </div>
     </CourseLayout>
