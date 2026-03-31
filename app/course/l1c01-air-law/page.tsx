@@ -243,6 +243,38 @@ export default function L1C01AirLaw() {
                 </div>
               </div>
             </div>
+
+            <InstructorNote type="info">
+              <p className="font-semibold mb-3">Real Part IX Examples You&apos;ll Use:</p>
+              <div className="space-y-3 text-sm">
+                <div className="bg-white p-3 rounded border border-blue-100">
+                  <p className="font-semibold mb-1"><code className="bg-gray-100 px-2 py-1 rounded">901.56</code> - Sheltered Operations</p>
+                  <p className="text-xs text-gray-600">Part <span className="font-semibold">9</span> (900) + Regulation <span className="font-semibold">0</span> + Subpart <span className="font-semibold">1</span> + Section 56 = Division V requirements</p>
+                </div>
+                <div className="bg-white p-3 rounded border border-blue-100">
+                  <p className="font-semibold mb-1"><code className="bg-gray-100 px-2 py-1 rounded">901.87</code> - BVLOS Operations Applicability</p>
+                  <p className="text-xs text-gray-600">Part <span className="font-semibold">9</span> (900) + Regulation <span className="font-semibold">0</span> + Subpart <span className="font-semibold">1</span> + Section 87 = Division VI (your focus in L1C!)</p>
+                </div>
+                <div className="bg-white p-3 rounded border border-blue-100">
+                  <p className="font-semibold mb-1"><code className="bg-gray-100 px-2 py-1 rounded">901.213</code> - RPAS Operator Certificate Eligibility</p>
+                  <p className="text-xs text-gray-600">Part <span className="font-semibold">9</span> (900) + Regulation <span className="font-semibold">0</span> + Subpart <span className="font-semibold">2</span> + Section 13 = Division XII requirements</p>
+                </div>
+                <div className="bg-white p-3 rounded border border-blue-100">
+                  <p className="font-semibold mb-1"><code className="bg-gray-100 px-2 py-1 rounded">921.04</code> - RPAS Pilot Certificate Training</p>
+                  <p className="text-xs text-gray-600">Part <span className="font-semibold">9</span> (900) + Standard <span className="font-semibold">2</span> + Subpart <span className="font-semibold">1</span> + Section 04 = Standard 921, Division X</p>
+                </div>
+                <div className="bg-white p-3 rounded border border-blue-100">
+                  <p className="font-semibold mb-1"><code className="bg-gray-100 px-2 py-1 rounded">922.07</code> - Manufacturer Declaration Requirements</p>
+                  <p className="text-xs text-gray-600">Part <span className="font-semibold">9</span> (900) + Standard <span className="font-semibold">2</span> + Subpart <span className="font-semibold">2</span> + Section 07 = Standard 922, Division XI</p>
+                </div>
+                <div className="bg-white p-3 rounded border border-blue-100">
+                  <p className="font-semibold mb-1"><code className="bg-gray-100 px-2 py-1 rounded">923.01</code> - Vision-Based Detect and Avoid</p>
+                  <p className="text-xs text-gray-600">Part <span className="font-semibold">9</span> (900) + Standard <span className="font-semibold">2</span> + Subpart <span className="font-semibold">3</span> + Section 01 = Standard 923, your DAA method!</p>
+                </div>
+              </div>
+              <p className="mt-3 text-sm"><strong>Pro Tip:</strong> When someone says &quot;CAR 901.87&quot; you immediately know it&apos;s a regulation (0) in Subpart 1, and when they say &quot;Standard 923&quot; you know it&apos;s about detect and avoid (Subpart 3).</p>
+            </InstructorNote>
+
             <InstructorNote type="keypoint">
               <p>SFOCs are managed under Subpart 3 of CARs.</p>
             </InstructorNote>
@@ -454,6 +486,145 @@ export default function L1C01AirLaw() {
                 </div>
               </div>
             </div>
+
+            <InstructorNote type="info">
+              <p className="font-semibold mb-3">Real Canadian Airspace Examples - Where You&apos;ll Actually Operate</p>
+
+              <div className="space-y-3 text-sm">
+                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
+                  <p className="font-semibold mb-2 text-red-700">Class C - Major International Airports (SFOC Required for RPAS)</p>
+                  <div className="grid md:grid-cols-2 gap-3 text-xs">
+                    <div>
+                      <p className="font-semibold">Toronto Pearson (CYYZ)</p>
+                      <ul className="ml-3 mt-1">
+                        <li>• Canada&apos;s busiest airport</li>
+                        <li>• Class C from SFC to 11,500 ft</li>
+                        <li>• ~30 NM radius of controlled airspace</li>
+                        <li>• Extremely high traffic volume</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-semibold">Vancouver (CYVR)</p>
+                      <ul className="ml-3 mt-1">
+                        <li>• West coast hub</li>
+                        <li>• Class C from SFC to 10,000 ft</li>
+                        <li>• Complex terrain (mountains, water)</li>
+                        <li>• Multiple helicopter operators nearby</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-semibold">Montreal (CYUL)</p>
+                      <ul className="ml-3 mt-1">
+                        <li>• Quebec&apos;s primary airport</li>
+                        <li>• Class C from SFC to 10,000 ft</li>
+                        <li>• Bilingual ATC communications</li>
+                        <li>• Multiple approach paths</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-semibold">Calgary (CYYC)</p>
+                      <ul className="ml-3 mt-1">
+                        <li>• Prairie hub, high elevation (3,557 ft)</li>
+                        <li>• Class C from SFC to 11,500 ft</li>
+                        <li>• Mountain wave activity common</li>
+                        <li>• Strong wind conditions</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p className="mt-2 text-xs font-semibold text-red-700">⚠️ RPAS operations within Class C require SFOC and ATC coordination - typically not suitable for routine L1C operations</p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-yellow-500">
+                  <p className="font-semibold mb-2 text-yellow-700">Class D - Regional Airports (SFOC Required for RPAS)</p>
+                  <div className="grid md:grid-cols-2 gap-3 text-xs">
+                    <div>
+                      <p className="font-semibold">Ottawa (CYOW)</p>
+                      <ul className="ml-3 mt-1">
+                        <li>• National capital airport</li>
+                        <li>• Class D from SFC to 3,000 ft within 7 NM</li>
+                        <li>• Government and commercial traffic</li>
+                        <li>• Class C airspace above 3,000 ft</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-semibold">Victoria (CYYJ)</p>
+                      <ul className="ml-3 mt-1">
+                        <li>• BC provincial capital</li>
+                        <li>• Class D with control zone</li>
+                        <li>• Frequent seaplane traffic nearby</li>
+                        <li>• Weather influenced by Pacific</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-semibold">London (CYXU)</p>
+                      <ul className="ml-3 mt-1">
+                        <li>• Southern Ontario regional</li>
+                        <li>• Class D control zone</li>
+                        <li>• Mix of commercial and training traffic</li>
+                        <li>• Active flight school operations</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-semibold">Kelowna (CYLW)</p>
+                      <ul className="ml-3 mt-1">
+                        <li>• Okanagan Valley hub</li>
+                        <li>• Class D with mountainous terrain</li>
+                        <li>• Seasonal wildfire operations</li>
+                        <li>• High summer traffic volume</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p className="mt-2 text-xs font-semibold text-yellow-700">⚠️ Class D operations require tower communication and authorization - coordination essential for RPAS</p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-blue-500">
+                  <p className="font-semibold mb-2 text-blue-700">Class E - Transition Airspace (May Require Coordination)</p>
+                  <div className="text-xs space-y-2">
+                    <p><strong>Where you&apos;ll encounter Class E:</strong></p>
+                    <ul className="ml-3 space-y-1">
+                      <li>• Airways connecting major airports (Victor Airways, Jet Routes)</li>
+                      <li>• Terminal control area transitions (surrounding Class C/D airspace)</li>
+                      <li>• Typically starts at 2,200 ft AGL or higher in most areas</li>
+                      <li>• Controlled airspace where ATC provides service to IFR traffic</li>
+                    </ul>
+                    <p className="mt-2"><strong>Example:</strong> Flying near CYOW (Ottawa), Class E transition airspace extends beyond the Class D control zone, typically starting at 2,200 ft AGL. If your RPAS operates below 2,200 ft and outside the control zone, you&apos;re likely in Class G.</p>
+                  </div>
+                  <p className="mt-2 text-xs font-semibold text-blue-700">Most L1C operations below 400 ft AGL will be in Class G, not Class E</p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-green-500">
+                  <p className="font-semibold mb-2 text-green-700">Class F & Class G - Where You&apos;ll Actually Fly (No ATC Required)</p>
+                  <div className="text-xs space-y-2">
+                    <p><strong>Class G (Uncontrolled):</strong> Most rural areas, agricultural land, remote regions</p>
+                    <ul className="ml-3 space-y-1">
+                      <li>• <strong>Example:</strong> Farm operations 50 km from any aerodrome - typically Class G from surface</li>
+                      <li>• <strong>Example:</strong> Northern Ontario mining site - Class G throughout most of the area</li>
+                      <li>• <strong>Example:</strong> Pipeline inspection in rural Alberta - Class G below 2,200 ft AGL</li>
+                    </ul>
+
+                    <p className="mt-2"><strong>Class F (Advisory/Restricted/Danger):</strong> Special use airspace - check DAH and NOTAMs</p>
+                    <ul className="ml-3 space-y-1">
+                      <li>• <strong>CYA503(P)</strong> - Parachute zone near Gatineau, QC (check activity times)</li>
+                      <li>• <strong>CYA306(T)</strong> - Training area near Cold Lake, AB (military aircraft)</li>
+                      <li>• <strong>CYR518</strong> - Restricted area for artillery range (never enter when active)</li>
+                    </ul>
+                  </div>
+                  <p className="mt-2 text-xs font-semibold text-green-700">✓ Target these areas for L1C operations - no ATC coordination required, but always check NOTAMs for temporary restrictions!</p>
+                </div>
+
+                <div className="bg-yellow-50 p-4 rounded-lg">
+                  <p className="font-semibold mb-2 text-xs">Planning Tip for Site Selection:</p>
+                  <ul className="text-xs space-y-1">
+                    <li>1. <strong>Check VFR charts:</strong> Identify airspace class at your operating altitude</li>
+                    <li>2. <strong>Measure distances:</strong> How far from nearest controlled airspace? (Use NRCAN DSST or VFR chart)</li>
+                    <li>3. <strong>Look for Class G:</strong> Rural areas &gt;10 NM from aerodromes are usually Class G</li>
+                    <li>4. <strong>Check Class F:</strong> Any CYA/CYR/CYD areas nearby? When are they active?</li>
+                    <li>5. <strong>Review NOTAMs:</strong> Temporary restricted areas, military exercises, forest fire TFRs</li>
+                    <li>6. <strong>Document in ROM:</strong> Your site survey must include airspace classification and any coordination required</li>
+                  </ul>
+                </div>
+              </div>
+            </InstructorNote>
           </div>
 
           <div className="mb-6">
@@ -792,7 +963,15 @@ export default function L1C01AirLaw() {
 
             <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
               <h4 className="font-semibold mb-2">Flight Geography</h4>
-              <p className="text-sm">The area within which an RPA is intended to fly for a specific operation</p>
+              <p className="text-sm mb-3">The area within which an RPA is intended to fly for a specific operation</p>
+
+              <div className="bg-white p-3 rounded border border-blue-100 text-xs space-y-2">
+                <p className="font-semibold">How to Define Flight Geography in Your ROM:</p>
+                <p><strong>Option 1 - Coordinates:</strong> &quot;Flight geography is bounded by coordinates N45°25.5&apos; W75°41.2&apos; (NW corner), N45°24.8&apos; W75°40.1&apos; (SE corner), altitude 0-400 ft AGL&quot;</p>
+                <p><strong>Option 2 - Visual Boundaries:</strong> &quot;Flight geography extends from the north property fence line to the south treeline, west boundary at Highway 7, east boundary at the creek, altitude 0-300 ft AGL&quot;</p>
+                <p><strong>Option 3 - Radius:</strong> &quot;Flight geography is a 2 NM radius centered on N45°25.123&apos; W75°40.456&apos;, altitude 0-400 ft AGL&quot;</p>
+                <p className="text-yellow-700 font-semibold">⚠️ Your ROM must clearly define how you establish flight geography for each mission type!</p>
+              </div>
             </div>
 
             <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
@@ -803,7 +982,91 @@ export default function L1C01AirLaw() {
 
             <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
               <h4 className="font-semibold mb-2">Ground Risk Buffer</h4>
-              <p className="text-sm">The area immediately surrounding the contingency volume that, when measured horizontally from the perimeter of the contingency volume, is at least equal to the planned maximum altitude of the RPA for the flight</p>
+              <p className="text-sm mb-3">The area immediately surrounding the contingency volume that, when measured horizontally from the perimeter of the contingency volume, is at least equal to the planned maximum altitude of the RPA for the flight</p>
+
+              <div className="bg-white p-4 rounded border border-blue-100 text-xs space-y-3">
+                <p className="font-semibold mb-2">Ground Risk Buffer Calculation Examples:</p>
+
+                <div className="space-y-3">
+                  <div className="p-3 bg-gray-50 rounded">
+                    <p className="font-semibold mb-2">Example 1: Basic Calculation</p>
+                    <ul className="space-y-1 ml-3">
+                      <li>• Planned maximum altitude: <strong>400 ft AGL</strong></li>
+                      <li>• Minimum ground risk buffer: <strong>400 ft horizontal</strong> from contingency volume perimeter</li>
+                      <li>• Reasoning: Regulatory minimum = altitude (1:1 ratio)</li>
+                    </ul>
+                    <p className="mt-2 font-semibold">Total protected area = Flight Geography + Contingency Volume + 400 ft buffer</p>
+                  </div>
+
+                  <div className="p-3 bg-gray-50 rounded">
+                    <p className="font-semibold mb-2">Example 2: Wind Considerations (Conservative Approach)</p>
+                    <ul className="space-y-1 ml-3">
+                      <li>• Planned maximum altitude: <strong>300 ft AGL</strong></li>
+                      <li>• Wind conditions: <strong>20 kt sustained, gusting 30 kt</strong></li>
+                      <li>• RPAS glide ratio: <strong>3:1</strong> (loses 1 ft altitude per 3 ft horizontal)</li>
+                      <li>• Regulatory minimum buffer: <strong>300 ft</strong></li>
+                      <li>• Wind drift calculation: 30 kt = ~50 ft/sec. Time to descend from 300 ft at 10 ft/sec = 30 seconds</li>
+                      <li>• Potential wind drift: 50 ft/sec × 30 sec = <strong>1,500 ft</strong></li>
+                      <li>• Recommended buffer: <strong>1,500 ft</strong> (greater of regulatory min or wind drift)</li>
+                    </ul>
+                    <p className="mt-2 font-semibold text-yellow-700">⚠️ Professional practice: Calculate worst-case wind drift and use the larger value!</p>
+                  </div>
+
+                  <div className="p-3 bg-gray-50 rounded">
+                    <p className="font-semibold mb-2">Example 3: Fly-Away Scenario Planning</p>
+                    <ul className="space-y-1 ml-3">
+                      <li>• RPAS: <strong>DJI M300 RTK</strong></li>
+                      <li>• Maximum speed: <strong>50 kt (82 ft/sec)</strong></li>
+                      <li>• Battery endurance: <strong>15 minutes remaining</strong></li>
+                      <li>• Planned altitude: <strong>400 ft AGL</strong></li>
+                      <li>• Regulatory minimum: <strong>400 ft buffer</strong></li>
+                      <li>• Worst case fly-away: 82 ft/sec × 900 sec (15 min) = <strong>73,800 ft = 12.3 NM</strong></li>
+                      <li>• Practical buffer considering terrain: <strong>2 NM</strong> (account for obstacles forcing landing)</li>
+                    </ul>
+                    <p className="mt-2 font-semibold text-red-700">🚨 This shows why contingency procedures (geofencing, return-to-home, battery monitoring) are CRITICAL!</p>
+                  </div>
+
+                  <div className="p-3 bg-gray-50 rounded">
+                    <p className="font-semibold mb-2">Example 4: Mission Planning Integration</p>
+                    <p className="mb-2">Agricultural survey mission:</p>
+                    <ul className="space-y-1 ml-3">
+                      <li>• <strong>Flight Geography:</strong> 1 NM × 0.5 NM rectangular field pattern, 0-200 ft AGL</li>
+                      <li>• <strong>Contingency Volume:</strong> 200 ft buffer around flight geography (RTL path)</li>
+                      <li>• <strong>Ground Risk Buffer:</strong> Minimum 200 ft (= max altitude) from contingency volume perimeter</li>
+                      <li>• <strong>Wind adjustment:</strong> 15 kt winds → add 500 ft buffer = 700 ft total</li>
+                      <li>• <strong>Population check:</strong> Ensure no populated areas within ground risk buffer</li>
+                      <li>• <strong>Result:</strong> Total protected area requires ~1.3 NM × 0.8 NM clear zone</li>
+                    </ul>
+                  </div>
+
+                  <div className="p-3 bg-yellow-50 rounded border-l-4 border-yellow-500">
+                    <p className="font-semibold mb-2">Factors That Increase Ground Risk Buffer Size:</p>
+                    <ul className="space-y-1 ml-3">
+                      <li>✓ <strong>High winds:</strong> Increase drift potential during descent</li>
+                      <li>✓ <strong>Heavy payload:</strong> Affects glide ratio and descent rate</li>
+                      <li>✓ <strong>Low battery:</strong> Limits contingency options</li>
+                      <li>✓ <strong>Complex terrain:</strong> Mountains, buildings affect descent paths</li>
+                      <li>✓ <strong>Multiple RPAS:</strong> Larger collective protected area</li>
+                      <li>✓ <strong>Population density:</strong> Higher risk requires larger buffer</li>
+                      <li>✓ <strong>RPAS performance:</strong> Faster aircraft = larger potential impact area</li>
+                    </ul>
+                  </div>
+
+                  <div className="p-3 bg-green-50 rounded border-l-4 border-green-500">
+                    <p className="font-semibold mb-2">ROM Requirements for Ground Risk Buffer:</p>
+                    <ul className="space-y-1 ml-3 text-xs">
+                      <li>• Specify calculation method (regulatory minimum + wind factor)</li>
+                      <li>• Define when to use conservative buffers (high wind, populated areas)</li>
+                      <li>• Include pre-flight buffer verification checklist</li>
+                      <li>• Document how buffer is measured and enforced (geofencing?)</li>
+                      <li>• Specify who approves buffer calculations (Person Responsible for Operations)</li>
+                      <li>• Require buffer review when conditions change (wind increase, altitude change)</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <p className="font-semibold text-blue-700 mt-3">Key Principle: Ground Risk Buffer is your last line of defense against ground impact outside your operational area. Always err on the side of caution!</p>
+              </div>
             </div>
 
             <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
@@ -983,6 +1246,136 @@ export default function L1C01AirLaw() {
               <p className="mb-2">The site survey requirements have changed under the new regulations. For BVLOS operations, pilots are required to know their lateral distances from populated areas (population density).</p>
               <p>Find these densities in the NRCAN Drone Site Selection Tool or the Statistics Canada population density by dissemination area.</p>
             </InstructorNote>
+
+            <InstructorNote type="info">
+              <p className="font-semibold mb-3">Site Survey Checklist & Examples</p>
+
+              <div className="space-y-4 text-sm">
+                <div className="bg-white p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold mb-2">What a Proper Site Survey Must Include:</p>
+                  <div className="grid md:grid-cols-2 gap-3 text-xs">
+                    <div>
+                      <p className="font-semibold text-green-700 mb-1">✓ Airspace Information</p>
+                      <ul className="ml-4 space-y-1">
+                        <li>• Airspace class</li>
+                        <li>• Controlled vs uncontrolled</li>
+                        <li>• SFC boundaries</li>
+                        <li>• NOTAMs affecting area</li>
+                        <li>• Nearby aerodromes</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-green-700 mb-1">✓ Population Density</p>
+                      <ul className="ml-4 space-y-1">
+                        <li>• NRCAN DSST classification</li>
+                        <li>• Populated areas within 1 NM</li>
+                        <li>• Roads, highways proximity</li>
+                        <li>• Buildings, structures</li>
+                        <li>• Public gatherings potential</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-green-700 mb-1">✓ Hazards & Obstacles</p>
+                      <ul className="ml-4 space-y-1">
+                        <li>• Towers, powerlines height</li>
+                        <li>• Trees, terrain features</li>
+                        <li>• Wildlife (birds, nesting)</li>
+                        <li>• Weather patterns</li>
+                        <li>• Electromagnetic interference</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-green-700 mb-1">✓ Operational Considerations</p>
+                      <ul className="ml-4 space-y-1">
+                        <li>• GCS location options</li>
+                        <li>• VO positioning</li>
+                        <li>• Escape routes</li>
+                        <li>• Emergency landing zones</li>
+                        <li>• Access roads/permissions</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold mb-2">Example Site Survey (Agricultural Monitoring)</p>
+                  <div className="text-xs space-y-2 bg-gray-50 p-3 rounded">
+                    <p><strong>Location:</strong> Rural farmland, 20 km southwest of Ottawa, ON</p>
+                    <p><strong>Coordinates:</strong> Center point N45°15.234&apos; W75°52.123&apos;</p>
+                    <p><strong>Date Surveyed:</strong> 2026-03-15 | <strong>Valid Until:</strong> 2027-03-15 (annual review required)</p>
+
+                    <p className="font-semibold mt-3 mb-1">Airspace:</p>
+                    <ul className="ml-4">
+                      <li>• Class G uncontrolled airspace</li>
+                      <li>• 15 NM from CYOW (Ottawa/Macdonald-Cartier), Class C SFC at 12 NM</li>
+                      <li>• No active NOTAMs or restrictions</li>
+                      <li>• Nearest aerodrome: Rockcliffe (CYRO) 18 NM northeast</li>
+                    </ul>
+
+                    <p className="font-semibold mt-2 mb-1">Population Density (NRCAN DSST):</p>
+                    <ul className="ml-4">
+                      <li>• Classification: Sparsely populated (&lt;1 person per 5,000 m²)</li>
+                      <li>• Farmhouse 800 m east of center (1 family)</li>
+                      <li>• County road 2 km south (light traffic, ~10 vehicles/hour)</li>
+                      <li>• Nearest town: 5 km north (population 2,500)</li>
+                      <li>• No advertised events expected in area</li>
+                    </ul>
+
+                    <p className="font-semibold mt-2 mb-1">Hazards/Obstacles:</p>
+                    <ul className="ml-4">
+                      <li>• Powerlines along east property boundary - 60 ft AGL (marked on map)</li>
+                      <li>• Grain silo 1.2 km southeast - 120 ft AGL</li>
+                      <li>• Tree line north boundary - 40-50 ft AGL</li>
+                      <li>• Red-tailed hawks observed nesting in trees (seasonal, April-August)</li>
+                      <li>• Prevailing winds: west/southwest, calm mornings typical</li>
+                    </ul>
+
+                    <p className="font-semibold mt-2 mb-1">Operations Plan:</p>
+                    <ul className="ml-4">
+                      <li>• GCS location: North field access road (coordinates provided)</li>
+                      <li>• VO position: Center field elevation (line of sight to all areas)</li>
+                      <li>• Flight geography: 1 NM radius, max altitude 300 ft AGL</li>
+                      <li>• Emergency landing zones: 3 open fields identified (coordinates mapped)</li>
+                      <li>• Landowner permission: Obtained, valid through October 2026</li>
+                    </ul>
+
+                    <p className="font-semibold mt-2 mb-1">Weather Considerations:</p>
+                    <ul className="ml-4">
+                      <li>• Nearest METAR: CYOW (20 km), update frequency: hourly</li>
+                      <li>• Local effects: Morning fog common in low areas (burn off by 09:00)</li>
+                      <li>• Abort criteria: If visibility &lt; 4 SM or ceiling &lt; 1,200 ft</li>
+                    </ul>
+
+                    <p className="mt-3 text-yellow-700 font-semibold">✓ Site survey documented in ROM Section 4.2, reviewed and approved by Person Responsible for Operations</p>
+                  </div>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold mb-2">Common Site Survey Mistakes to Avoid:</p>
+                  <ul className="space-y-2 text-xs">
+                    <li>❌ <strong>Generic descriptions:</strong> &quot;Rural area, no hazards&quot; is insufficient. Be specific with measurements, coordinates, obstacle heights.</li>
+                    <li>❌ <strong>Outdated information:</strong> Not checking NOTAMs day-of. Site surveys should be reviewed before each mission series.</li>
+                    <li>❌ <strong>Missing population density:</strong> Assuming &quot;looks empty&quot; without checking NRCAN DSST or StatsCan data.</li>
+                    <li>❌ <strong>Ignoring seasonal changes:</strong> Bird migrations, crop heights, seasonal events (fairs, festivals) change site conditions.</li>
+                    <li>❌ <strong>No emergency planning:</strong> Not identifying emergency landing zones or abort procedures.</li>
+                    <li>❌ <strong>Vague boundaries:</strong> &quot;Somewhere around the farm&quot; instead of precise flight geography coordinates.</li>
+                    <li>❌ <strong>Single visit:</strong> Not observing different times of day (morning fog, afternoon traffic patterns, evening wildlife).</li>
+                  </ul>
+                </div>
+
+                <div className="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-500">
+                  <p className="font-semibold mb-2">ROM Requirement:</p>
+                  <p className="text-xs">Your RPAS Operations Manual must specify:</p>
+                  <ul className="text-xs space-y-1 ml-4 mt-2">
+                    <li>• Site survey template/checklist format</li>
+                    <li>• Who is authorized to conduct site surveys</li>
+                    <li>• How often surveys must be reviewed/updated</li>
+                    <li>• Where site survey documentation is stored</li>
+                    <li>• Process for updating surveys when conditions change</li>
+                  </ul>
+                </div>
+              </div>
+            </InstructorNote>
           </div>
 
           <div className="mb-6">
@@ -994,6 +1387,113 @@ export default function L1C01AirLaw() {
             <InstructorNote type="keypoint">
               <p className="mb-2">There is different criteria for different categories, which can cause confusion. You must operate in accordance with the manufacturer&apos;s instructions.</p>
               <p>For an mRPAS, if the visibility is less than 4 statute miles, the drone can&apos;t be farther than half of that distance from you. This can be difficult to calculate. You can fly outside of these weather conditions with an SFOC.</p>
+            </InstructorNote>
+
+            <InstructorNote type="info">
+              <p className="font-semibold mb-3">How to Actually Assess Weather for RPAS Operations</p>
+
+              <div className="space-y-4 text-sm">
+                <div className="bg-white p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold mb-2">1. Reading METAR Reports</p>
+                  <p className="mb-2 text-xs font-mono bg-gray-100 p-2 rounded">CYOW 311500Z 27015G25KT 3SM -RA BR BKN008 OVC015 05/04 A2990 RMK SF5SC3</p>
+                  <ul className="space-y-1 text-xs">
+                    <li>• <strong>CYOW</strong> = Ottawa Airport</li>
+                    <li>• <strong>311500Z</strong> = 31st day, 1500 UTC</li>
+                    <li>• <strong>27015G25KT</strong> = Wind from 270° at 15 kt, gusting to 25 kt</li>
+                    <li>• <strong>3SM</strong> = Visibility 3 statute miles (MINIMUM for Standard 923!)</li>
+                    <li>• <strong>-RA BR</strong> = Light rain, mist</li>
+                    <li>• <strong>BKN008 OVC015</strong> = Broken clouds at 800 ft, Overcast at 1,500 ft (ceiling = 800 ft, BELOW 1,000 ft minimum!)</li>
+                    <li>• <strong>05/04</strong> = Temperature 5°C, Dewpoint 4°C (small spread = fog risk)</li>
+                  </ul>
+                  <p className="mt-2 text-xs font-semibold text-red-600">❌ This weather is NOT suitable for Standard 923 operations - ceiling too low (800 ft &lt; 1,000 ft required)</p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold mb-2">2. Reading TAF (Terminal Aerodrome Forecast)</p>
+                  <p className="mb-2 text-xs font-mono bg-gray-100 p-2 rounded">TAF CYOW 311138Z 3112/0118 30012KT P6SM FEW050 SCT120<br/>     FM311800 28015G25KT 4SM -SHRA BR BKN015 OVC040<br/>     TEMPO 3118/3122 2SM -SHRA BR BKN008</p>
+                  <ul className="space-y-1 text-xs">
+                    <li>• <strong>3112/0118</strong> = Valid from 31st 1200Z to 1st 1800Z (30 hours)</li>
+                    <li>• <strong>P6SM</strong> = Visibility greater than 6 SM (good!)</li>
+                    <li>• <strong>FEW050 SCT120</strong> = Few clouds at 5,000 ft, Scattered at 12,000 ft (excellent ceiling!)</li>
+                    <li>• <strong>FM311800</strong> = From 31st at 1800Z conditions change</li>
+                    <li>• <strong>4SM -SHRA BR BKN015</strong> = Vis drops to 4 SM, light rain showers, broken at 1,500 ft</li>
+                    <li>• <strong>TEMPO 3118/3122 2SM</strong> = Temporarily between 1800-2200Z visibility may drop to 2 SM</li>
+                  </ul>
+                  <p className="mt-2 text-xs font-semibold text-yellow-600">⚠️ Plan your mission timing! Good weather early, deteriorating after 1800Z. TEMPO period has 2 SM visibility (below minimums).</p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold mb-2">3. Cloud Coverage Interpretation</p>
+                  <div className="grid grid-cols-2 gap-2 text-xs">
+                    <div>
+                      <p className="font-semibold">SKC/CLR</p>
+                      <p>Sky clear - no ceiling</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold">FEW (1-2 oktas)</p>
+                      <p>Few clouds - no ceiling</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold">SCT (3-4 oktas)</p>
+                      <p>Scattered - no ceiling</p>
+                    </div>
+                    <div className="bg-yellow-50 p-1 rounded">
+                      <p className="font-semibold text-red-600">BKN (5-7 oktas)</p>
+                      <p>Broken - THIS IS A CEILING</p>
+                    </div>
+                    <div className="bg-yellow-50 p-1 rounded">
+                      <p className="font-semibold text-red-600">OVC (8 oktas)</p>
+                      <p>Overcast - THIS IS A CEILING</p>
+                    </div>
+                    <div className="bg-yellow-50 p-1 rounded">
+                      <p className="font-semibold text-red-600">VV</p>
+                      <p>Vertical visibility - obscured sky</p>
+                    </div>
+                  </div>
+                  <p className="mt-2 text-xs font-semibold">Ceiling = lowest BKN, OVC, or VV layer. Must be 1,000 ft AGL or higher for Standard 923!</p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold mb-2">4. Visibility Measurement Techniques</p>
+                  <ul className="space-y-2 text-xs">
+                    <li>• <strong>Farm section lines:</strong> In prairie provinces, most sections are 1 mile × 1 mile. Quarter section = 0.5 SM. If you can see 6 quarter-sections, that&apos;s 3 SM (minimum!)</li>
+                    <li>• <strong>Known landmarks:</strong> Identify towers, buildings, or features at known distances. Can you clearly see the tower 3 miles away?</li>
+                    <li>• <strong>Contrast test:</strong> At 3 SM, you should see distinct colors and shapes. At 1-2 SM, edges blur together.</li>
+                    <li>• <strong>Nearest METAR:</strong> If METAR says 3 SM but you assess visibility as worse, use the more conservative value.</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold mb-2">5. Ceiling Estimation Techniques</p>
+                  <ul className="space-y-2 text-xs">
+                    <li>• <strong>Communication towers:</strong> Most are 200-300 ft tall. If clouds are touching halfway up a 300 ft tower = 150 ft ceiling (too low!)</li>
+                    <li>• <strong>Hills/mountains:</strong> If you know terrain elevation, clouds hitting hillsides indicate ceiling height</li>
+                    <li>• <strong>Nearest METAR:</strong> Airport METAR ceiling is measured precisely with ceilometer</li>
+                    <li>• <strong>Pireps (Pilot Reports):</strong> Manned aircraft report cloud base heights</li>
+                    <li>• <strong>Rule of thumb:</strong> If clouds look &quot;low and threatening&quot;, they probably are below 1,000 ft</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border border-blue-200">
+                  <p className="font-semibold mb-2">6. When METAR and Observations Conflict</p>
+                  <p className="mb-2 text-xs">The nearest METAR reports 5 SM visibility and 2,000 ft ceiling, but at your site visibility looks like 2 SM with lower clouds.</p>
+                  <p className="text-xs font-semibold text-red-600">ALWAYS use the more conservative assessment!</p>
+                  <p className="mt-1 text-xs">Weather varies by location. METARs are point observations at airports. If your on-site assessment is worse than METAR, trust your eyes and don&apos;t fly. Your ROM should specify this decision-making process.</p>
+                </div>
+
+                <div className="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-500">
+                  <p className="font-semibold mb-2">Pro Tips for Weather Decision-Making:</p>
+                  <ul className="space-y-1 text-xs">
+                    <li>✓ Check multiple METAR stations around your operating area</li>
+                    <li>✓ Review TAF for trends - is weather improving or deteriorating?</li>
+                    <li>✓ Monitor real-time: weather radar, satellite imagery, webcams</li>
+                    <li>✓ Set personal minimums above regulatory minimums (e.g., 4 SM instead of 3 SM)</li>
+                    <li>✓ Have abort criteria in your ROM - what weather change triggers RTB?</li>
+                    <li>✓ Document weather assessment in your flight log (METAR time, conditions, decision rationale)</li>
+                    <li>✓ When temperature/dewpoint spread &lt; 3°C, fog risk is HIGH - monitor closely</li>
+                  </ul>
+                </div>
+              </div>
             </InstructorNote>
           </div>
 
@@ -1128,6 +1628,51 @@ export default function L1C01AirLaw() {
                 <li>The <strong>platform</strong> refers to the safety assurances that must be in place</li>
                 <li>The <strong>procedures</strong> refer to the RPAS Operator Certificate, operations manual, procedures, checklists, deconfliction, etc.</li>
               </ul>
+            </InstructorNote>
+
+            <InstructorNote type="activity">
+              <p className="font-semibold mb-3">3P Approach: Pass or Fail? Test Your Understanding</p>
+              <p className="text-sm mb-4">For each scenario below, identify which of the 3 Ps is missing or non-compliant:</p>
+
+              <div className="space-y-4">
+                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
+                  <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 1: Age Requirement</p>
+                  <p className="text-sm mb-2"><strong>Situation:</strong> A 17-year-old pilot holds a valid L1C certificate, has completed recency requirements, and will operate under an RPAS Operator Certificate with a compliant platform.</p>
+                  <p className="text-sm"><strong>Result: FAIL</strong> - Missing PILOT requirement (must be 18+ years old per CAR 901.89)</p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
+                  <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 2: Platform Modification</p>
+                  <p className="text-sm mb-2"><strong>Situation:</strong> An 18-year-old L1C pilot with current recency, operating under an RPAS Operator Certificate, using a DJI M350 with modified propeller guards (not manufacturer-approved modifications) without demonstrating Standard 922 compliance.</p>
+                  <p className="text-sm"><strong>Result: FAIL</strong> - Missing PLATFORM requirement (modifications require manufacturer instructions OR Standard 922 demonstration per CAR 901.95)</p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
+                  <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 3: No ROM</p>
+                  <p className="text-sm mb-2"><strong>Situation:</strong> An 18-year-old L1C pilot with current recency wants to conduct BVLOS operations using a compliant platform, but hasn&apos;t applied for or received an RPAS Operator Certificate.</p>
+                  <p className="text-sm"><strong>Result: FAIL</strong> - Missing PROCEDURE requirement (must have RPAS Operator Certificate with ROM per CAR 901.88)</p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
+                  <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 4: Expired Recency</p>
+                  <p className="text-sm mb-2"><strong>Situation:</strong> A 25-year-old pilot holds an L1C certificate obtained 30 months ago, hasn&apos;t completed recency requirements, operates under an RPAS Operator Certificate with a compliant platform.</p>
+                  <p className="text-sm"><strong>Result: FAIL</strong> - Missing PILOT requirement (recency must be demonstrated within 24 months per CAR 901.89)</p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
+                  <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 5: Incomplete ROM</p>
+                  <p className="text-sm mb-2"><strong>Situation:</strong> An 18-year-old L1C pilot with current recency, using a compliant platform, has an RPAS Operator Certificate but the ROM doesn&apos;t include emergency procedures or a site survey process.</p>
+                  <p className="text-sm"><strong>Result: FAIL</strong> - Missing PROCEDURE requirement (ROM must include all required elements per CAR 901.217)</p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-green-500">
+                  <p className="font-semibold text-green-700 mb-2">✅ SCENARIO 6: All Requirements Met</p>
+                  <p className="text-sm mb-2"><strong>Situation:</strong> A 22-year-old pilot holds a valid L1C certificate with recency completed 6 months ago, operates under an RPAS Operator Certificate (DMP-issued) with a complete ROM including all required sections, using a DJI M300 RTK with manufacturer&apos;s declaration for BVLOS operations (no modifications).</p>
+                  <p className="text-sm"><strong>Result: PASS</strong> - All 3 Ps met! ✓ Pilot (18+, L1C cert, current recency) ✓ Procedure (RPAS Operator Certificate with compliant ROM) ✓ Platform (manufacturer declaration, no unauthorized mods)</p>
+                </div>
+              </div>
+
+              <p className="mt-4 text-sm font-semibold">Remember: ALL THREE Ps must be in place before conducting BVLOS operations. Missing even one element means you cannot legally operate!</p>
             </InstructorNote>
           </div>
 
@@ -1283,6 +1828,100 @@ export default function L1C01AirLaw() {
                 <p className="text-sm">Outstretched arm with 4 horizontal fingers stacked on the horizon</p>
               </div>
             </div>
+
+            <InstructorNote type="activity">
+              <p className="font-semibold mb-3">Standard 923 Decision-Making: Can You Fly?</p>
+              <p className="text-sm mb-4">Practice applying Standard 923 requirements to real-world scenarios. For each situation, determine if the operation is compliant:</p>
+
+              <div className="space-y-4">
+                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
+                  <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 1: Poor Visibility</p>
+                  <p className="text-sm mb-2"><strong>Conditions:</strong></p>
+                  <ul className="text-xs space-y-1 mb-2 ml-4">
+                    <li>• Visibility: 2.5 statute miles</li>
+                    <li>• Ceiling: 1,200 ft AGL</li>
+                    <li>• Sun: 25° above horizon (outside quadrant)</li>
+                    <li>• Drone position: 3 NM from pilot, 1.5 NM from VO</li>
+                  </ul>
+                  <p className="text-sm"><strong>Decision: NO FLY</strong> - Visibility must be at least 3 SM. Even though all other conditions are met, failing one requirement means the operation cannot proceed under Standard 923.</p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
+                  <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 2: Low Ceiling</p>
+                  <p className="text-sm mb-2"><strong>Conditions:</strong></p>
+                  <ul className="text-xs space-y-1 mb-2 ml-4">
+                    <li>• Visibility: 5 statute miles</li>
+                    <li>• Ceiling: 800 ft AGL (overcast layer)</li>
+                    <li>• Sun: 5° above horizon</li>
+                    <li>• Drone position: 2 NM from pilot, 1 NM from VO</li>
+                  </ul>
+                  <p className="text-sm"><strong>Decision: NO FLY</strong> - Two failures: (1) Ceiling must be at least 1,000 ft AGL, (2) Sun must be at least 6° above horizon or below horizon. Even if ceiling was compliant, the sun position alone would prevent the operation.</p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
+                  <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 3: Distance Violation</p>
+                  <p className="text-sm mb-2"><strong>Conditions:</strong></p>
+                  <ul className="text-xs space-y-1 mb-2 ml-4">
+                    <li>• Visibility: 10 statute miles</li>
+                    <li>• Ceiling: 2,500 ft AGL</li>
+                    <li>• Sun: Below horizon (night operations not allowed, but sun position OK)</li>
+                    <li>• Drone position: 4.5 NM from pilot, 2.5 NM from VO</li>
+                  </ul>
+                  <p className="text-sm"><strong>Decision: NO FLY</strong> - Two distance violations: (1) Drone must be within 4 NM of pilot/GCS (currently 4.5 NM), (2) Drone must be within 2 NM of VO (currently 2.5 NM). Both limits exceeded.</p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-yellow-500">
+                  <p className="font-semibold text-yellow-700 mb-2">⚠️ SCENARIO 4: Deteriorating Conditions</p>
+                  <p className="text-sm mb-2"><strong>Conditions at mission start:</strong></p>
+                  <ul className="text-xs space-y-1 mb-2 ml-4">
+                    <li>• Visibility: 4 statute miles</li>
+                    <li>• Ceiling: 1,500 ft AGL</li>
+                    <li>• Sun: 50° above horizon</li>
+                    <li>• Drone position: 3 NM from pilot, 1.5 NM from VO</li>
+                  </ul>
+                  <p className="text-sm mb-2"><strong>15 minutes into mission:</strong> TAF forecast shows thunderstorm approaching, visibility expected to drop to 1 SM within 30 minutes, ceiling dropping to 500 ft.</p>
+                  <p className="text-sm"><strong>Decision: ABORT MISSION</strong> - While current conditions are compliant, you must continuously monitor weather. If conditions will deteriorate below minimums before mission completion, abort and return to base. Pre-flight planning must include weather monitoring and escape routes.</p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-green-500">
+                  <p className="font-semibold text-green-700 mb-2">✅ SCENARIO 5: Compliant Operation</p>
+                  <p className="text-sm mb-2"><strong>Conditions:</strong></p>
+                  <ul className="text-xs space-y-1 mb-2 ml-4">
+                    <li>• Visibility: 5 statute miles (verified by METAR and visual confirmation)</li>
+                    <li>• Ceiling: 3,000 ft AGL (scattered clouds, plenty of clearance)</li>
+                    <li>• Sun: 60° above horizon, behind the VO (outside critical quadrant)</li>
+                    <li>• Drone position: 3.5 NM from pilot/GCS, 1.8 NM from VO</li>
+                    <li>• VO has clear line of sight, scanning airspace continuously</li>
+                    <li>• Radio communication established between pilot and VO</li>
+                  </ul>
+                  <p className="text-sm"><strong>Decision: GO FOR FLIGHT</strong> - All Standard 923 requirements met: ✓ Visibility (5 SM &gt; 3 SM min) ✓ Ceiling (3,000 ft &gt; 1,000 ft min) ✓ Sun position (60° &gt; 45° and outside quadrant) ✓ Distance (3.5 NM &lt; 4 NM from pilot, 1.8 NM &lt; 2 NM from VO)</p>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-green-500">
+                  <p className="font-semibold text-green-700 mb-2">✅ SCENARIO 6: Marginal but Legal</p>
+                  <p className="text-sm mb-2"><strong>Conditions:</strong></p>
+                  <ul className="text-xs space-y-1 mb-2 ml-4">
+                    <li>• Visibility: Exactly 3 statute miles (measured using section lines)</li>
+                    <li>• Ceiling: Exactly 1,000 ft AGL (broken layer at 1,000 ft)</li>
+                    <li>• Sun: Exactly 45° above horizon and directly in VO&apos;s scan area</li>
+                    <li>• Drone position: 4.0 NM from pilot, 2.0 NM from VO</li>
+                  </ul>
+                  <p className="text-sm mb-2"><strong>Decision: TECHNICALLY LEGAL but NOT RECOMMENDED</strong> - All minimums are exactly met, which is technically compliant. However, any slight deterioration puts you out of compliance. Professional practice: Add personal minimums above regulatory minimums (e.g., 3.5 SM visibility, 1,200 ft ceiling) to account for uncertainty and provide safety margins.</p>
+                  <p className="text-xs mt-2 text-yellow-700 font-semibold">⚠️ Best Practice: Your ROM should specify personal minimums higher than regulatory minimums to account for measurement uncertainty and safety margins!</p>
+                </div>
+              </div>
+
+              <div className="mt-4 p-4 bg-blue-50 rounded-lg">
+                <p className="font-semibold mb-2">Key Takeaways:</p>
+                <ul className="text-sm space-y-1">
+                  <li>• ALL Standard 923 requirements must be met simultaneously - failing one means no-go</li>
+                  <li>• Continuously monitor conditions throughout the flight</li>
+                  <li>• Have abort criteria and procedures in your ROM</li>
+                  <li>• Professional operators set personal minimums above regulatory minimums</li>
+                  <li>• When in doubt, don&apos;t fly - get an SFOC or wait for better conditions</li>
+                </ul>
+              </div>
+            </InstructorNote>
           </div>
         </CourseSection>
 
@@ -1508,6 +2147,304 @@ export default function L1C01AirLaw() {
             <h3 className="text-xl font-semibold mb-4">ROM Guidance</h3>
             <InstructorNote type="keypoint">
               <p>Operators must have the following in their RPAS Operations Manual: Safety program, CRM, Training program, Record keeping details, Normal and emergency procedures (e.g., fly-aways). NASA has compiled 30 years of research on how to develop checklists, etc.</p>
+            </InstructorNote>
+
+            <InstructorNote type="info">
+              <p className="font-semibold mb-3">RPAS Operations Manual - Structure & Content Examples</p>
+              <p className="text-sm mb-4">Your ROM doesn&apos;t need to be 500 pages, but it MUST be specific, practical, and actually usable by your crew. Here are examples of what each required section should contain:</p>
+
+              <div className="space-y-4 text-sm">
+                <div className="bg-white p-4 rounded-lg border-l-4 border-blue-500">
+                  <p className="font-semibold mb-2">1. ROLES AND RESPONSIBILITIES</p>
+                  <div className="text-xs space-y-2 bg-gray-50 p-3 rounded">
+                    <p className="font-semibold">Example Content:</p>
+                    <div className="space-y-2">
+                      <div>
+                        <p className="font-semibold text-blue-700">Accountable Executive: [Name]</p>
+                        <ul className="ml-4 mt-1">
+                          <li>• Ultimate responsibility for safety and regulatory compliance</li>
+                          <li>• Authority to allocate resources for safety initiatives</li>
+                          <li>• Reviews and approves ROM annually or when changes required</li>
+                          <li>• Ensures all personnel are adequately trained and qualified</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-blue-700">Person Responsible for Maintenance: [Name]</p>
+                        <ul className="ml-4 mt-1">
+                          <li>• Develops and maintains maintenance schedule for all RPAS</li>
+                          <li>• Ensures maintenance records are current and accessible</li>
+                          <li>• Approves RPAS for flight after maintenance actions</li>
+                          <li>• Investigates maintenance-related incidents</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-blue-700">Pilot-in-Command:</p>
+                        <ul className="ml-4 mt-1">
+                          <li>• Holds valid L1C certificate with current recency</li>
+                          <li>• Conducts pre-flight planning including weather, NOTAMs, site survey</li>
+                          <li>• Final authority for go/no-go decision</li>
+                          <li>• Maintains communication with VO and crew</li>
+                          <li>• Completes post-flight documentation</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-blue-700">Visual Observer:</p>
+                        <ul className="ml-4 mt-1">
+                          <li>• Trained per company training program (Section 5)</li>
+                          <li>• Maintains visual contact with operational airspace</li>
+                          <li>• Scans for conflicting traffic and hazards</li>
+                          <li>• Immediately reports conflicts or concerns to PIC</li>
+                          <li>• Does NOT operate controls unless also qualified pilot</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-yellow-500">
+                  <p className="font-semibold mb-2">2. SAFETY PROGRAM / PROCESSES (CAR 901.218)</p>
+                  <div className="text-xs space-y-2 bg-gray-50 p-3 rounded">
+                    <p className="font-semibold">Example Content:</p>
+                    <div className="space-y-2">
+                      <div>
+                        <p className="font-semibold text-yellow-700">Safety Policy Statement:</p>
+                        <p className="italic ml-2 mt-1">&quot;[Company Name] is committed to conducting all RPAS operations in the safest manner possible. Safety is our top priority, and all personnel are empowered to stop operations if unsafe conditions are identified. We will continuously improve our safety processes through incident reporting, analysis, and corrective action.&quot;</p>
+                        <p className="ml-2 mt-1">Signed: [Accountable Executive], Date: [Date]</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-yellow-700">Risk Assessment Process:</p>
+                        <ul className="ml-4 mt-1">
+                          <li>• All missions require completion of pre-flight risk assessment form</li>
+                          <li>• Risk factors assessed: weather, airspace, population, aircraft performance, crew experience</li>
+                          <li>• Risk scoring: Low (1-3), Medium (4-6), High (7-9)</li>
+                          <li>• Medium risk requires supervisor approval; High risk requires Accountable Executive approval</li>
+                          <li>• Mitigation measures must be identified and implemented before flight</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-yellow-700">Incident/Accident Reporting:</p>
+                        <ul className="ml-4 mt-1">
+                          <li>• All incidents (injury, property damage, near-miss) reported within 24 hours</li>
+                          <li>• Incident report form submitted to Person Responsible for Operations</li>
+                          <li>• Investigation conducted within 7 days</li>
+                          <li>• Corrective actions identified and implemented</li>
+                          <li>• Serious incidents reported to Transport Canada per CAR 901.85</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-yellow-700">Safety Meetings:</p>
+                        <ul className="ml-4 mt-1">
+                          <li>• Quarterly safety meetings with all operational personnel</li>
+                          <li>• Review incidents, regulatory changes, lessons learned</li>
+                          <li>• Minutes documented and distributed</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-green-500">
+                  <p className="font-semibold mb-2">3. NORMAL PROCEDURES</p>
+                  <div className="text-xs space-y-2 bg-gray-50 p-3 rounded">
+                    <p className="font-semibold">Example: Pre-Flight Checklist (DJI M300 RTK)</p>
+                    <div className="space-y-1 ml-3 font-mono text-xs">
+                      <p>☐ <strong>Mission Planning Complete</strong></p>
+                      <p className="ml-4">☐ Weather minimums met (vis ≥3 SM, ceiling ≥1,000 ft)</p>
+                      <p className="ml-4">☐ NOTAMs reviewed, no TFRs or restrictions</p>
+                      <p className="ml-4">☐ Site survey current (within 12 months)</p>
+                      <p className="ml-4">☐ Flight geography defined and documented</p>
+                      <p className="ml-4">☐ Ground risk buffer calculated and clear</p>
+                      <p className="ml-4">☐ ATC coordination complete (if required)</p>
+
+                      <p className="mt-2">☐ <strong>Aircraft Inspection</strong></p>
+                      <p className="ml-4">☐ Airframe: No cracks, damage, or loose components</p>
+                      <p className="ml-4">☐ Propellers: No chips, cracks, secure attachment</p>
+                      <p className="ml-4">☐ Motors: Spin freely, no grinding or resistance</p>
+                      <p className="ml-4">☐ Landing gear: Extended, locked, no damage</p>
+                      <p className="ml-4">☐ Cameras/payload: Secure, clean, functional</p>
+                      <p className="ml-4">☐ Battery: Charge ≥50%, no swelling, connectors clean</p>
+
+                      <p className="mt-2">☐ <strong>Systems Check</strong></p>
+                      <p className="ml-4">☐ Firmware: Current version, no pending updates</p>
+                      <p className="ml-4">☐ GPS: ≥10 satellites, good signal strength</p>
+                      <p className="ml-4">☐ Compass: Calibrated, no interference warnings</p>
+                      <p className="ml-4">☐ Return-to-Home: Altitude set (min 100 ft above obstacles)</p>
+                      <p className="ml-4">☐ Geofence: Configured to flight geography + contingency</p>
+                      <p className="ml-4">☐ Low battery warning: Set to 30% (abort and RTH)</p>
+                      <p className="ml-4">☐ Communication: Radio check with VO - clear comms</p>
+
+                      <p className="mt-2">☐ <strong>Documentation</strong></p>
+                      <p className="ml-4">☐ Pilot certificate and recency proof accessible</p>
+                      <p className="ml-4">☐ RPAS Operator Certificate copy on-site</p>
+                      <p className="ml-4">☐ Insurance certificate current</p>
+                      <p className="ml-4">☐ Flight log ready for completion</p>
+
+                      <p className="mt-2 font-sans">Pilot Signature: _____________ Date/Time: _______</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
+                  <p className="font-semibold mb-2">4. EMERGENCY PROCEDURES</p>
+                  <div className="text-xs space-y-3 bg-gray-50 p-3 rounded">
+                    <div>
+                      <p className="font-semibold text-red-700">Loss of GPS (DJI M300 RTK Example):</p>
+                      <div className="ml-3 mt-1">
+                        <p><strong>Indications:</strong> &quot;GPS Signal Lost&quot; warning, aircraft switches to ATTI mode</p>
+                        <p><strong>Immediate Actions:</strong></p>
+                        <ol className="ml-4 mt-1">
+                          <li>1. Announce &quot;GPS LOST&quot; to crew</li>
+                          <li>2. Cease mission activities immediately</li>
+                          <li>3. Maintain visual contact with aircraft</li>
+                          <li>4. Reduce altitude if safe to do so (improves VO visual contact)</li>
+                          <li>5. Manually navigate to clear area away from obstacles</li>
+                          <li>6. Attempt to regain GPS (move away from interference sources)</li>
+                          <li>7. If GPS not regained within 30 seconds, execute manual landing</li>
+                          <li>8. Do NOT attempt RTH without GPS lock</li>
+                        </ol>
+                        <p className="mt-2"><strong>Post-Event:</strong> Report incident, investigate cause, update risk assessment</p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <p className="font-semibold text-red-700">Fly-Away (Uncontrolled Departure):</p>
+                      <div className="ml-3 mt-1">
+                        <p><strong>Indications:</strong> Aircraft not responding to controls, departing operational volume</p>
+                        <p><strong>Immediate Actions:</strong></p>
+                        <ol className="ml-4 mt-1">
+                          <li>1. Announce &quot;FLY-AWAY&quot; to crew and any nearby aircraft</li>
+                          <li>2. Attempt emergency stop (if equipped)</li>
+                          <li>3. Attempt RTH activation</li>
+                          <li>4. Notify ATC immediately if in/near controlled airspace</li>
+                          <li>5. Maintain visual contact as long as possible</li>
+                          <li>6. Note last known position, altitude, heading, time</li>
+                          <li>7. Monitor battery endurance - estimate crash location</li>
+                          <li>8. If over populated area, notify local authorities</li>
+                          <li>9. Do NOT attempt to retrieve until aircraft confirmed landed</li>
+                          <li>10. Report to Transport Canada within 24 hours (CAR 901.85)</li>
+                        </ol>
+                        <p className="mt-2"><strong>Post-Event:</strong> Secure aircraft, preserve evidence, conduct full investigation</p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <p className="font-semibold text-red-700">Manned Aircraft Conflict:</p>
+                      <div className="ml-3 mt-1">
+                        <p><strong>Indications:</strong> VO reports aircraft in operational airspace</p>
+                        <p><strong>Immediate Actions:</strong></p>
+                        <ol className="ml-4 mt-1">
+                          <li>1. VO announces &quot;TRAFFIC, [direction], [distance]&quot;</li>
+                          <li>2. PIC immediately descends RPAS and moves away from traffic</li>
+                          <li>3. Land if conflict imminent or safe to do so</li>
+                          <li>4. Do NOT resume operations until traffic clear and deconflicted</li>
+                          <li>5. If equipped, activate aircraft lights/strobes for visibility</li>
+                          <li>6. Report near-miss if aircraft within 500 ft horizontal or 100 ft vertical</li>
+                        </ol>
+                        <p className="mt-2"><strong>Manned Aircraft ALWAYS Has Right of Way</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-purple-500">
+                  <p className="font-semibold mb-2">5. TRAINING PROGRAM</p>
+                  <div className="text-xs space-y-2 bg-gray-50 p-3 rounded">
+                    <p className="font-semibold">Example Training Requirements:</p>
+                    <div className="space-y-2">
+                      <div>
+                        <p className="font-semibold text-purple-700">Pilot Training:</p>
+                        <ul className="ml-4 mt-1">
+                          <li>• Prerequisites: Valid L1C certificate, current recency</li>
+                          <li>• Company-specific training: ROM procedures, aircraft systems, site-specific operations (min 4 hours ground, 2 hours flight)</li>
+                          <li>• Type rating: Each new RPAS platform requires checkout (min 5 supervised flights)</li>
+                          <li>• Recurrent training: Annual (min 2 hours) - regulatory updates, incident reviews, emergency procedures</li>
+                          <li>• Proficiency check: Annual flight evaluation by qualified check pilot</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-purple-700">Visual Observer Training:</p>
+                        <ul className="ml-4 mt-1">
+                          <li>• Initial training: 4 hours - scanning techniques, communication procedures, aircraft recognition, emergency procedures</li>
+                          <li>• Supervised operations: Minimum 3 missions with experienced VO before independent duty</li>
+                          <li>• Recurrent training: Annual - regulatory changes, lessons learned</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-purple-700">Training Records:</p>
+                        <ul className="ml-4 mt-1">
+                          <li>• All training documented in personnel files</li>
+                          <li>• Retained for minimum 3 years after employee separation</li>
+                          <li>• Include: Date, subject, duration, instructor, trainee signature</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-4 rounded-lg border-l-4 border-gray-500">
+                  <p className="font-semibold mb-2">6. MAINTENANCE PROGRAM</p>
+                  <div className="text-xs space-y-2 bg-gray-50 p-3 rounded">
+                    <p className="font-semibold">Example: DJI M300 RTK Maintenance Schedule</p>
+                    <div className="space-y-2">
+                      <p className="font-semibold text-gray-700">Pre-Flight (Every Flight):</p>
+                      <ul className="ml-4">
+                        <li>• Visual inspection per checklist</li>
+                        <li>• Battery voltage check (≥3.7V per cell)</li>
+                        <li>• Propeller security check</li>
+                      </ul>
+
+                      <p className="font-semibold text-gray-700 mt-2">Every 10 Flight Hours:</p>
+                      <ul className="ml-4">
+                        <li>• Clean airframe and sensors</li>
+                        <li>• Check motor screws (torque to spec)</li>
+                        <li>• Inspect prop condition (replace if damaged)</li>
+                        <li>• Test RTH function</li>
+                      </ul>
+
+                      <p className="font-semibold text-gray-700 mt-2">Every 50 Flight Hours or 6 Months:</p>
+                      <ul className="ml-4">
+                        <li>• Complete airframe inspection</li>
+                        <li>• Gimbal calibration</li>
+                        <li>• Battery health analysis (replace if capacity &lt;80%)</li>
+                        <li>• Firmware update check</li>
+                        <li>• Compass calibration</li>
+                        <li>• IMU calibration</li>
+                      </ul>
+
+                      <p className="font-semibold text-gray-700 mt-2">Annual:</p>
+                      <ul className="ml-4">
+                        <li>• Full system functional check</li>
+                        <li>• Replace wear items (props, landing gear pads)</li>
+                        <li>• Professional inspection by manufacturer or certified technician</li>
+                      </ul>
+
+                      <p className="mt-2"><strong>Maintenance Records:</strong> All maintenance logged with date, work performed, parts replaced, technician signature. Retained for life of aircraft + 2 years.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                  <p className="font-semibold mb-2 text-xs">ROM Document Control:</p>
+                  <ul className="text-xs space-y-1">
+                    <li>• <strong>Version Control:</strong> Each ROM revision numbered and dated</li>
+                    <li>• <strong>Distribution:</strong> All operational personnel receive current ROM copy</li>
+                    <li>• <strong>Review Cycle:</strong> Annual review by Accountable Executive, or when regulations/procedures change</li>
+                    <li>• <strong>Amendment Process:</strong> Proposed changes submitted to Accountable Executive, approved changes distributed within 7 days</li>
+                    <li>• <strong>Availability:</strong> ROM accessible at all operating sites (electronic or hardcopy)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-4 p-4 bg-yellow-50 rounded border border-yellow-300">
+                <p className="font-semibold mb-2 text-sm">Remember:</p>
+                <ul className="text-xs space-y-1">
+                  <li>✓ Your ROM must be USABLE - if it&apos;s too complex, nobody will follow it</li>
+                  <li>✓ Your ROM must be COMPLETE - Transport Canada will review it during audits</li>
+                  <li>✓ Your ROM must be CURRENT - update when regulations or procedures change</li>
+                  <li>✓ Your ROM is a LIVING DOCUMENT - continuously improve based on operations and incidents</li>
+                  <li>✓ Your ROM is your BEST DEFENSE - in an incident, TC will ask &quot;Did you follow your ROM?&quot;</li>
+                </ul>
+              </div>
             </InstructorNote>
           </div>
         </CourseSection>
