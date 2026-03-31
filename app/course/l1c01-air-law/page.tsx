@@ -1282,8 +1282,55 @@ export default function L1C01AirLaw() {
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 900.14-900.20 RPAS Registration</h3>
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <p className="font-semibold mb-3">CAR 900.14 - Registration Required</p>
+              <p className="font-mono text-sm mb-4">No person shall operate a remotely piloted aircraft that is registered in accordance with Subpart 2 of Part I unless it is marked with its registration mark in accordance with section 202.26.</p>
+
+              <p className="font-semibold mb-3">CAR 900.15 - Owner Registration</p>
+              <p className="font-mono text-sm mb-4">The owner of a remotely piloted aircraft shall register it if the aircraft weighs more than 250 g and less than 25 kg.</p>
+
+              <p className="font-semibold mb-3">CAR 900.16 - Registration Not Required</p>
+              <p className="font-mono text-sm">The owner of a remotely piloted aircraft that is used exclusively for recreational purposes and has a maximum take-off weight of 250 g or less is not required to register it.</p>
+            </div>
+
             <InstructorNote type="keypoint">
-              <p>There have been no significant changes with RPAS registration. However, under the new regulations, operators can register a drone above 25 kg into the drone management portal.</p>
+              <p className="font-semibold mb-2">What Changed in New Regulations:</p>
+              <p className="text-sm mb-3">Previously, drones above 25 kg could not be registered through the Drone Management Portal (DMP). Now, operators CAN register drones over 25 kg through the DMP, simplifying the process for medium and large RPAS.</p>
+
+              <p className="font-semibold mb-2">Registration Requirements Summary:</p>
+              <ul className="space-y-2 text-sm mb-3">
+                <li><strong>Under 250 g (recreational only):</strong> No registration required</li>
+                <li><strong>250 g - 25 kg:</strong> MUST register through Drone Management Portal</li>
+                <li><strong>Over 25 kg:</strong> NOW can register through DMP (new capability)</li>
+              </ul>
+
+              <p className="font-semibold mb-2">How to Register:</p>
+              <ol className="space-y-1 text-sm ml-4 mb-3">
+                <li>1. Create account at Drone Management Portal (tc.canada.ca/drones)</li>
+                <li>2. Enter drone details (make, model, serial number, weight)</li>
+                <li>3. Pay $5 registration fee (valid 1 year)</li>
+                <li>4. Receive registration number (e.g., C-ABCD1234)</li>
+                <li>5. Mark drone with registration number (permanent, fire-resistant marker or label)</li>
+              </ol>
+
+              <p className="font-semibold mb-2">Marking Requirements (CAR 202.26):</p>
+              <ul className="space-y-1 text-sm mb-3">
+                <li>• Must be visible without tools (no battery compartment)</li>
+                <li>• Fire-resistant marking (won&apos;t burn off in crash)</li>
+                <li>• Readable (not hidden, not tiny text)</li>
+                <li>• Permanent (engraving, label, marker - not easily removed)</li>
+              </ul>
+
+              <p className="font-semibold mb-2">Common Registration Issues:</p>
+              <ul className="space-y-1 text-sm">
+                <li>❌ <strong>Serial number doesn&apos;t match format:</strong> DJI uses different formats - enter exactly as shown on drone</li>
+                <li>❌ <strong>Multiple drones same model:</strong> Each drone needs separate registration (unique serial numbers)</li>
+                <li>❌ <strong>Forgot to renew:</strong> Registration expires after 1 year - set calendar reminder</li>
+                <li>❌ <strong>Marking inside battery bay:</strong> Not compliant - must be visible without opening/removing parts</li>
+                <li>❌ <strong>Using old registration after selling drone:</strong> New owner must re-register in their name</li>
+              </ul>
+
+              <p className="text-sm mt-3 font-semibold">Pro Tip: Take a photo of your registration certificate and marking on the drone. Keep it in your flight documents for quick reference during inspections.</p>
             </InstructorNote>
           </div>
 
@@ -1537,13 +1584,40 @@ export default function L1C01AirLaw() {
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 901.34 Minimum Weather Conditions</h3>
+            <div className="bg-white p-6 rounded-lg border border-gray-200 mb-4">
+              <p className="font-semibold mb-3">No person shall operate a remotely piloted aircraft in VLOS unless:</p>
+              <p className="font-mono text-sm ml-4 mb-3">(a) the aircraft is operated in accordance with the operating limitations specified by the manufacturer, including those limitations respecting meteorological conditions; and</p>
+              <p className="font-mono text-sm ml-4">(b) in the case of a micro remotely piloted aircraft or a small remotely piloted aircraft, the ground visibility is 3 SM or more and the distance between the aircraft and any cloud is at least 500 feet measured vertically and 2,000 feet measured horizontally or, if the ground visibility is less than 4 SM, the aircraft remains, during the operation, within a horizontal distance from the pilot-in-command that is not greater than half of the distance corresponding to the ground visibility.</p>
+            </div>
+
             <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-300 mb-4">
-              <p className="font-semibold">Note: Operations outside of these conditions require an SFOC.</p>
+              <p className="font-semibold">⚠️ Operations outside of these conditions require an SFOC.</p>
             </div>
 
             <InstructorNote type="keypoint">
-              <p className="mb-2">There is different criteria for different categories, which can cause confusion. You must operate in accordance with the manufacturer&apos;s instructions.</p>
-              <p>For an mRPAS, if the visibility is less than 4 statute miles, the drone can&apos;t be farther than half of that distance from you. This can be difficult to calculate. You can fly outside of these weather conditions with an SFOC.</p>
+              <p className="font-semibold mb-2">Understanding the Two Requirements:</p>
+
+              <p className="text-sm mb-3"><strong>Requirement (a) - Manufacturer Operating Limitations:</strong> You MUST follow the drone manufacturer&apos;s weather limits. Check your aircraft manual for maximum wind speeds, operating temperature ranges, precipitation limits, etc. CAR 901.34(a) makes manufacturer weather limits legally binding.</p>
+
+              <p className="text-sm mb-3"><strong>Requirement (b) - Regulatory Weather Minimums (micro/small RPAS only):</strong></p>
+              <ul className="space-y-2 text-sm ml-4 mb-3">
+                <li><strong>Standard weather:</strong> Visibility ≥ 3 SM, cloud distance 500 ft vertical / 2,000 ft horizontal</li>
+                <li><strong>Reduced visibility:</strong> If visibility &lt; 4 SM, stay within HALF that distance from PIC
+                  <ul className="ml-4 mt-1">
+                    <li>• Example: 2 SM visibility → stay within 1 SM of pilot</li>
+                    <li>• Example: 3 SM visibility → stay within 1.5 SM of pilot</li>
+                  </ul>
+                </li>
+              </ul>
+
+              <p className="font-semibold mb-2 text-sm">Why the Reduced Visibility Rule Exists:</p>
+              <p className="text-sm mb-3">In lower visibility, you need to keep the drone closer so you can maintain VLOS and see conflicting traffic. The closer proximity compensates for reduced atmospheric clarity.</p>
+
+              <p className="font-semibold mb-2 text-sm">Medium & Large RPAS:</p>
+              <p className="text-sm mb-3">Note that subsection (b) only applies to micro and small RPAS. Medium and large RPAS operations have different weather requirements (typically requiring SFOC for VLOS anyway).</p>
+
+              <p className="font-semibold mb-2 text-sm">Cloud Distance Clarification:</p>
+              <p className="text-sm">500 ft vertical means if cloud base is at 1,000 ft AGL, you must stay below 500 ft AGL. 2,000 ft horizontal means don&apos;t fly into or near cloud edges. This allows manned aircraft operating in clouds to have separation from your RPAS.</p>
             </InstructorNote>
 
             <InstructorNote type="info">
@@ -1776,17 +1850,73 @@ export default function L1C01AirLaw() {
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 901.87 Applicability</h3>
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <p className="mb-4">Use the <strong>NRCAN DSST-2 tool</strong>, because they&apos;ve done the calculation on population density and airspace.</p>
-              <p className="font-semibold">If the NRCAN map is unshaded, go fly. If it is shaded, they likely need an SFOC.</p>
+              <p className="font-semibold mb-3">Subject to subsection (2), this Division applies to BVLOS operations of a small remotely piloted aircraft if</p>
+              <p className="font-mono text-sm ml-4 mb-2">(a) the operation is conducted</p>
+              <p className="font-mono text-sm ml-8 mb-2">(i) in an uncontrolled airspace or a Class F airspace,</p>
+              <p className="font-mono text-sm ml-8 mb-2">(ii) in an air risk class A, B or C airspace, as determined in accordance with AC 903-001, Joint Process for Airspace Risk Assessment for Remotely Piloted Aircraft (RPA) Systems (RPAS) Operations,</p>
+              <p className="font-mono text-sm ml-8 mb-2">(iii) over a sparsely populated area and not over a populated area, and</p>
+              <p className="font-mono text-sm ml-8 mb-3">(iv) at any time during the operation, at an altitude that is less than or equal to the lesser of 400 feet AGL and 500 feet above the pilot-in-command or visual observer; and</p>
+              <p className="font-mono text-sm ml-4 mb-4">(b) the remotely piloted aircraft is operated in accordance with an RPAS operations manual.</p>
+
+              <p className="font-semibold mb-3">Subsection (2) - Pre-Validated Declarations:</p>
+              <p className="font-mono text-sm">This Division does not apply to a BVLOS operation unless the remotely piloted aircraft meets the conditions set out in a declaration under Standard 922 or, if applicable, a pre-validated declaration.</p>
             </div>
+
+            <InstructorNote type="keypoint">
+              <p className="font-semibold mb-2">When CAR 901.87 (Division VI - L1C) Applies:</p>
+              <p className="text-sm mb-3">This regulation defines the conditions under which you can conduct L1C BVLOS operations WITHOUT an SFOC. All conditions must be met simultaneously:</p>
+
+              <ul className="space-y-3 text-sm mb-4">
+                <li><strong>1. Airspace Requirements (three conditions):</strong>
+                  <ul className="ml-4 mt-1 space-y-1">
+                    <li>✓ Uncontrolled airspace (Class G) OR Class F</li>
+                    <li>✓ Air Risk Class A, B, or C (NOT Class D - requires SFOC)</li>
+                    <li>✓ Over sparsely populated area (NOT populated area)</li>
+                  </ul>
+                </li>
+
+                <li><strong>2. Altitude Limit:</strong> ≤ 400 ft AGL AND ≤ 500 ft above PIC or VO (whichever is lower)</li>
+
+                <li><strong>3. RPAS Operations Manual:</strong> Must have approved ROM</li>
+
+                <li><strong>4. Aircraft Declaration:</strong> Drone must have Standard 922 declaration OR pre-validated declaration</li>
+              </ul>
+
+              <p className="font-semibold mb-2">Using NRCAN DSST-2 Tool:</p>
+              <div className="bg-blue-50 p-3 rounded text-sm mb-3">
+                <p className="mb-2">The Drone Site Selection Tool (DSST-2) combines all these requirements into one visual map:</p>
+                <ul className="space-y-1 ml-4">
+                  <li>• <strong>Unshaded (white/clear):</strong> All CAR 901.87 conditions met → L1C operations permitted</li>
+                  <li>• <strong>Shaded (red/yellow):</strong> One or more conditions NOT met → SFOC required</li>
+                </ul>
+                <p className="mt-2 font-semibold">Access: natural-resources.canada.ca/drones → DSST-2</p>
+              </div>
+
+              <p className="font-semibold mb-2">Population Density Definitions (from Part IX Division I):</p>
+              <ul className="space-y-1 text-sm mb-3">
+                <li><strong>Populated Area:</strong> 1 or more persons per 5,000 m² (≥ 200 per km²)</li>
+                <li><strong>Sparsely Populated Area:</strong> Less than 1 person per 5,000 m² (&lt; 200 per km²)</li>
+                <li><strong>Data Source:</strong> Statistics Canada most recent Census data</li>
+              </ul>
+
+              <p className="font-semibold mb-2">Common Scenarios:</p>
+              <ul className="space-y-2 text-sm">
+                <li><strong>Agricultural farmland:</strong> Usually sparsely populated → L1C applicable if other conditions met</li>
+                <li><strong>Near small town:</strong> Check DSST-2 - boundary between populated/sparsely is data-driven</li>
+                <li><strong>Class D airspace:</strong> Even if sparsely populated → SFOC required (Air Risk Class D)</li>
+                <li><strong>Over 400 ft AGL:</strong> Even in perfect location → SFOC required (altitude exceeds limit)</li>
+              </ul>
+
+              <p className="text-sm mt-3 font-semibold bg-yellow-50 p-2 rounded">Bottom Line: CAR 901.87 is the &quot;gatekeeper&quot; for L1C operations. If all conditions are met, you can operate under Division VI (901.87-901.95). If ANY condition is not met, you need an SFOC under Subpart 3.</p>
+            </InstructorNote>
 
             <InstructorNote type="activity">
               <p className="font-semibold mb-2">Practice Question:</p>
               <p className="mb-2">What is the definition of an unpopulated area and a sparsely populated area?</p>
-              <p className="text-sm mb-4"><strong>Answer:</strong> An unpopulated area has fewer than five people per km². A sparsely populated area has between five and 25 people per km².</p>
+              <p className="text-sm mb-4"><strong>Answer:</strong> There is no &quot;unpopulated area&quot; definition in L1C regulations. The terms are <strong>populated area</strong> (≥ 1 person per 5,000 m²) and <strong>sparsely populated area</strong> (&lt; 1 person per 5,000 m²). Data comes from Statistics Canada Census.</p>
               <p className="font-semibold mb-2">Practice Question:</p>
               <p className="mb-2">Whose data set is used to determine these populated areas?</p>
-              <p className="text-sm"><strong>Answer:</strong> Statistics Canada most recent Census data</p>
+              <p className="text-sm"><strong>Answer:</strong> Statistics Canada most recent Census data, as referenced in the definitions in Part IX Division I.</p>
             </InstructorNote>
           </div>
 
