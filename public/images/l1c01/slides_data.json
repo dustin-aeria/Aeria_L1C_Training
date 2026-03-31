@@ -1,0 +1,1169 @@
+[
+  {
+    "slide_number": 1,
+    "title": "L1C01 Air Law",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nStudying regulations may be considered the ‘driest’ and is the longest section of this course. This is why it is being covered first while the students are fresh.\n\nKey Points\nOperators and pilots are responsible for being aware of and following current regulations. \nE.g., What regulations are we operating under? What are the rules?  What are the limits?\nNew regulations have been implemented and regulations change over time. \n\nActivities\nN/A"
+  },
+  {
+    "slide_number": 2,
+    "title": "Objectives",
+    "content": [
+      {
+        "type": "text",
+        "text": "After this section, you will be able to...\nIdentify which parts of the Canadian Aviation Regulations apply to RPAS operations\nDifferentiate between Advanced RPAS operations and Level 1 Complex (L1C) RPAS operations\nExplain the difference between a regulation and a standard\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nThese key learning objectives will be covered during this section. \n\nKey Points\nN/A\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 3,
+    "title": "Advanced vs. L1C vs. SFOC",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nCanada has three operational environments above the 'basic' level: Advanced, Level 1 Complex, and the SFOC environment.\nIn this course, we will be covering the information required for the L1C certification.\n\nActivities\nDiscussion: What types of drone operations do each of the participants engage in? Which of three operations environments would apply? "
+  },
+  {
+    "slide_number": 4,
+    "title": "L1C Requirements",
+    "content": [
+      {
+        "type": "text",
+        "text": "Candidates must..."
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nParticipants must meet these requirements for the L1C certificate:\nBe minimum of 18 years of age.\nComplete the advanced exam, L1C exam, and application online through Transport Canada's Drone Management Portal (DMP).\nComplete a 20-hr ground school and in-person flight review (Note: This course meets this requirement).\nGround school instructors must be affiliated with an organization that has declared to Transport Canada that they have a L1C training program that meets the TP 15530 standard.\nFlight reviewers must hold a L1C RPAS certificate with flight reviewer privileges and be associated with a TP 15530 declared training organization in the DMP.\nThe completion order of these requirements is fixed, because Transport Canada wants applicants to build a foundation of knowledge.\n\nActivities\nN/A\n\n"
+  },
+  {
+    "slide_number": 5,
+    "title": "Aviation Regulations",
+    "content": [
+      {
+        "type": "text",
+        "text": "The Aeronautics Act:\nIs the legislation that governs aviation in Canada\nEnables the Canadian Aviation Regulations (CARs)"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nThe Aeronautics Act from 1985 is what enables the Canadian Aviation Regulations (CARs).\nThe Aeronautics Act still exists, but CARs started in the mid 1990s. CARs was a big change to the existing regulations.\n\nActivities\nN/A\n\u000b\n"
+  },
+  {
+    "slide_number": 6,
+    "title": "Main Three Agencies",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nTransport Canada:\nBuilds and enforces regulations\nBefore the 1990s, provided air traffic control and airport management, but have since privatized that and now oversee public safety in a regulatory capacity\nNAV CANADA:\nAir traffic control\nDoes not build regulations\nRelevant when flying in the airspace near airports\nTransportation Safety Board of Canada:\nIndependent agency with mandate to review incidents and accidents involving aviation, rail, motorways, and maritime\nMake recommendations to Transport Canada and federal government on how to improve regulations for aviation safety\nOnly investigate incidents with drones over 25kg\n\nActivities\nN/A\n\n"
+  },
+  {
+    "slide_number": 7,
+    "title": "Canadian Aviation Regulations (CARs)",
+    "content": [
+      {
+        "type": "text",
+        "text": "Part I General Provisions\nPart II Aircraft Registration\nPart III Airports\nPart IV Licensing and Training\nPart V Airworthiness\nPart VI Flight Rules\nPart VII Commercial Air Services\nPart VIII Air Navigation Services\nPart IX RPAS\nPart X Greenhouse Gas Emissions"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nCARs are not only for drones.\nDrone operators mostly work with CARs Part 9 but should be familiar with other parts, especially 1 and 6.\nPart 1: Introductions of the law\nPart 2: Aircraft registration, excluding RPAS registration (which is covered in Part 9)\nPart 3: Airport operators must be familiar with these regulatory targets; registered vs. certified (under Part 3 of CARs) air drone\nPart 4: Licensing and training for traditional aviation (RPAS training and certification is under PARX IX\nPart 5: Type certification of traditional aircraft\nPart 6: relevant, because we share space with traditional pilots and want to understand what larger aircraft are going to be doing.\nPart 7: Commercial air services (e.g., Air Canada, West Jet, etc.) regulations\nPart 8: Air traffic control\nPart 9: Most important for drones. Will be discussed in other slides.\nPart 10: Greenhouse Gas Emissions (not relevant to RPAS operations)\n\nActivities\nN/A"
+  },
+  {
+    "slide_number": 8,
+    "title": "Regulation vs. Standard",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nRegulation: Can be enforced\nStandard: Method to enable compliance with regulation\nThe regulation states the rule, and the standard explains how to meet that rule.\n\nActivities\nN/A"
+  },
+  {
+    "slide_number": 9,
+    "title": "Numbering Structure",
+    "content": [
+      {
+        "type": "text",
+        "text": "First digit identifies the Part.\nFor example:\n901.56: Part IX"
+      },
+      {
+        "type": "text",
+        "text": "Second digit identifies a regulation versus a standard.\nFor example:\n901.56  ‘0’ = regulation\n921.04  ‘2’ = standard"
+      },
+      {
+        "type": "text",
+        "text": "Third digit identifies the Subpart.\nFor example:\n901.56: Subpart 1 of Part IX of the CARs"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nFirst digit: Part\nSecond digit: Regulation or standard; a 0 signifies a regulation and a 2 signifies a standard.\nThird digit: Subpart; there are two subparts in Part 9.\nSFOCs are managed under Subpart 3 of CARs. \n\nActivities\nN/A"
+  },
+  {
+    "slide_number": 10,
+    "title": "CARs Part I – General Provisions",
+    "content": [
+      {
+        "type": "text",
+        "text": "Provides a comprehensive list of definitions used in the Canadian Aviation Regulations (CAR 101.01)\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nIt is important to be familiar with the definitions to ensure everyone is speaking the same language.\nFor example, in CARs Part 9, an RPAS operator refers to the individual or organization holding the RPAS Operator Certificate, not the pilot.\n\nActivities\nN/A"
+  },
+  {
+    "slide_number": 11,
+    "title": "Part I – General Provisions",
+    "content": [
+      {
+        "type": "text",
+        "text": "Remotely Piloted Aircraft (RPA)\u000bA navigable aircraft, other than a balloon, rocket, or kite, that is operated by a pilot who is not on board\nRemotely Piloted Aircraft System (RPAS)\u000bA set of configurable elements consisting of an RPA, its control station, the command and control links, and any other system elements required during flight operation"
+      },
+      {
+        "type": "text",
+        "text": "Command and Control Link\u000bThe data link between an RPA and a control station that is used in the management of a flight\nControl Station\u000bThe collection of facilities and equipment from which an RPA is controlled and monitored\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nRPAS vs RPA\nRPAS: Refers to the whole system, including the command station, command and control link, and the aircraft\nRPA: The aircraft itself\nControl Station: Collection of facilities and equipment. It is up to the manufacturer to decide the level of the control station (e.g., RC controller, laptop, big moving van, etc.).\nCARs Part 9 does not differentiate model aircraft and drones. They are all covered.\n\nActivities\nN/A"
+  },
+  {
+    "slide_number": 12,
+    "title": "Part I – General Provisions",
+    "content": [
+      {
+        "type": "text",
+        "text": "CAR 103.01 Document Inspection"
+      },
+      {
+        "type": "text",
+        "text": "…shall produce the Canadian aviation document, technical record, or other document for inspection in accordance with the terms of a demand made by a peace officer, an immigration officer, or the Minister\n"
+      },
+      {
+        "type": "text",
+        "text": "CAR 103.04 Record Keeping"
+      },
+      {
+        "type": "text",
+        "text": "Digital: Protected against loss/destruction/tampering\nMay be printed on paper and provided to the Minister with reasonable notice\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nTransport Canada has been asking and training law enforcement agencies to assist in having a basic understanding of drone regulations, so they can intervene with nefarious drone operations and understand what is legitimate and what is noncompliant.\nDrone operators must provide records to law enforcement, immigration, or the Minister upon request. \nRecords must be kept and stored digitally or physically. If storing digitally, you must have a backup. \n\nActivities\nN/A"
+  },
+  {
+    "slide_number": 13,
+    "title": "106.01 Part I – Accountable Executive",
+    "content": [
+      {
+        "type": "text",
+        "text": "Appointment and Acceptance"
+      },
+      {
+        "type": "text",
+        "text": "…to be responsible for operations or activities authorized under the certificate and accountable on their behalf for meeting the requirements of these Regulations…\n…no person shall be appointed… unless they have control of the financial and human resources…"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nAccording to Transport Canada, an accountable executive is someone who has control of the financial and human resources in the company. \nThis role is typically occupied by the president but does not have to be.\nIf a single person operates with an RPAS Operator Certificate, they occupy all roles (person responsible for maintenance, accountable executive, pilot, etc.)\nA requirement of an RPAS Operator Certificate is to define an organizational structure, including who the accountable executive is.\n\nActivities\nDiscussion: What is the participant’s organization structure? Who is the accountable executive? \u000b\t OR What would be the structure if the organization had an operating certificate? Who would be the accountable executive?"
+  },
+  {
+    "slide_number": 14,
+    "title": "Part VI – General Operating & Flight Rules",
+    "content": [],
+    "images": [
+      {
+        "filename": "slide14_img01.jpg",
+        "path": "/images/l1c00/slide14_img01.jpg"
+      }
+    ],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nN/A\n\nActivities\nN/A"
+  },
+  {
+    "slide_number": 15,
+    "title": "CARs Part VI – Flight Rules – Traditional Aircraft",
+    "content": [
+      {
+        "type": "text",
+        "text": "Visual Flight Rules (VFR)"
+      },
+      {
+        "type": "text",
+        "text": "Visual reference to the surface of the earth\nVisual Meteorological Conditions (VMC)\n‘See and be seen’ \nTypical for small aircraft sharing the same airspace as RPAS\n\n"
+      },
+      {
+        "type": "text",
+        "text": "Instrument Flight Rules (IFR)"
+      },
+      {
+        "type": "text",
+        "text": "No longer require reference to the surface on the Earth\nAirlines and aircraft that fly at high altitudes\nNear airports/aerodromes"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nSince airspace is shared, drone operators and pilots must have a basic understanding of what traditional aircraft are doing in the airspace.\nPart VI of the CARS has two groups of rules: VFR and IFR for flying an aircraft.\nVFR: Flying in visual reference to the ground (out of cloud, can see the ground, heads outside of cockpit); NAV CANADA is not looking out for drones, so pilots must look out and be reactive (see and be seen). ‘See and be seen’ is old technology that the industry should try to move away from, because a pilot’s vision can fail.\nIFR: No longer flying in visual reference to the ground; set of rules needed when flying in and above cloud (flying on instruments); NAV CANADA gets everyone out of the drone’s way.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 16,
+    "title": "Canadian Domestic Airspace (CDA)",
+    "content": [
+      {
+        "type": "text",
+        "text": "Canadian Domestic Airspace:\nSouthern Domestic Airspace (SDA)\nNorthern Domestic Airspace (NDA)\nCanadian Regulations (CARs) apply to this airspace\nDifferent rules between SDA and NDA\nNDA: ARC-A (atypical) airspace for RPAS operators\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nNAV CANADA’s Designated Airspace Handbook shows the SDA and NDA on a map.\nHighlight how north the NDA is.\n\nKey Points\nMost Canadian operations will be in the SDA.\nThere is a different set of rules for the NDA, because it is very low risk and low traffic.\nIn NDA, everything below 400 ft AGL is atypical airspace (ARC A), which means the DAA performance criteria has significantly reduced.\nFor the rest of this course, “airspace” is going to refer to SDA.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 17,
+    "title": "Altimeter Setting vs. Standard Pressure Regions",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nThis will be discussed more in the Systems slide deck.\n\nKey Points\nPilots have two general regions: Altimeter Setting Region and Standard Pressure Region.\nWhen operating in SDA, drones are in an Altimeter Setting Region. \nWhen operating near an airport, there is an altimeter setting that you must put into the altimeter to make your altitude real (or to make it as close to a true altitude as possible). Those altitudes are corrected to an altitude above sea level.\nWhen operating in NDA, drones are in a Standard Pressure Region.\nThe weather stations are so far apart, so pilots can’t get all the corrections needed to have a valid altimeter reading.\nWhen outside of takeoff and landing, set a standard pressure of 2992.\nThe altitudes are part of traffic management in traditional aviation and work towards traffic separation.\nIt’s important to work on common altitudes for separation.\n\nActivities\nPractice Question: What are RPAS altitudes derived from?\nAnswer: Your drone is giving you true altitude. Your aircraft altitude is not a true altitude unless at are at a standard ISA temperature. Anything that deviates outside of ISA and traditional aircraft are no longer at a true altitude. \nDiscussion: What are the challenges combining RPAS (GPS) altitudes with traditional aircraft that use altimeters?\n"
+  },
+  {
+    "slide_number": 18,
+    "title": "",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nThe importance of this slide is to discuss the many different altitude references that exist in RPAS.\n\nKey Points\nDrones typically refer to home altitude. Pilots need to understand that altitude and the unit it is working in.\nEventually, drones will need to ‘speak the same language’ as traditional aircraft, so drone operators should develop procedures that work in the same ‘language’ as traditional aircraft.\nUnderstanding how altitude works in the ground control station is step one in being able to develop procedures.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 19,
+    "title": "Requirements by Airspace Class IFR",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nFor the RPAS Operator Certificate/L1C operations, drones will be operating in the Class F and Class G airspace for the most part.\nDrone operators do not need to understand the nuances of Class A, B, C, D, and E.\nIt is more important to understand if the airspace is controlled or uncontrolled.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 20,
+    "title": "Requirements by Airspace Class VFR",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nSpeak about weather limitations.\n\nKey Points\nIt is important to understand the ceiling and visibility requirements for helicopters when flying in Class G uncontrolled airspace.\nIn Class G airspace, an aircraft must have either \n2 miles of visibility and clear cloud or \n1 mile visibility, can’t be more than 500 ft vertical separation to the cloud and 2000 ft horizontal separation to the cloud\nThese requirements have a lot to do with reaction time (see and be seen).\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 21,
+    "title": "Airspace Structure",
+    "content": [
+      {
+        "type": "text",
+        "text": "Vertical Profile"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nThe airspace is sometimes referred to as an upside-down wedding cake.\n\nKey Points\nThis is what the vertical profile of airspace looks like.\nAround airports, there are transition errors (that usually start around 700 ft AGL), Class C control zones, and controlled areas for IFR traffic.\nThere are some areas of Class F (special use) airspace that may occasionally become Class G airspace.\nIn the L1C world, drones will be operating in the green area (Class G airspace).\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 22,
+    "title": "AC 903-001 7.0 Air Risk Determination",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nThis was not reviewed in Advanced RPAS training.\n\nKey Points\nARC stands for Air Risk Class.\nIn BVLOS under the L1C, you will be operating under ARC-A, -B, and occasionally -C.\nARC-D airspace is going to be handled under the SFOC process. NAV CANADA will get involved, because almost all ARC-D airspace is regulated by NAV CANADA.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 23,
+    "title": "AC 903-001 7.0 Air Risk Determination",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nThis flowchart helps calculate the ARC.\nThe ARC determines the performance of the technology-based DAA system: Higher ARCs require more robust performance.\nARC-A is performance requirements for DAA are almost nonexistent. There is almost no requirement to have an onboard DAA to meet the requirements for ARC-A.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 24,
+    "title": "Controlled vs. Uncontrolled Airspace",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nRisk ratios and criteria are discussed later.\n\nKey Points\nFor the most part, operators only need to understand if the airspace is controlled or uncontrolled.\nClass F is mostly uncontrolled but occasionally could be controlled.\nClass A, B, C, D, E are controlled.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 25,
+    "title": "Designation of Class F Airspace",
+    "content": [
+      {
+        "type": "text",
+        "text": "Example CYA113(A):\nCYA113(A)\nCY = Canada\nCYA113(A)\nA = Alert\nD = Danger\nR = Restricted\nCYA113(A)\nArea identification\n"
+      },
+      {
+        "type": "text",
+        "text": "CYA114(A)\nA = Acrobatic\nF = Aircraft Test Area\nH = Hang Gliding\nM = Military\nP = Parachuting\nS = Soaring\nT = Training\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nThis may not have been covered in the Advanced RPAS exam, but some of these questions may be on the L1C exam.\nRemind the students that questions related to airspace designation may in the L1C online exam.\n\nKey Points\nAll Class F airspace is going to have a designation, using an alphanumeric designator.\nThe first two letters  (CY) indicate Canada.\nThe third letter indicates the type of Class F airspace.\nThe three numbers indicate the designation (area identification) of the Class F airspace.\nThe modifier after the designator indicates the type or use of the special use airspace.\n\nActivities\nN/A"
+  },
+  {
+    "slide_number": 26,
+    "title": "Where to Find Airspace Dimensions?",
+    "content": [
+      {
+        "type": "text",
+        "text": "Designated Airspace Handbook\nIncludes user/controlling agency for Class F airspace (CYA, CYR)\nEffective dates\n‘Ultimate authority’\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nParticipants should have a laptop and internet access during this course to access the Designated Airspace Handbook.\n\nKey Points\nFind information on this in the Designated Airspace Handbook, which is free to download.\nThis handbook is the ultimate authority and law for the regulations when building programs and looking at a new site assessment, because it is regularly updated.\n\nActivities\nPractice Question: Can you find the Designated Airspace Handbook? \nAnswer: All participants can locate the handbook online. \n"
+  },
+  {
+    "slide_number": 27,
+    "title": "Where to Find Airspace Dimensions?",
+    "content": [
+      {
+        "type": "text",
+        "text": "NAV Drone Map Viewer\nNRCAN Drone Site Selection Tool - 2\nVFR Navigation Charts (VNC)\nEffective dates\n"
+      },
+      {
+        "type": "text",
+        "text": "Freemium providers\nSkyVector\nFltPlan Go\nCommercial providers\nForeflight\nFlySafe\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nShow participants how to find and use NRCAN DSST-2 later.\nParticipants will likely need to look at a VNC map on their L1C exam.\n\nKey Points\nNAV Drone:\nHas a lot of airspace information and has a geographic representation of NOTAM closed areas, which not a lot of providers do\nAlberta has a lot of closed airspace due to wildfires. NAV Drone is helpful for verifying these areas when operating\nNRCAN Drone Site Selection Tool (DSST-2):\nCan be used for BVLOS operations\nHas already accounted for population density\nIf the area is shaded, don’t fly. If the area is not shaded, fly (L1C operations).\nFreemium Providers:\nFltPlan Go is a good provider for finding the Canada Flight Supplement (CFS) airport information and VNC maps.\nCommercial Providers:\nForeflight is the standard in traditional aviation and is user friendly.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 28,
+    "title": "Where to Find Airport Information?",
+    "content": [
+      {
+        "type": "text",
+        "text": "Canada Flight Supplement\nCanada Water Aerodrome Supplement\nNRCAN Drone Site Selection Tool – 2\nVFR Navigation Charts (VNC)\nEffective dates\n"
+      },
+      {
+        "type": "text",
+        "text": "Commercial providers\nForeflight'\nFlysafe\nFreemium providers\nFltPlan Go (free)\nSky Vector (free)\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nParticipants will refer to Canada Flight Supplement for their advanced online ground school.\n\nKey Points\nCanada Flight Supplement:\nRegularly updated. Do not buy paper copies, because they will become outdated quickly.\nMost of the data contained in the CFS is also included with apps such as ForeFlight and FltPlanGo.\nL1C operations cannot occur within 5 nautical miles of an aerodrome listed in in this document.\nDSST-2 tool has built the 5 nautical mile buffers around these aerodromes.\nNAV Drone also includes a layer to visualize the 5 nautical mile buffers around the aerodromes listed in the CFS.\nAerodromes in this document are considered 'registered'.  However, commercial airports may also be considered certified (cert) as meeting CARs Part III requirements for an airport.\nThere is also a 'Canada Water Aerodrome Supplement.’\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 29,
+    "title": "Part VI – Division V – 601.96 Operations at or in the Vicinity of an Aerodrome",
+    "content": [
+      {
+        "type": "text",
+        "text": "Left-hand pattern 1,000 ft AGL, except:\nPublished in the CFS, or\nAuthorized by ATC\nMaintain listening watch on appropriate frequency"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nThis was covered in more depth in the Advanced RPAS course.\n\nKey Points\nYou must fly a left-hand traffic pattern of 1,000 ft AGL, unless published otherwise in the Canada Flight Supplement or authorized by air traffic control.\nAirports in the traffic pattern must maintain a listening watch on the appropriate frequency.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 30,
+    "title": "Part VI – Division V – 601.96 Operations at or in the Vicinity of an Aerodrome",
+    "content": [
+      {
+        "type": "text",
+        "text": "Transient aircraft will remain 2,000 ft AGL above unless:\nPublic safety\nAerial inspection\nFull list at 602.96 (5) "
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nTransient aircraft over air drones must fly 2,000 ft AGL, so they don’t conflict with traffic patterns.\nAltitudes are one criteria used in traffic separation, so it is important to know at what altitudes aircrafts are operating.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 31,
+    "title": "Part VI – Division V 601.97 Uncontrolled Aerodromes within an MF Area",
+    "content": [
+      {
+        "type": "text",
+        "text": "Reporting on departure (602.100):\nBefore: Broadcast intentions and look and listen\nAfter: Broadcast leaving\nReporting on arrival (602.101):\nBroadcast 5 minutes prior to arrival\nBroadcast traffic pattern location\nBroadcast clear on the ground\n\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nA lot of the same criteria that applies to uncontrolled aerodromes applies here too.\nBroadcast intentions 5 minutes prior to arrival.\nAir operators for public safety, life rescue, or aerial inspection will have exceptions that allow them to fly below these regulations.\n\nActivities\nPractice Question: How low can a traditional aircraft fly legally?\nAnswer: As low as needed if there is a requirement to be that low.  Slide 34 will explain CAR 602.15 low altitude flight."
+  },
+  {
+    "slide_number": 32,
+    "title": "Part VI – Division I – 601.14 Minimum Altitudes & Distances ",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nDrones must fly higher when above a built-up area/open-air assembly.\n\nActivities\nPractice Question: What is the definition of a built-up area?\nAnswer: There is no official definition of what a built-up area is. This is a gap in the regulations.\n"
+  },
+  {
+    "slide_number": 33,
+    "title": "Part VI – Division I – 602.15 Permissible Low Altitude Flight ",
+    "content": [
+      {
+        "type": "text",
+        "text": "Altitudes can be flown lower than those listed in 602.14 for:\nPolice\nSaving human life\nFirefighting/ambulance\nFisheries Act\nAdministration of national or provincial parks\n\n"
+      },
+      {
+        "type": "text",
+        "text": "\n\nFlight inspection\nAerial application\nAerial photography\nHelicopter external loads\nFlight training\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nThere are exceptions to the altitudes that can be flown.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 34,
+    "title": "601.15 CARs Forest Fire Aircraft Operating Restrictions",
+    "content": [
+      {
+        "type": "text",
+        "text": "No person shall operate an aircraft:\n(a) over a forest fire area, or over any area that is located within 5 nautical miles of a forest fire area, at an altitude of less than 3,000 ft AGL; or\n(b) in any airspace that is described in a NOTAM issued pursuant to section 601.16.\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nExample incidents when a drone has caused a suspicion to flight operations:\nwww.ctvnews.ca/edmonton/article/man-fined-10k-for-flying-drone-during-wildfire-fighting-efforts-in-jasper-national-park \nwww.ctvnews.ca/world/article/canadian-super-scooper-plane-grounded-after-hitting-civilian-drone-over-los-angeles-wildfires \n\nKey Points\nWildfire operations are frequently suspended, because a drone was flying too close. \nEven a traditional aircraft can’t fly near a wildfire (within 5 nautical miles and at an altitude of less than 3,000 ft AGL).\nDrone operators are required to avoid wildfire areas even if there is no closed NOTAM space (designated and undesignated).\nTraditional air pilots are required to report wildfires.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 35,
+    "title": "Part IX – RPAS",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nCARs Part IX includes the most important regulations for drone operators.\nThere have been a lot of changes in this new body of rules.\n\nActivities\nN/A"
+  },
+  {
+    "slide_number": 36,
+    "title": "Timeline of Part IX to CARs",
+    "content": [
+      {
+        "type": "text",
+        "text": "Prior to 2019, Transport Canada used the SFOC process for RPAS operations."
+      },
+      {
+        "type": "text",
+        "text": "CARs Part IX"
+      },
+      {
+        "type": "text",
+        "text": "New part of the Canadian Aviation Regulations to address small remotely piloted aircraft systems. SFOC process manages operations not addressed by Part IX. "
+      },
+      {
+        "type": "text",
+        "text": "NPA Lower-Risk BVLOS"
+      },
+      {
+        "type": "text",
+        "text": "Notice of proposed amendments to CARs Part IX to address low-risk BVLOS."
+      },
+      {
+        "type": "text",
+        "text": "Canada Gazette, Part I Lower-Risk BVLOS"
+      },
+      {
+        "type": "text",
+        "text": "Proposed changes to CARs Part IX to consolidate low-risk BVLOS operations."
+      },
+      {
+        "type": "text",
+        "text": "Canada Gazette, Part II Lower-Risk BVLOS"
+      },
+      {
+        "type": "text",
+        "text": "Enactment of changes to CARs Part IX, fully coming into effect November 4, 2025."
+      },
+      {
+        "type": "text",
+        "text": "2019"
+      },
+      {
+        "type": "text",
+        "text": "2020"
+      },
+      {
+        "type": "text",
+        "text": "2023"
+      },
+      {
+        "type": "text",
+        "text": "2025"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nCARs Part IX is the second-newest part of CARs and apply to everything related to RPAS’.\nCanada is one of the world leaders in BVLOS operations in terms of regulations.\nPrior to 2019, all drone operations happened with an SFOC (Part 9 of CARs did not exist).\nL1C operations are covered under CAR 901 operations. Public safety organizations will be covered in CAR 903 under the SFOC process.\n2019:\nCanada enacted BVLOS operations under Part IX, allowing people to do routine BVLOS operations with RPAS less than 25kg.\n2020:\nTransport Canada started to develop low-risk BVLOS regulations.\nThere was a campaign and media show to present to the public and collect information.\nThey used the SFOC process as a learning ground.\nThe work done in Phase 1 UTM trials was learning for operators, Transport Canada, and NAV CANADA.\nA lot of the lessons learned got converted into the L1C regulations.\n2023:\nTransport Canada proposed updates for low-risk BVLOS operations, released it to the public, and took in feedback.\n2025: \nTransport Canada used the feedback to make revisions and release a new body of regulations.\nThese new regulations are what we’re covering in this L1C course.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 37,
+    "title": "CARs Part IX Structure",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nSubpart 1 is CARs 901 and talks about all the different operating conditions.\nWe will discuss the following divisions the most:\nDivision 6: L1C Operations\nDivision 12: RPAS Operator Certificate\nDivision 5: Advanced Operations (the changes to this section grant a lot of additional privileges)\nWe will not delve deeply into Subpart 3.\n\nActivities\nN/A\n\n\u000b\u000b"
+  },
+  {
+    "slide_number": 38,
+    "title": "Part IX - Division I – General Provisions",
+    "content": [
+      {
+        "type": "text",
+        "text": "Advertised Event: An outdoor event that is advertised to the general public, including a concert, festival, market, or sporting event\nBVLOS Operation: An operation of an RPA that is not in VLOS, but does not include an extended VLOS operation or a sheltered operation\nContingency Procedures: The procedures to be followed to address conditions that could lead to an unsafe situation\nContingency Volume: The area immediately surrounding the flight geography within which contingency procedures are intended to be used to return an RPA to the flight geography or safely terminate the flight\n\n\n\n"
+      },
+      {
+        "type": "text",
+        "text": "Note: Some definitions have been moved to Part I of CARs."
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nIt is important that everyone is familiar with these definitions, so everyone is speaking the same language.\nAdvertised Event: \nAn event is considered advertised if you’re making a public invitation. For example, a wedding would not count.\nTransport Canada has a mandate to protect the public in open air events.\nA drone under 250g still needs an SFOC to operate at an advertised event.\nBVLOS Operation:\nWhen the drone is not in VLOS of the pilot or visual observer.\nBVLOS does not include an extended VLOS operation.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 39,
+    "title": "Part IX – Division I – General Provisions",
+    "content": [
+      {
+        "type": "text",
+        "text": "Extended VLOS Operation: An operation of an RPA that is not in VLOS but during which unaided visual contact is maintained with the airspace in which the aircraft is operating in a manner sufficient to detect conflicting air traffic and other hazards and take action to avoid them\nFlight Geography: The area within which an RPA is intended to fly for a specific operation\nFly-away: In respect of an RPA, an interruption or loss of the command and control link, such that the pilot no longer being able to control the aircraft and the aircraft no longer following its preprogrammed procedures or operating in a predictable or planned manner\n\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nThere is another slide with an extended explanation of Extended VLOS Operation.\nFlight Geography will be covered when talking about the SORA.\n\nKey Points\nExtended VLOS is not BVLOS under CARs Part 9.\nPeople often confuse an RTL event with a fly-away.\nIf the drone is doing what it was programmed to do after loss of control, it is not a fly-away.\nA fly-away is when the RPAS departs the operational volume and you can no longer control it.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 40,
+    "title": "Part IX – Division I – General Provisions",
+    "content": [
+      {
+        "type": "text",
+        "text": "Ground Risk Buffer: The area immediately surrounding the contingency volume that, when measured horizontally from the perimeter of the contingency volume, is at least equal to the planned maximum altitude of the RPA for the flight\nMandatory Action: The inspection, repair, or modification of an RPAS that is necessary to prevent an unsafe or potentially unsafe condition\nMedium Remotely Piloted Aircraft: An RPA that has an operating weight of more than 25 kg (55 lbs) but not more than 150 kg (331 lbs)\nSmall Remotely Piloted Aircraft: An RPA that has an operating weight of at least 250 g (0.55 lb) but not more than 25 kg (55 lbs)\n\n\n\n\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nGround Risk Buffer will be discussed when operational volume is discussed.\n\nKey Points\nMandatory Action: Something the operator and maintenance personnel are going to have to do to maintain the airworthiness of the aircraft.\nMedium RPAS: New category that is allowed under your advanced privileges. Organizations can operate an RPAS between 25kg and 150kg without an SFOC.\nThere are different privileges and safety assurances depending on whether pilots are operating a small or medium RPAS.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 41,
+    "title": "Part IX – Division I – General Provisions",
+    "content": [
+      {
+        "type": "text",
+        "text": "Operational Volume: The area that is composed of the flight geography, contingency volume, and ground risk buffer\nPayload: A system, object, or collection of objects, including a slung load, that is on board or is otherwise connected to an RPA but that is not required for flight\nPopulated Area: An area with more than 5 people per square kilometre\nRPAS Ground School Instruction: Instructor-led training given to 1 or more persons, delivered in-person or virtually, and provided through an organized program of lectures, homework, or self-paced study\nRPAS Operations Manual: The manual established by an RPAS operator under section 901.217\n\n\n\n\n\n\n\n\n\n\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nOperational Volume will be discussed when flight operations is covered.\n\nKey Points\nPayload: Anything that does not contribute to the operation of the aircraft (e.g., camera, delivery items)\nCARs Part 9 has clear definitions of what populated, unpopulated, and sparely populated areas are.\nRPAS Ground School Instruction: This course\nRPAS Operations Manual (ROM): This is new. People that have been doing SFOCs most likely already have a ROM, because it is one of the ways to meet the requirements (not the only one). Under L1C, Transport Canada required RPAS operators to have a ROM in addition to the license.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 42,
+    "title": "Part IX – Division I – General Provisions",
+    "content": [
+      {
+        "type": "text",
+        "text": "RPAS Operator: The holder of an RPAS Operator Certificate\u000bNote: Not the same as RPAS pilot.\nRPAS Operator Certificate: A certificate issued under section 901.214\nSheltered Operation: An operation of an RPA that is not in VLOS and during which the aircraft remains at less than 200 ft (61 m), measured horizontally, from a building or structure and at an altitude no greater than 100 ft (30 m) above that building or structure\nOperating Weight: The weight of an RPA at any point during a flight, including any payload and any safety equipment that is on board or otherwise connected to the aircraft\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nSheltered operations will be further discussed in a later slide.\n\nKey Points\nUnder the L1C, RPAS operations look more like a small airline with structure, organizational control, maintenance procedures, etc. That group (holder of the RPAS Operator Certificate) is referred to as the RPAS operator, instead of the pilot.\nThe operating weight is different from the maximum takeoff weight of an aircraft, which is a defined limitation that comes from the manufacturer.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 43,
+    "title": "Part IX – Division I – General Provisions",
+    "content": [
+      {
+        "type": "text",
+        "text": "Sparsely Populated Area: An area with more than 5 but not more than 25 people per square kilometre\nVisual Line-of-sight (VLOS): Unaided visual contact maintained with an RPA in a manner sufficient to maintain control of the aircraft, know its location, and scan the airspace in which it is operating to detect conflicting air traffic and other hazards and take action to avoid them\nVisual Observer: A crew member who is trained to assist the pilot in ensuring the safe conduct of a flight\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nIn the in-person in-flight review, participants will need to state what the population density is for the proposed area of flight operations.\n\nKey Points\nSparsely Populated Area: The 2021 Census by Statistics Canada is the current standard for assessing this.\nVLOS: Pilots must know the drone’s location and see the drone close enough to be able to control it. There is no fixed limit, but this is typically 800 m to 1.2 km based on the size of the drone and meteorological conditions.\nVisual Observer: It is important that this person is trained.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 44,
+    "title": "Part IX – Division II – 900.8 Emergency Security Perimeter",
+    "content": [
+      {
+        "type": "text",
+        "text": "No person shall operate an RPA over or within the security perimeter established by a public authority in response to an emergency, unless an operation is conducted in the service of a public authority."
+      }
+    ],
+    "images": [
+      {
+        "filename": "slide44_img02.jpg",
+        "path": "/images/l1c00/slide44_img02.jpg"
+      }
+    ],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nPolice, firefighters, and other public authority have a legal right to operate drones within an emergency security perimeter.\nThere is no CAR on security perimeter for manned aviation.\nThese security perimeter rules also apply to microdrones.\n\nActivities\nDiscussion: What physically delineates a security perimeter? What are the challenges in identifying the security perimeter to apply this CAR?"
+  },
+  {
+    "slide_number": 45,
+    "title": "Part IX – Division II – 900.09 General Operating and Flight Rules",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nCommercial air service used to refer to CARs Part 7 (Air Canada, West Jet, etc.). Now, CARs acknowledges that drones can perform commercial air services.\nOperators don’t need an SFOC if they’re a non-resident/non-Canadian and operating under a free trade agreement.\nWhen operators haul goods, they need a CTA license, and the Canadian government will get a tax cut.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 46,
+    "title": "Part IX – Division III – 900.14 to 900.20 RPAS Registration",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nThere have been no significant changes with RPAS registration.\nHowever, under the new regulations, operators can register a drone above 25 kg into the drone management portal.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 47,
+    "title": "CARs Part IV – Subpart I",
+    "content": [
+      {
+        "type": "text",
+        "text": "Small and medium RPAS"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nThis section covers the basic and advanced privileges.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 48,
+    "title": "Part IX – Division III – 901.19 \u000bGeneral Operating & Flight Rules\u000bFitness of Crew Members",
+    "content": [
+      {
+        "type": "text",
+        "text": "No fatigued or unfit crew\nNo RPAS operation until 12 hours after consumption of alcohol, or under the influence of alcohol\nNo using any drug that impairs judgement"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nReference the organization’s drug and alcohol policy.\n\nKey Points\nThis applies to all CARs 901 operations: basic, advanced, L1C.\nEven if a crew member has a prescription, they cannot be under the influence of drugs that impair judgement (e.g., medicinal marijuana). \nThere is no medical license required to be a L1C pilot; however, they must complete a self-declaration stating they are fit to fly and not under the influence. \nCrew members are responsible for knowing and following their organizations drug and alcohol policy, including appliable testing that may apply.\n\nActivities\nDiscussion: What are the current organizational policies towards drugs and alcohol? Do they meet the above regulation? "
+  },
+  {
+    "slide_number": 49,
+    "title": "Part IV – Division III – 901.24 \u000bGeneral Operating & Flight Rules \u000bPre-Flight Information",
+    "content": [
+      {
+        "type": "text",
+        "text": "Pilot to be familiar with:\nSite survey\nRPAS declaration\nQualification of all crew members"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nWhen accepting an operation under CARs 901, ensure\nThe site survey is valid (even if operators do not do it themselves).\nThe RPAS has a safety assurance and declaration.\nAll crew members are qualified.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 50,
+    "title": "Part IX – Division III – 901.26 Horizontal Distances (VLOS)",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nTo be near a person/over a person means different things depending on the size of the RPAS.\nSmall RPAS: 30 m horizontally and 5 m vertically\nMedium RPAS: 152 m horizontally \n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 51,
+    "title": "Part IX – Division III – 901.27 Site Survey",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nThe site survey requirements have changed under the new regulations.\nFor BLVOS operations, pilots are required to know their lateral distances from populated areas (population density).\nFind these densities in the NRCAN Drone Site Selection Tool or the Statistics Canada population density by dissemination area.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 52,
+    "title": "Part IX – Division III – 901.34 Minimum Weather Conditions",
+    "content": [
+      {
+        "type": "text",
+        "text": "Note: Operations outside of these conditions require an SFOC."
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nThere is different criteria for these four different categories, which can cause confusion.\nYou must operate in accordance with the manufacturer's instructions.\nFor an mRPAS, if the visibility is less than 4 statute miles, the drone can’t be farther than half of that distance from you. This can be difficult to calculate.\nYou can fly outside of these weather conditions with an SFOC.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 53,
+    "title": "Part IX – Division III – 901.35 Icing",
+    "content": [
+      {
+        "type": "text",
+        "text": "...icing conditions are observed, are reported to exist or are likely to be encountered…unless the aircraft is equipped…\n…frost, ice or snow adhering to any of the critical surfaces…"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nA critical surface is anything that contributes to the lifting agents.\nIt’s especially important to ensure there is no frost, ice, etc. on bigger drones.\n“Icing conditions” could include a weather alert for freezing rain.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 54,
+    "title": "Part IX – Division III – Use of First-Person View Devices 901.38",
+    "content": [
+      {
+        "type": "text",
+        "text": "…unless a visual observer maintains unaided visual contact with the airspace…\nFPV Device: Generates and transmits a streaming video image to a control station display or monitor, giving the pilot of an RPA the illusion of flying the aircraft from an onboard pilot’s perspective"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nThe definition of FPV Device changed with the new regulations. \nGoggles are not required to be considered using an FPV device.\nAn RC model that has an RC controller with no video feed is not an FPV device.\nIf a pilot is so focused on the video that they are no longer monitoring the airspace, bring in a visual observer.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 55,
+    "title": "Part IX – Division IV – Basic Operations",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nExample: If there are any Model Aeronautics Association of Canada (MAAC) members (i.e., model aircraft clubs), those clubs must operate at least under basic RPAS operations.\n\nKey Points\nBasic operations have had no significant change under the new regulations.\nThese are very basis requirements to operate in basic RPAS operations.\n\nActivities\nN/A"
+  },
+  {
+    "slide_number": 56,
+    "title": "Part IV – Division V – Advanced Operations",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nSafety assurances are covered in depth in the Systems slide deck.\n\nKey Points\nThere have been significant changes to advanced operations under the new regulations (see slide for changes).\nA safety assurance can also be called an RPAS declaration.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 57,
+    "title": "Part IX – Division V – 901.74 Advanced Operations Extended VLOS",
+    "content": [
+      {
+        "type": "text",
+        "text": "Pilot & GCS"
+      },
+      {
+        "type": "text",
+        "text": "VO"
+      },
+      {
+        "type": "text",
+        "text": "Small RPAS"
+      },
+      {
+        "type": "text",
+        "text": "2 NM"
+      },
+      {
+        "type": "text",
+        "text": "Pilot and control station are located at the site for take-off and recovery\nRPA within 2 NM of pilot, VO, and control station\nRPA is always greater than 100 ft (30 m) horizontally from any person\nVO maintains unaided visual contact with the airspace\nBelow 400 ft AGL\nVO has basic RPAS certificate or better"
+      }
+    ],
+    "images": [
+      {
+        "filename": "slide57_img03.png",
+        "path": "/images/l1c00/slide57_img03.png"
+      },
+      {
+        "filename": "slide57_img04.png",
+        "path": "/images/l1c00/slide57_img04.png"
+      },
+      {
+        "filename": "slide57_img05.png",
+        "path": "/images/l1c00/slide57_img05.png"
+      },
+      {
+        "filename": "slide57_img06.png",
+        "path": "/images/l1c00/slide57_img06.png"
+      }
+    ],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nExtended VLOS is not the same as BVLOS.\nExtended VLOS:\nDrone must be within 2 NM of the pilot, visual observer, and the ground station.\nPeople planning to run drones in boxes remotely will not be able to do Extended VLOS, because the drone will not be within 2 NM of the ground station.\nRPAS must stay more than 30m horizontally from any person not involved in the operation, even if your drone has a safety assurance to fly over people. The CAR supersedes that safety assurance. \nExtended VLOS is very good for site surveys in unpopulated areas, but BVLOS is better for flying in a public area.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 58,
+    "title": "Part IX – Division V – 901.74 Advanced Ops Sheltered Operation",
+    "content": [
+      {
+        "type": "text",
+        "text": "Small RPAS"
+      },
+      {
+        "type": "text",
+        "text": "Pilot and control station are located at the site for take-off and landing\nRPA within 2 NM of pilot and control station\nRPA is always greater than 100 ft (30 m) horizontally from any person\nBelow 400 ft AGL"
+      },
+      {
+        "type": "text",
+        "text": "100ft"
+      },
+      {
+        "type": "text",
+        "text": "200 ft"
+      },
+      {
+        "type": "text",
+        "text": "Pilot"
+      },
+      {
+        "type": "text",
+        "text": "2 NM"
+      }
+    ],
+    "images": [
+      {
+        "filename": "slide58_img07.png",
+        "path": "/images/l1c00/slide58_img07.png"
+      },
+      {
+        "filename": "slide58_img08.png",
+        "path": "/images/l1c00/slide58_img08.png"
+      },
+      {
+        "filename": "slide58_img09.png",
+        "path": "/images/l1c00/slide58_img09.png"
+      },
+      {
+        "filename": "slide58_img10.png",
+        "path": "/images/l1c00/slide58_img10.png"
+      }
+    ],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nA sheltered operation may or may not be considered a BVLOS operation.\nThe drone must be within 100 ft vertically and 200 ft horizontally from a building, because there is almost no chance that a helicopter will also be in that airspace.\nThis gives the pilot the ability to inspect roofs, bridges, power lines, etc. \nThe pilot does not need a visual observer.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 59,
+    "title": "Part IX – Division VI – L1C",
+    "content": [
+      {
+        "type": "text",
+        "text": "Applicability (901.87)\nNRCAN DSST-2"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nThere will be a slide later on how to use the NRCAN DSSST-2 tool.\n\nKey Points\nUse the NRCAN DSST-2 tool, because they’ve done the calculation on population density and airspace.\nIf the NRCAN map is unshaded, go fly. If it is shaded, they likely need an SFOC.\nThere are a few conditions (see the slide).\n\nActivities\nPractice Question: What is the definition of an unpopulated area and a sparsely populated area?\nAnswer: An unpopulated area has fewer than five people. A sparsely populated area has between five and 25 people.\n\nPractice Question: Whose data set is used to determine these populated areas?\nAnswer: Statistics Canada most recent Census data"
+  },
+  {
+    "slide_number": 60,
+    "title": "Division VI – L1C Operations",
+    "content": [
+      {
+        "type": "text",
+        "text": "3P approach:\nPilot: Level 1 Complex (901.89)\nProcedure: RPAS Operator Certificate (901.88)\nPlatform: Declaration (901.95)\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nThere is a 3P approach to L1C operations: Pilot, Platform, Procedures.\nWhen setting up an organization, it’s important for the operator to ask if they have all three Ps.\nThe pilot refers to the L1C pilot certificate.\nThe platform refers to the safety assurances that must be in place.\nThe procedures refer to the RPAS Operator Certificate, operations manual, procedures, checklists, deconfliction, etc.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 61,
+    "title": "Division VI – L1C Pilot",
+    "content": [
+      {
+        "type": "text",
+        "text": "18 years of age\nHold a L1C certificate\nMeet the recency requirements (24 months)\nPilot certificate and recency demonstration are easily accessible during operations\nNote: There is no requirement for a medical certificate\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nThere are requirements to be a L1C pilot. \nPeople often forget the recency requirement:\nTransport Canada needs to know operators are up-to-date on the regulations. This L1C course requalifies participants for the recurrence. The easiest way to get requalified is the self-paced study from Transport Canada that comes with a study guide telling participants where to find the answers. When they fill out the questionnaire and keep it with them, they’re considered current.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 62,
+    "title": "Division VI – L1C Procedures",
+    "content": [
+      {
+        "type": "text",
+        "text": "RPAS Operator Certificate\nIssued to individual or organization (the operator) through the DMP\nOperator requires an RPAS Operations Manual (901.217) that includes:\nRoles and responsibilities of crew members\nRoles and responsibilities of maintenance personnel\nSafety processes (901.218)\nNormal and emergency procedures (901.23)\nTraining syllabus\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nAn individual or a corporation can hold the RPAS Operator Certificate. \nTo hold an RPAS Operator Certificate they need to: \nBe a Canadian or a Canadian organization\nHave an RPAS Operations Manual in place that includes a safety policy, procedures, training, etc. \nOperators must administer yearly recurrent training to all crew members before they fly under the L1C operator certificate.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 63,
+    "title": "Division VI – L1C Platform",
+    "content": [
+      {
+        "type": "text",
+        "text": "901.87(a)"
+      },
+      {
+        "type": "text",
+        "text": "901.87(a)"
+      },
+      {
+        "type": "text",
+        "text": "901.87(b)"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nReference the list using this link: https://tc.canada.ca/en/aviation/drone-safety/learn-rules-you-fly-your-drone/choosing-right-drone-advanced-operations\n\nKey Points\nThere are three different operational categories of drones.\nAfter November 4th, 2025, Transport Canada updated the public list of safety assurances from manufactures to include BVLOS operations.\n\nActivities\nN/A"
+  },
+  {
+    "slide_number": 64,
+    "title": "Part IX – Division VI – L1C Modification of RPAS",
+    "content": [
+      {
+        "type": "text",
+        "text": "Demonstrate Standard 922 is met\nPerform in accordance with manufacturer instructions"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nIf you modify your drone, you will not be able to exercise these privileges unless you:\nDemonstrate Standard 922 is met\nPerform the modifications in accordance with the manufacturer’s instructions\nIf modifications are performed in accordance with manufacturer instructions, operators do not need to demonstrate to Transport Canada that Standard 922 is met.\nIf the manufacturer does not provide instructions on how to modify their drone, the operator must prove to Transport Canada they still meet Standard 922. It is recommended not to modify drones unless the manufacturer provides instructions on how to do so.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 65,
+    "title": "Part IX – Division VI – L1C Detect & Avoid Requirements",
+    "content": [
+      {
+        "type": "text",
+        "text": "If RPAS does not have onboard capability for DAA:\nStandard 923 (human) Vision-Based Detect and Avoid"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nThere are six new standards a manufacturer can make a declaration against.\nThe standard against DAA assumes the manufacturer is going to build an onboard DAA system, which is not always going to be the case.\nIf the manufacturer does not have a DAA system, it’s acceptable to do BVLOS integrations using human-based DAA. This is covered in Standard 923, VO DAA.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 66,
+    "title": "Part IX – Division VI – L1C Standard 923 Vision-Based DAA",
+    "content": [
+      {
+        "type": "text",
+        "text": "Pilot & GCS"
+      },
+      {
+        "type": "text",
+        "text": "VO"
+      },
+      {
+        "type": "text",
+        "text": "4 NM"
+      },
+      {
+        "type": "text",
+        "text": "2 NM"
+      },
+      {
+        "type": "text",
+        "text": "\n\nSun:\nOutside the quadrant, greater than 45 degrees above horizon, or\nbelow the horizon\n\n"
+      },
+      {
+        "type": "text",
+        "text": "Visibility = 3 SM+\n\nCeiling = 1,000 ft AGL+"
+      }
+    ],
+    "images": [
+      {
+        "filename": "slide66_img11.png",
+        "path": "/images/l1c00/slide66_img11.png"
+      },
+      {
+        "filename": "slide66_img12.png",
+        "path": "/images/l1c00/slide66_img12.png"
+      },
+      {
+        "filename": "slide66_img13.png",
+        "path": "/images/l1c00/slide66_img13.png"
+      },
+      {
+        "filename": "slide66_img14.png",
+        "path": "/images/l1c00/slide66_img14.png"
+      },
+      {
+        "filename": "slide66_img15.png",
+        "path": "/images/l1c00/slide66_img15.png"
+      }
+    ],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nVO DAA looks a lot like the standard scenario for low-risk BVLOS operations.\nThe conditions of Standard 923:\nDrone can be flown upwards of 4 NM away from the pilot and the ground control station.\nDrone must within 2 NM of the VO.\nPilot must have a visibility of greater than 3 SM.\nCeiling must be greater than 1000 ft AGL.\nSun can’t be in pilot’s eyes when they’re looking at the airspace.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 67,
+    "title": "Part IX – Division VI – L1C Standard 923 Vision-Based DAA",
+    "content": [
+      {
+        "type": "text",
+        "text": "How to judge visibility:\nNearest METAR\nMeasure section lines of farms (¼ section = ½ SM)\nTower in the distance\nHow to judge ceilings:\nNearest METAR\nTowers\nMountains\nHow to judge visual obstructions:\nOutstretched arm with 4 horizontal fingers stacked on the horizon"
+      },
+      {
+        "type": "text",
+        "text": "Roberts, 2007."
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nHow to judge visibility:\nSection lines (2 section lines is 1 SM)\nAviation-based weather stations \nLook at a tower in the distance (this is how the weather reporters at NAV CANADA assess visibility)\nHow to judge ceilings:\nClouds hitting the top of rolling hills\nAviation-based weather station\nLook at a tower (they’re usually 200-300 ft)\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 68,
+    "title": "Part IX – Division X – Training \u000b& Flight Review",
+    "content": [
+      {
+        "type": "text",
+        "text": "Standard 921 – Remotely Pilot Aircraft – CARs\nBasic pilot certificate\nAdvanced pilot certificate\nFlight reviewer rating\nRecency requirements\nDeclared training provider requirements (TP15530 TP15263)\nL1C pilot certificate\n\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nWhile this is not a critical slide, it is useful to show participants that there are defined standards for training organizations to follow.\n\nKey Points\nThis standard:\nCovers training for all RPAS pilot certificates\nTells you what it takes to be a declared training provider\n\nActivities\nN/A"
+  },
+  {
+    "slide_number": 69,
+    "title": "Part IX – Division X – Training \u000b& Flight Review",
+    "content": [
+      {
+        "type": "text",
+        "text": "Flight reviewer (901.176):\nAdvanced or L1C endorsed with flight reviewer rating (as appropriate)\nAffiliated with a ‘declared’ training provider"
+      }
+    ],
+    "images": [
+      {
+        "filename": "slide69_img16.jpg",
+        "path": "/images/l1c00/slide69_img16.jpg"
+      }
+    ],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nTo be a flight reviewer for L1C, reviewers must:\nHave the L1C pilot certificate\nBe affiliated with a declared training provider\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 70,
+    "title": "Part IX – Division X – Training \u000b& Flight Review",
+    "content": [
+      {
+        "type": "text",
+        "text": "Retaking of Exam (901.178)\n24-hour period to review"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nParticipants must wait 24 hours to take the L1C exam again if they fail on the first attempt.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 71,
+    "title": "Part IX – Division X – Training \u000b& Flight Review",
+    "content": [
+      {
+        "type": "text",
+        "text": "Flight Reviewer’s Guide TP 15395"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nThere are standards flight reviewers must follow.\nIf there are students in the classroom who will become L1C flight reviewers, this document should be downloaded and possibly discussed. \n\nKey Points\nThis is the guiding document for flight reviews.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 72,
+    "title": "Part IX – Division XI – RPAS Declarations",
+    "content": [
+      {
+        "type": "text",
+        "text": "Responsibilities of the declarant (Manufacturer):\n‘Declaration’ to the Minister assuring target levels of safety for the required standards\nMaintenance program\nMandatory actions for continued compliance/airworthiness\nRPAS Operations Manual (pilot’s handbook)\nRecord keeping substantiating declaration\nService difficulty reports (PVD)\nAnnual reporting to the Minister (PVD)"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nThis will be covered again in the Systems slide deck.\n\nKey Points\nThese are the new declarations in place (see table).\nSafety and Reliability and Environmental Envelope have dollar signs next to them, because they are going to be very costly standards for a manufacturer to achieve.\nEvery country is going to have a different safety assurance.\nWhen operators purchase a drone with a safety assurance, they know that the manufacturer has met all the conditions (maintenance program, mandatory actions, etc.).\nService Difficulty Report: If an operator has a problem with the drone that is a manufacturing or design fault, the manufacturer must keep that on record.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 73,
+    "title": "Part IX – Division XI – Operational Categories Requiring Safety Assurances ",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nThese are the new operational categories, and the safety assurances that are required in each category.\n\nKey Points\nThe columns are organized by VLOS versus BVLOS.\nThe grouping of rows is RPAS maximum take-off weight.\nEach box groups together the specific ‘standards’ against which a manufacturer must make a safety assurance.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 74,
+    "title": "Part IX – Division XI – RPAS Declarations",
+    "content": [
+      {
+        "type": "text",
+        "text": "Declarations are required for lower ground risk:\nsRPAS over/near people and BVLOS greater than 1 km from populated areas\nPre-validated Declarations (PVD) are required for higher ground risk:\nmRPAS over/near people\nsRPAS over sparsely populated areas/less than 1 km from populated areas"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nOperators only need to worry about declarations.\nManufacturers worry about PVD, which is a higher level of declaration.\nIf a drone has a safety assurance from a manufacturer that is referred to as a PVD, operators will have a few more privileges. This means that the manufacturer has done a lot more work with Transport Canada to obtain that PVD.\nThe first question operators should ask when a salesman is trying to sell a drone is: What are you doing for the safety assurance?\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 75,
+    "title": "Part IX – Division XII – RPAS Operator Certificate",
+    "content": [
+      {
+        "type": "text",
+        "text": "Eligibility to hold (901.213):\nCanadian citizen or permanent resident of Canada\nGovernment of Canada or ‘agent of’\nCorporation or entity formed under laws of Canada or a province\nCommercial air service or not?"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nIf the organization to which the students belong already has an RPAS Operator Certificate, the instructor can show the operating certificate to the students.\n\nKey Points\nThe 3Ps are pilot, platform, and procedures. This falls under the third P, procedures.\nEveryone that wants to exercise L1C privileges has to do so under an RPAS Operator Certificate.\nYou apply for an RPAS Operator Certificate through the drone management portal as an individual or corporation. \nWhen you apply for this certificate, you are making a declaration to Transport Canada that you have the policies and processes in place to be an RPAS operator.\n\nActivities\nN/A"
+  },
+  {
+    "slide_number": 76,
+    "title": "Part IX – Division XII – RPAS Operator Certificate",
+    "content": [
+      {
+        "type": "text",
+        "text": "General Conditions (901.216):\nOrganizational structure\nMaintain a training program\nRPAS that is proper for the type of operation\nRPAS maintenance IAW with manufacturer’s instructions\nNotify Minister of organizational changes \n"
+      }
+    ],
+    "images": [
+      {
+        "filename": "slide76_img17.jpg",
+        "path": "/images/l1c00/slide76_img17.jpg"
+      }
+    ],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nTo obtain an RPAS Operator Certificate, they must:\nDefine an organizational structure.\nMaintain a training program (including annual recurrency training with record keeping).\nHave an RPAS that is proper for the types of operations.\nOutline their maintenance plan.\nHave a process to notify the Minister of organizational changes.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 77,
+    "title": "Part IX – Division XII – RPAS Operator Certificate RPAS Operations Manual",
+    "content": [
+      {
+        "type": "text",
+        "text": "901.217:\nRoles and responsibilities of crew\nRoles and responsibilities of all operational and maintenance personnel\nSafety program/processes\nNormal and emergency procedures\nTraining program and personnel qualifications"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nOperators are required by law to have an RPAS Operations Manual before applying for an RPAS Operator Certificate.\nThey don’t have to have an SMS, but they do have to have a safety program.\nVisual observers must be trained under their training program.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 78,
+    "title": "Part IX – Division XII – RPAS Operator Certificate (Hierarchy)",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nIt is very important to have a named Accountable Executive, so Transport Canada knows who holds the ultimate responsibility.\nThe only other role that must have a person named is the Person Responsible for Maintenance.\n\nActivities\nDiscussion: If your organization has an RPAS Operator Certificate, can you draft the organizational structure? \u000b                   OR If your organization does not have an RPAS Operator Certificate, can you draft a possible organizational structure? "
+  },
+  {
+    "slide_number": 79,
+    "title": "Part IX – Division XII – RPAS Operator Certificate Manual Requirements",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nOperators must have the following in their RPAS Operations Manual:\nSafety program (This does not need to be an SMS. It can be external to the RPAS manual, but that is not recommended from a record keeping standpoint.)\nMCM\nTraining program\nRecord keeping details\nNormal and emergency procedures (e.g., fly-aways)\nNASA has compiled 30 years of research on how to develop checklists, etc.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 80,
+    "title": "CARs Part IX – Subpart III",
+    "content": [
+      {
+        "type": "text",
+        "text": "Special Flight Operations (903)"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nThere will still be times operators need to get an SFOC (e.g., flying in the shaded areas of DSST-2).\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 81,
+    "title": "Part IX – Subpart III – Special Flight Operations (SFOC)",
+    "content": [],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nBiggest change in SFOCs: If operators are flying a sub 250 g drone at an advertised event, they need an SFOC.\nNow, operators do not have to get an SFOC for a lot of low-risk BVLOS operations, due to the L1C.\nSFOCs are now categorized into low, medium, and high complexity.\nA foreign operator used to need an SFOC, but they can now operate as an agent under an operator’s RPAS Operator Certificate.\nOperators can only have a drone registered in one country at a time.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 82,
+    "title": "\u000bPart II – SOR/2025-70 – Service Fees\u000bCanada Gazette\u000b",
+    "content": [
+      {
+        "type": "text",
+        "text": "Previous and current fees for the following services are available on the Canada Gazette website:\nDrone registration\nL1C operations exam\nL1C operations pilot certificate\nPre-validated declarations\nRPAS Operator Certificate\nSFOC – Very low, medium, and high complexity\nAmendment to an existing  SFOC"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nA breakdown of previous and current fees for the listed services can be found on the Canada Gazette website: https://gazette.gc.ca/rp-pr/p2/2025/2025-03-26/html/sor-dors70-eng.html \n\nKey Points\nOperators now need to pay for an SFOC.\nHigh-complexity SFOCs are very expensive ($2000).\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 83,
+    "title": "Division XII – RPAS Operator Certificate ROM Guidance",
+    "content": [
+      {
+        "type": "text",
+        "text": "Guidance on Manual Development for Remotely Piloted Aircraft System Operator Certificate (RPOC)"
+      },
+      {
+        "type": "text",
+        "text": "Professional Compliance & Writing Services"
+      }
+    ],
+    "images": [
+      {
+        "filename": "slide83_img18.png",
+        "path": "/images/l1c00/slide83_img18.png"
+      }
+    ],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nScriptorium can help Operators build an RPAS Operations Manual.\n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 84,
+    "title": "References",
+    "content": [
+      {
+        "type": "text",
+        "text": "AirMarket. (n.d.) Fly Safe: Enterprise Drone Management Platform. https://airmarket.io/flysafe/\nArduPilot. (n.d.). Terrain Altitude (ASL) [illustration]. ArduPilot. https://ardupilot.org/\nCanada Gazette. (2025, March 5). Regulations Amending the Canadian Aviation Regulations (RPAS – Beyond Visual Line-of-Sight and Other Operations): SOR/2025-70. Government of Canada. https://gazette.gc.ca/rp-pr/p2/2025/2025-03-26/html/sor-dors70-eng.html\nGarmin Company. (n.d.) FltPlan. FltPlan.com\nFlight Plan. (n.d.) Sky Vector: Aeronautical Charts. https://skyvector.com/\nForeFlight: A Boeing Company. https://foreflight.com/\nNational Research Council Canada. (2025, April 11). Drone site selection tool 2 [BVLOS data map]. Government of Canada. https://nrc.canada.ca/en/drone-tool-2/index.html\n\n\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nThese resources were used to create the course content. They are also sources of further information. \n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 85,
+    "title": "References",
+    "content": [
+      {
+        "type": "text",
+        "text": "NAV CANADA. (2025, June 12). Designated Airspace Handbook [maps]. Department of National Defence. https://www.navcanada.ca/en/dah20250612.pdf\nNAV Drone Viewer. (n.d.) NAV CANADA. https://map.navdrone.ca/\nOperational Guides. (n.d.) NAV CANADA. https://www.navcanada.ca/en/aeronautical-information/operational-guides.aspx\nRoberts, E. (2007, April 10). Standing over the clouds [photograph]. Flickr. https://www.flickr.com/photos/donabelandewen/470780785/ CC BY 2.0 https://creativecommons.org/licenses/by/2.0/deed.en \nTransport Canada. (2021, November). Canadian Aviation Regulations (CARs): Quick Reference Guide. Government of Canada. https://tc.canada.ca/sites/default/files/2021-11/TP_15286_11x17_EN_NOV21.pdf\nTransport Canada. (2025, March). Flight Reviewer’s Guide for Pilots of Remotely Piloted Aircraft Systems. Government of Canada. https://tc.canada.ca/en/aviation/publications/flight-reviewer-s-guide-pilots-remotely-piloted-aircraft-systems\n\n\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nThese resources were used to create the course content. They are also sources of further information. \n\nActivities\nN/A\n"
+  },
+  {
+    "slide_number": 86,
+    "title": "References",
+    "content": [
+      {
+        "type": "text",
+        "text": "Transport Canada. (2025, April 1). Standard 921 - Remotely Piloted Aircraft - Canadian Aviation Regulations (CARs). Government of Canada. https://tc.canada.ca/en/corporate-services/acts-regulations/list-regulations/canadian-aviation-regulations-sor-96-433/standards/standard-921-remotely-piloted-aircraft\nTransport Canada. (2025, April 1). Canadian Aviation Regulations (SOR/96-433). Government of Canada. https://tc.canada.ca/en/corporate-services/acts-regulations/list-regulations/canadian-aviation-regulations-sor-96-433\nTransport Canada. (2025, April 7). Advisory Circular (AC) No. 901-002. Government of Canada. https://tc.canada.ca/en/aviation/reference-centre/advisory-circulars/advisory-circular-ac-no-901-002\nTransport Canada. (2025, July 30). Apply for an RPAS Operator Certificate. Government of Canada. https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/apply-rpas-operator-certificate\n\n\n\n"
+      }
+    ],
+    "images": [],
+    "notes": "Instructor Notes\nN/A\n\nKey Points\nThese resources were used to create the course content. They are also sources of further information. \n\nActivities\nN/A\n"
+  }
+]
