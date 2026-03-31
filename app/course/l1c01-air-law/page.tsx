@@ -326,46 +326,110 @@ export default function L1C01AirLaw() {
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 103.01 Document Inspection</h3>
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <p className="mb-4 font-mono text-sm">&quot;...shall produce the Canadian aviation document, technical record, or other document for inspection in accordance with the terms of a demand made by a peace officer, an immigration officer, or the Minister&quot;</p>
+              <p className="font-semibold mb-3">Every person who is required by these Regulations to maintain a Canadian aviation document, a technical record, or any other document shall produce the Canadian aviation document, technical record, or other document for inspection in accordance with the terms of a demand made by a peace officer, an immigration officer, or the Minister.</p>
             </div>
 
             <InstructorNote type="keypoint">
-              <p>Transport Canada has been asking and training law enforcement agencies to assist in having a basic understanding of drone regulations, so they can intervene with nefarious drone operations and understand what is legitimate and what is noncompliant. Drone operators must provide records to law enforcement, immigration, or the Minister upon request.</p>
+              <p className="font-semibold mb-2">Who Can Demand to See Your Documents:</p>
+              <ul className="space-y-2 text-sm mb-3">
+                <li><strong>Peace Officer:</strong> Police, RCMP, provincial/municipal law enforcement</li>
+                <li><strong>Immigration Officer:</strong> CBSA officers at borders or ports of entry</li>
+                <li><strong>The Minister:</strong> Transport Canada inspectors and authorized representatives</li>
+              </ul>
+
+              <p className="font-semibold mb-2">What Documents You Must Produce:</p>
+              <ul className="space-y-1 text-sm mb-3">
+                <li>• Pilot certificate (L1C certificate)</li>
+                <li>• Proof of recency (within 24 months)</li>
+                <li>• RPAS Operator Certificate (if operating under one)</li>
+                <li>• RPAS registration certificate</li>
+                <li>• Proof of liability insurance (if required)</li>
+                <li>• Flight logs and technical records (maintenance logs)</li>
+                <li>• Site survey documentation</li>
+                <li>• SFOC (if applicable to the operation)</li>
+              </ul>
+
+              <p className="font-semibold mb-2">Real-World Context:</p>
+              <p className="text-sm">Transport Canada has been actively training police and RCMP to recognize compliant vs. non-compliant drone operations. If law enforcement approaches you during operations, be professional, immediately cease flight activities, and produce all requested documents. Refusal to produce documents is a violation of CAR 103.01.</p>
+
+              <p className="text-sm mt-2"><strong>Best Practice:</strong> Keep digital copies on your phone/tablet and physical copies in your flight case. Being able to produce documents immediately demonstrates professionalism and compliance.</p>
             </InstructorNote>
           </div>
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 103.04 Record Keeping</h3>
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <ul className="space-y-2">
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span><strong>Digital:</strong> Protected against loss/destruction/tampering</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">•</span>
-                  <span>May be printed on paper and provided to the Minister with reasonable notice</span>
-                </li>
-              </ul>
+              <p className="font-semibold mb-3">Every person who is required to keep a record under these Regulations may keep the record in an electronic format if:</p>
+              <p className="font-mono text-sm ml-4 mb-3">(a) the electronic format is protected against loss, destruction and falsification; and</p>
+              <p className="font-mono text-sm ml-4 mb-4">(b) the record may be made available in printed form to the Minister with reasonable notice.</p>
+              <p className="font-semibold">Every person who keeps a record in an electronic format shall provide a printed copy of the record to the Minister within the time that is specified in a written request for the record from the Minister.</p>
             </div>
 
             <InstructorNote type="keypoint">
-              <p>Records must be kept and stored digitally or physically. If storing digitally, you must have a backup.</p>
+              <p className="font-semibold mb-2">What &quot;Protected Against Loss, Destruction and Falsification&quot; Means:</p>
+              <ul className="space-y-2 text-sm mb-3">
+                <li><strong>Backup Required:</strong> Cloud storage (Google Drive, Dropbox, OneDrive) or external hard drive backup. Single device storage is NOT sufficient.</li>
+                <li><strong>Version Control:</strong> Use dated filenames or version numbers to prevent accidental overwrites (e.g., FlightLog_2026-03-31_v1.pdf)</li>
+                <li><strong>Access Control:</strong> Password-protected accounts, limited access to authorized personnel only</li>
+                <li><strong>Tamper Evidence:</strong> PDF format (harder to edit than Word docs), digital signatures if available, or read-only permissions after finalization</li>
+              </ul>
+
+              <p className="font-semibold mb-2">Practical Record Keeping System Examples:</p>
+              <ul className="space-y-2 text-sm mb-3">
+                <li><strong>Small Operator (1-3 pilots):</strong> Google Sheets for flight logs synced to cloud, maintenance records in Google Drive, scanned certificates in Dropbox. All auto-backed up, accessible from phone/tablet in field.</li>
+                <li><strong>Medium Organization (4-10 pilots):</strong> Dedicated flight logging software (e.g., AirData, DroneDeploy), ROM and procedures in shared company drive with access controls, annual export to PDF for long-term archive.</li>
+                <li><strong>Large Operator (10+ pilots):</strong> Database system with user permissions, automated backup to offsite server, integration with maintenance tracking and compliance monitoring tools.</li>
+              </ul>
+
+              <p className="font-semibold mb-2">When TC Requests Records:</p>
+              <p className="text-sm">Transport Canada can request records during audits, incident investigations, or random compliance checks. You must be able to produce printed copies within the timeframe they specify (typically 24-72 hours). If you can&apos;t produce records because they were lost or destroyed, you&apos;re in violation of CAR 103.04.</p>
+
+              <p className="text-sm mt-2"><strong>Best Practice:</strong> Test your backup system quarterly - can you actually retrieve and print your records? Many operators discover their &quot;backup&quot; doesn&apos;t work when TC comes calling.</p>
             </InstructorNote>
           </div>
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 106.01 Accountable Executive</h3>
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <h4 className="font-semibold mb-3">Appointment and Acceptance</h4>
-              <p className="mb-4 font-mono text-sm">&quot;...to be responsible for operations or activities authorized under the certificate and accountable on their behalf for meeting the requirements of these Regulations...&quot;</p>
-              <p className="font-mono text-sm">&quot;...no person shall be appointed... unless they have control of the financial and human resources...&quot;</p>
+              <h4 className="font-semibold mb-3">Appointment and Acceptance of Accountable Executive</h4>
+
+              <p className="font-semibold mb-2">(1) A person or organization that holds a certificate referred to in subsection (5) shall appoint an accountable executive:</p>
+              <p className="font-mono text-sm ml-4 mb-3">(a) to be responsible for the operations or activities authorized under the certificate and accountable on their behalf for meeting the requirements of these Regulations that relate to those operations or activities; and</p>
+              <p className="font-mono text-sm ml-4 mb-4">(b) to provide a letter of acceptance from the accountable executive to the Minister acknowledging their responsibilities and accountability.</p>
+
+              <p className="font-semibold mb-2">(2) No person shall be appointed as an accountable executive under subsection (1) unless they have control of the financial and human resources required to carry out the operations or activities authorized under the certificate.</p>
+
+              <p className="text-sm mt-3"><em>Note: Subsection (5) lists applicable certificates including RPAS Operator Certificates</em></p>
             </div>
 
             <InstructorNote type="keypoint">
-              <p className="mb-2">According to Transport Canada, an accountable executive is someone who has control of the financial and human resources in the company. This role is typically occupied by the president but does not have to be.</p>
-              <p className="mb-2">If a single person operates with an RPAS Operator Certificate, they occupy all roles (person responsible for maintenance, accountable executive, pilot, etc.)</p>
-              <p>A requirement of an RPAS Operator Certificate is to define an organizational structure, including who the accountable executive is.</p>
+              <p className="font-semibold mb-2">Who Can Be an Accountable Executive:</p>
+              <p className="text-sm mb-3">The Accountable Executive must have <strong>real authority</strong> - not just a title. They must control the budget (financial resources) and can hire/assign/train personnel (human resources). If they can&apos;t allocate money for safety equipment or can&apos;t pull a pilot from operations due to safety concerns, they don&apos;t have sufficient authority.</p>
+
+              <p className="font-semibold mb-2">Common Scenarios:</p>
+              <ul className="space-y-2 text-sm mb-3">
+                <li><strong>Sole Proprietor:</strong> You&apos;re the owner, pilot, maintenance person, AND accountable executive. You wear all hats. Your letter of acceptance acknowledges YOU are responsible for everything.</li>
+
+                <li><strong>Small Company (2-10 employees):</strong> Typically the owner or president. Could be operations manager if they have budget authority and can make hiring/firing decisions.</li>
+
+                <li><strong>Department in Larger Organization:</strong> Cannot be the company president who has no knowledge of RPAS operations. Must be someone in the drone operations division with delegated budget and staffing authority (e.g., Director of UAS Operations).</li>
+
+                <li><strong>Government Agency:</strong> Typically branch director or program manager who controls budget for the RPAS program and has authority over personnel assignments.</li>
+              </ul>
+
+              <p className="font-semibold mb-2">Letter of Acceptance Requirement:</p>
+              <p className="text-sm mb-2">The Accountable Executive must provide a written letter to Transport Canada stating:</p>
+              <p className="text-sm italic ml-3 mb-3">&quot;I, [Name], accept the role of Accountable Executive for [Organization Name] and acknowledge that I am responsible for ensuring all operations conducted under RPAS Operator Certificate [Number] comply with the Canadian Aviation Regulations. I understand I am accountable to Transport Canada for the safety and regulatory compliance of these operations.&quot;</p>
+
+              <p className="font-semibold mb-2">What Makes Someone NOT Qualified:</p>
+              <ul className="space-y-1 text-sm">
+                <li>❌ Manager who must get approval for equipment purchases over $500</li>
+                <li>❌ Supervisor who can&apos;t remove unsafe pilots from duty</li>
+                <li>❌ Owner who delegates all authority to someone else</li>
+                <li>❌ Figurehead who doesn&apos;t understand RPAS operations</li>
+              </ul>
+
+              <p className="text-sm mt-3"><strong>Bottom Line:</strong> Transport Canada will hold the Accountable Executive personally responsible in incidents. Choose someone who has actual authority and understands the weight of this role.</p>
             </InstructorNote>
 
             <InstructorNote type="activity">
@@ -1500,26 +1564,58 @@ export default function L1C01AirLaw() {
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 901.35 Icing Conditions</h3>
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <p className="font-mono text-sm mb-3">&quot;...icing conditions are observed, are reported to exist or are likely to be encountered...unless the aircraft is equipped...&quot;</p>
-              <p className="font-mono text-sm">&quot;...frost, ice or snow adhering to any of the critical surfaces...&quot;</p>
+              <p className="font-semibold mb-3">No person shall operate a remotely piloted aircraft:</p>
+              <p className="font-mono text-sm ml-4 mb-3">(a) when icing conditions are observed, are reported to exist or are likely to be encountered during the operation, unless the aircraft is equipped with operational de-icing or anti-icing equipment and that equipment is used during the operation; or</p>
+              <p className="font-mono text-sm ml-4">(b) when frost, ice or snow is adhering to any of the critical surfaces of the aircraft.</p>
             </div>
 
             <InstructorNote type="keypoint">
-              <p className="mb-2">A critical surface is anything that contributes to the lifting agents. It&apos;s especially important to ensure there is no frost, ice, etc. on bigger drones.</p>
-              <p>&quot;Icing conditions&quot; could include a weather alert for freezing rain.</p>
+              <p className="font-semibold mb-2">What This Means in Practice:</p>
+              <p className="mb-3"><strong>Critical surfaces</strong> = any surface that generates lift or controls flight: propellers, rotors, wings, control surfaces. On multirotors, this primarily means your propellers.</p>
+
+              <p className="font-semibold mb-2">Real-World Scenarios:</p>
+              <ul className="space-y-2 text-sm">
+                <li><strong>Morning frost on your drone:</strong> You arrive at the site at 7 AM, drone was in the truck overnight, and there&apos;s frost on the propellers and airframe. <span className="text-red-600 font-semibold">Cannot fly</span> - must remove ALL frost before flight or wait for it to melt naturally.</li>
+
+                <li><strong>Freezing rain in the forecast:</strong> METAR shows &quot;FZRA&quot; (freezing rain) or GFA shows icing conditions. <span className="text-red-600 font-semibold">Cannot fly</span> - unless your RPAS has certified de-icing equipment (extremely rare for small RPAS).</li>
+
+                <li><strong>Snow accumulation during storage:</strong> Drone stored outside or in unheated building, snow accumulated on surfaces overnight. <span className="text-red-600 font-semibold">Cannot fly</span> - brush off ALL snow, ensure no ice formed underneath.</li>
+
+                <li><strong>Temperature near freezing with visible moisture:</strong> 0-2°C with fog, mist, or light rain. <span className="text-yellow-600 font-semibold">High risk</span> - ice can form rapidly on cold aircraft surfaces. Monitor closely, abort if icing observed.</li>
+
+                <li><strong>Cold-soaked aircraft:</strong> Drone stored in heated building, brought outside into -10°C air with high humidity. Moisture can condense and freeze on cold surfaces. <span className="text-yellow-600 font-semibold">Allow aircraft to temperature-equalize</span> before flight, inspect for ice formation.</li>
+              </ul>
+
+              <p className="mt-3 font-semibold">Bottom Line: Even a thin layer of frost reduces propeller efficiency and can cause loss of control. When in doubt, delay the flight.</p>
             </InstructorNote>
           </div>
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-4">CAR 901.38 Use of First-Person View Devices</h3>
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <p className="mb-3 font-mono text-sm">&quot;...unless a visual observer maintains unaided visual contact with the airspace...&quot;</p>
-              <p><strong>FPV Device:</strong> Generates and transmits a streaming video image to a control station display or monitor, giving the pilot of an RPA the illusion of flying the aircraft from an onboard pilot&apos;s perspective</p>
+            <div className="bg-white p-6 rounded-lg border border-gray-200 mb-4">
+              <p className="font-semibold mb-3">No person shall operate a remotely piloted aircraft using a first-person view device unless a visual observer maintains unaided visual contact with the airspace in which the aircraft is operating in a manner sufficient to detect conflicting air traffic or other hazards and to take action to avoid them.</p>
+            </div>
+
+            <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+              <p className="font-semibold mb-2">Definition - First-Person View (FPV) Device:</p>
+              <p className="text-sm">A device that generates and transmits a streaming video image to a control station display or monitor, giving the pilot of an RPA the illusion of flying the aircraft from an onboard pilot&apos;s perspective.</p>
             </div>
 
             <InstructorNote type="keypoint">
-              <p className="mb-2">The definition of FPV Device changed with the new regulations. Goggles are not required to be considered using an FPV device. An RC model that has an RC controller with no video feed is not an FPV device.</p>
-              <p>If a pilot is so focused on the video that they are no longer monitoring the airspace, bring in a visual observer.</p>
+              <p className="font-semibold mb-2">Key Change in New Regulations:</p>
+              <p className="mb-3">The definition of FPV Device now includes ANY video feed that creates a first-person perspective - not just goggles. If you&apos;re watching a screen showing the drone&apos;s camera view and flying based on that feed (rather than looking at the actual aircraft), you&apos;re using an FPV device.</p>
+
+              <p className="font-semibold mb-2">What Counts as FPV vs. What Doesn&apos;t:</p>
+              <ul className="space-y-2 text-sm">
+                <li><strong>IS FPV (requires VO):</strong> Pilot wearing goggles showing drone camera feed, pilot staring at tablet/phone screen flying via camera view, racing drone with video transmission where pilot never looks at actual aircraft</li>
+
+                <li><strong>NOT FPV (no VO required):</strong> Traditional RC controller with no video feed - pilot maintains direct visual contact with aircraft, Camera/gimbal used for mission purposes (inspection, mapping) but pilot flies by watching the actual aircraft not the screen, Monitoring payload video occasionally while maintaining visual contact with aircraft</li>
+              </ul>
+
+              <p className="mt-3 font-semibold mb-2">The Rule Simplified:</p>
+              <p>If you&apos;re flying by looking at a screen/goggles instead of the actual aircraft = FPV = Must have a Visual Observer maintaining direct visual contact with the airspace.</p>
+
+              <p className="mt-2 text-sm">If a pilot becomes so focused on video that they stop monitoring the actual airspace, they&apos;ve effectively created an FPV operation and need to bring in a VO.</p>
             </InstructorNote>
           </div>
         </CourseSection>
