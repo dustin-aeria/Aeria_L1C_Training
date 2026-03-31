@@ -1,7 +1,7 @@
 # Aeria L1C Training - Migration Progress Tracker
 
-**Last Updated:** 2026-03-31
-**Current Status:** L1C00 Complete ✅ | L1C01 Air Law Complete ✅ | Ready for User Review
+**Last Updated:** 2026-03-31 (Regulation Enhancement Session)
+**Current Status:** L1C00 Complete ✅ | L1C01 Air Law COMPLETE & ENHANCED ✅ | Deployed & Ready for Review
 
 ---
 
@@ -48,13 +48,89 @@
 6. Mandatory Links & Software
 7. After This Course
 
-#### ✅ L1C01: Air Law (86 slides)
+#### ✅ L1C01: Air Law (86 slides) - FULLY ENHANCED
 - **Location:** `app/course/l1c01-air-law/page.tsx`
 - **Images Extracted:** 18 (all diagrams and reference images)
-- **Status:** Complete and ready for review
-- **Content Preserved:** 100% - All 86 slides converted
+- **Status:** ✅ COMPLETE - All content + Full regulation text + Comprehensive enhancements
+- **Content Preserved:** 100% - All 86 slides converted with NO content lost
 - **Duration:** 4 hours
-- **URL:** https://aeria-l1-c-training.vercel.app/course/l1c01-air-law (pending deployment)
+- **URL:** https://aeria-l1-c-training.vercel.app/course/l1c01-air-law
+- **Last Major Update:** 2026-03-31 - Complete regulation enhancement pass
+
+**MAJOR ENHANCEMENTS COMPLETED:**
+
+**Phase 1: Initial Content Migration (COMPLETE)**
+- All 86 slides from PowerPoint converted to web format
+- All instructor notes, key points, and activities preserved
+- 18 images extracted and integrated
+- Table of contents with anchor navigation
+- 12 major section divisions
+
+**Phase 2: Practical Examples & Context (COMPLETE)**
+Added 8 enhancement categories:
+1. ✅ Numbering Structure - Real Part IX examples (901.56, 901.87, 901.213, etc.)
+2. ✅ 3P Approach - 6 pass/fail scenarios with detailed analysis
+3. ✅ Standard 923 - 6 "Can You Fly?" decision scenarios
+4. ✅ Weather Assessment - METAR/TAF reading with real examples
+5. ✅ Site Survey - Complete agricultural example with checklist
+6. ✅ Canadian Airspace - Real airports (CYYZ, CYOW, CYVR, CYYC, etc.)
+7. ✅ Ground Risk Buffer - Calculation examples with wind/altitude factors
+8. ✅ ROM Structure - Complete templates (pre-flight, emergency, training, maintenance)
+
+**Phase 3: Full Regulation Text Replacement (COMPLETE)**
+Fixed 25 regulation sections - replaced ALL partial quotes/bullet points with COMPLETE CAR text:
+
+*CRITICAL Fixes (6) - Missing regulation text entirely:*
+1. ✅ CAR 601.14 - Minimum Altitudes & Distances
+2. ✅ CAR 901.26 - Horizontal Distances (VLOS)
+3. ✅ CAR 901.27 - Site Survey
+4. ✅ CAR 901.34 - Minimum Weather Conditions
+5. ✅ CAR 901.87 - Applicability (L1C gatekeeper regulation)
+6. ✅ CAR 900.14-900.20 - RPAS Registration
+
+*HIGH Priority Fixes (14) - Partial quotes/bullet summaries:*
+7. ✅ CAR 601.96 - Operations at Aerodromes
+8. ✅ CAR 601.97 - Uncontrolled Aerodromes/MF
+9. ✅ CAR 602.15 - Permissible Low Altitude Flight
+10. ✅ CAR 901.19 - Fitness of Crew Members
+11. ✅ CAR 901.24 - Pre-Flight Information
+12. ✅ CAR 901.74 - Extended VLOS
+13. ✅ CAR 901.74 - Sheltered Operations
+14. ✅ CAR 901.89 - L1C Pilot Requirements
+15. ✅ CAR 901.95 - Declarations
+16. ✅ CAR 901.176 - Flight Reviewer Requirements
+17. ✅ CAR 901.178 - Retaking of Exam
+18. ✅ CAR 901.213 - Eligibility
+19. ✅ CAR 901.216 - General Conditions
+20. ✅ CAR 901.217 - RPAS Operations Manual
+
+*Previously Fixed (5) - From initial builds:*
+21. ✅ CAR 901.35 - Icing Conditions
+22. ✅ CAR 901.38 - FPV Devices
+23. ✅ CAR 103.01 - Document Inspection
+24. ✅ CAR 103.04 - Record Keeping
+25. ✅ CAR 106.01 - Accountable Executive
+
+**TRANSFORMATION PATTERN:**
+- BEFORE: "...icing conditions..." (partial with ellipsis)
+- AFTER: Complete CAR 901.35 with full subsections (a) and (b)
+
+- BEFORE: Bullet points "• 30 m horizontal, 5 m vertical"
+- AFTER: Full CAR 901.26 text with all subsections for small/medium/large RPAS
+
+- BEFORE: InstructorNote: "Critical surface = lifting surface"
+- AFTER: InstructorNote: Real scenarios (morning frost, freezing rain, cold-soaked aircraft), practical decision-making, common mistakes
+
+**INSTRUCTOR NOTE ENHANCEMENTS:**
+Every instructor note now provides VALUE through:
+- ✓ Real-world examples students will encounter
+- ✓ Common mistakes and misconceptions
+- ✓ Practical decision-making guidance
+- ✓ Specific scenarios with outcomes
+- ✓ Enforcement implications
+- ✓ "Why this matters" explanations
+- ✓ Step-by-step procedures
+- ✓ Calculation examples with real numbers
 
 **Sections (12 major divisions):**
 1. Objectives & L1C Context (3P Approach)
@@ -186,10 +262,16 @@ git add -A && git commit -m "message" && git push  # Auto-deploys to Vercel
 
 ## Design Decisions
 
-### Content Preservation
-- **Rule:** ALL regulatory content must be preserved exactly as-is
-- **Enhancement:** Can add interactive elements, better visuals, references
-- **Approval:** Content changes require discussion with user
+### Content Preservation & Enhancement Philosophy
+- **Rule:** ALL regulatory content must be preserved exactly as-is - NO content removed or falsified
+- **Enhancement Approach:** ADD VALUE without changing required material
+  - Full regulation text (no partial quotes with "...")
+  - Instructor notes that provide examples, context, practical guidance (not just restate regs)
+  - Real-world scenarios and decision-making frameworks
+  - Common mistakes and misconceptions addressed
+  - Canadian-specific examples (airports, locations, tools)
+- **Quality Standard:** Every regulation must be completely quotable; every instructor note must teach something new
+- **User Directive:** "state the full and actual regulation... the light bulb section should be a simplification and perhaps example or context to the regulation"
 
 ### Component System
 - **CourseLayout:** Handles navigation and responsive sidebar
