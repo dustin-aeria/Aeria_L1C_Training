@@ -4,6 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Aeria Solutions - L1C Training",
   description: "Level 1 Complex (L1C) RPAS Training - Transport Canada Certified",
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
