@@ -784,245 +784,6 @@ export default function L1C01AirLaw() {
             </InstructorNote>
           </div>
 
-          <div className="mb-6">
-            <h3 className="text-xl font-semibold mb-4">Requirements by Airspace Class (IFR)</h3>
-
-            <div className="bg-white p-6 rounded-lg border border-gray-200 mb-4 overflow-x-auto">
-              <table className="w-full text-sm border-collapse">
-                <thead>
-                  <tr className="bg-gray-100">
-                    <th className="border border-gray-300 p-2 text-left font-bold">IFR</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">Requirement</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">A</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">B</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">C</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">D</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">E</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">F</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">G</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="border border-gray-300 p-2 font-semibold" rowSpan={8}>IFR</td>
-                    <td className="border border-gray-300 p-2 font-semibold">Conflict Resolution</td>
-                    <td className="border border-gray-300 p-2 text-center bg-red-50">No drone operations</td>
-                    <td className="border border-gray-300 p-2 text-center bg-red-50">No drone operations</td>
-                    <td className="border border-gray-300 p-2 text-center">Provided between IFR and VFR</td>
-                    <td className="border border-gray-300 p-2 text-center">Equipment and workload permitting</td>
-                    <td className="border border-gray-300 p-2 text-center">No</td>
-                    <td className="border border-gray-300 p-2 text-center">Defer to the rules published in the Designated Airspace Handbook (TP 1820).</td>
-                    <td className="border border-gray-300 p-2 text-center">There are several rules that apply to uncontrolled traffic. Defer to CARs.</td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 p-2 font-semibold">Traffic Information</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center">Yes</td>
-                    <td className="border border-gray-300 p-2 text-center">Yes</td>
-                    <td className="border border-gray-300 p-2 text-center">Workload permitting</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 p-2 font-semibold">Separation</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center">IFR from IFR</td>
-                    <td className="border border-gray-300 p-2 text-center">IFR from IFR</td>
-                    <td className="border border-gray-300 p-2 text-center">IFR from IFR</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 p-2 font-semibold">Speed Limitation</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center">250 kt below 10,000 ft MSL<br/>200 kt below 3,000 ft AGL within 10 NM of a controlled airport</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 p-2 font-semibold">Radio</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center">Mandatory</td>
-                    <td className="border border-gray-300 p-2 text-center">Mandatory</td>
-                    <td className="border border-gray-300 p-2 text-center">Mandatory</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 p-2 font-semibold">Transponder</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center">Yes</td>
-                    <td className="border border-gray-300 p-2 text-center">Yes, in designated areas</td>
-                    <td className="border border-gray-300 p-2 text-center">Yes, in designated areas</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 p-2 font-semibold">Clearance</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center">ATC</td>
-                    <td className="border border-gray-300 p-2 text-center">ATC</td>
-                    <td className="border border-gray-300 p-2 text-center">ATC</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <InstructorNote type="keypoint">
-              <p className="mb-2">For the RPAS Operator Certificate/L1C operations, drones will be operating in the Class F and Class G airspace for the most part.</p>
-              <p className="mb-2">Drone operators do not need to understand the nuances of Class A, B, C, D, and E.</p>
-              <p>It is more important to understand if the airspace is controlled or uncontrolled.</p>
-            </InstructorNote>
-          </div>
-
-          <div className="mb-6">
-            <h3 className="text-xl font-semibold mb-4">Requirements by Airspace Class (VFR)</h3>
-
-            <div className="bg-white p-6 rounded-lg border border-gray-200 mb-4 overflow-x-auto">
-              <table className="w-full text-sm border-collapse">
-                <thead>
-                  <tr className="bg-gray-100">
-                    <th className="border border-gray-300 p-2 text-left font-bold">VFR</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">Requirement</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">A</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">B</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">C</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">D</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">D</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">E</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">E</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">F</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">G</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="border border-gray-300 p-2 font-semibold" rowSpan={9}>VFR</td>
-                    <td className="border border-gray-300 p-2 font-semibold">Conflict Resolution</td>
-                    <td className="border border-gray-300 p-2 text-center bg-red-50">No drone operations</td>
-                    <td className="border border-gray-300 p-2 text-center bg-red-50">No drone operations</td>
-                    <td className="border border-gray-300 p-2 text-center">Upon request</td>
-                    <td className="border border-gray-300 p-2 text-center">Upon request – equipment and workload permitting</td>
-                    <td className="border border-gray-300 p-2 text-center">Upon request – equipment and workload permitting</td>
-                    <td className="border border-gray-300 p-2 text-center">No</td>
-                    <td className="border border-gray-300 p-2 text-center">No</td>
-                    <td className="border border-gray-300 p-2 text-center">Defer to the rules published in the Designated Airspace Handbook (TP 1820).</td>
-                    <td className="border border-gray-300 p-2 text-center">There are several rules that apply to uncontrolled traffic. Defer to CARs.</td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 p-2 font-semibold">Traffic Information</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center">Yes</td>
-                    <td className="border border-gray-300 p-2 text-center">Yes</td>
-                    <td className="border border-gray-300 p-2 text-center">Yes</td>
-                    <td className="border border-gray-300 p-2 text-center">Workload permitting</td>
-                    <td className="border border-gray-300 p-2 text-center">Workload permitting</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 p-2 font-semibold">Separation</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 p-2 font-semibold">VMC Minima</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center">Flight visibility is not less than 3 miles<br/>The distance of the aircraft from cloud is not less than 500 ft vertically and 1 mile horizontally</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 p-2 font-semibold">SVFR</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center">Yes</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center">Yes</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center">Yes</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 p-2 font-semibold">Speed Limitation</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center">250 kt below 10,000 ft MSL<br/>200 kt below 3,000 ft AGL within 10 NM of a controlled airport</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 p-2 font-semibold">Radio</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center">Mandatory</td>
-                    <td className="border border-gray-300 p-2 text-center">Mandatory</td>
-                    <td className="border border-gray-300 p-2 text-center">Mandatory</td>
-                    <td className="border border-gray-300 p-2 text-center">Not required</td>
-                    <td className="border border-gray-300 p-2 text-center">Not required</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 p-2 font-semibold">Transponder</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center">Yes</td>
-                    <td className="border border-gray-300 p-2 text-center">Yes, in designated areas</td>
-                    <td className="border border-gray-300 p-2 text-center">Yes, in designated areas</td>
-                    <td className="border border-gray-300 p-2 text-center">Yes, in designated areas</td>
-                    <td className="border border-gray-300 p-2 text-center">Yes, in designated areas</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 p-2 font-semibold">Clearance</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center">ATC</td>
-                    <td className="border border-gray-300 p-2 text-center">Establish radio contact</td>
-                    <td className="border border-gray-300 p-2 text-center">Establish radio contact</td>
-                    <td className="border border-gray-300 p-2 text-center">Not required</td>
-                    <td className="border border-gray-300 p-2 text-center">Not required</td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                    <td className="border border-gray-300 p-2 text-center bg-gray-100"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <InstructorNote type="info">
-              <p>Speak about weather limitations.</p>
-            </InstructorNote>
-
             <InstructorNote type="keypoint">
               <p className="font-semibold mb-3">Understanding VFR Weather Minimums in Class G Airspace:</p>
 
@@ -2543,52 +2304,52 @@ export default function L1C01AirLaw() {
             </InstructorNote>
 
             <InstructorNote type="activity">
-              <p className="font-semibold mb-3">3P Approach: Pass or Fail? Test Your Understanding</p>
+              <p className="font-semibold mb-3">3P Approach: Scenario Analysis</p>
               <p className="text-sm mb-4">For each scenario below, identify which of the 3 Ps is missing or non-compliant:</p>
 
               <div className="space-y-4">
-                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
-                  <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 1: Age Requirement</p>
+                <div className="bg-white p-4 rounded-lg border-l-4 border-gray-300">
+                  <p className="font-semibold mb-2">SCENARIO 1</p>
                   <p className="text-sm mb-2"><strong>Situation:</strong> A 17-year-old pilot holds a valid L1C certificate, has completed recency requirements, and will operate under an RPAS Operator Certificate with a compliant platform.</p>
                   <RevealAnswer buttonText="Show Result">
                     <p className="text-sm"><strong>Result: FAIL</strong> - Missing PILOT requirement (must be 18+ years old per CAR 901.89)</p>
                   </RevealAnswer>
                 </div>
 
-                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
-                  <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 2: Platform Modification</p>
+                <div className="bg-white p-4 rounded-lg border-l-4 border-gray-300">
+                  <p className="font-semibold mb-2">SCENARIO 2</p>
                   <p className="text-sm mb-2"><strong>Situation:</strong> An 18-year-old L1C pilot with current recency, operating under an RPAS Operator Certificate, using a DJI M350 with modified propeller guards (not manufacturer-approved modifications) without demonstrating Standard 922 compliance.</p>
                   <RevealAnswer buttonText="Show Result">
                     <p className="text-sm"><strong>Result: FAIL</strong> - Missing PLATFORM requirement (modifications require manufacturer instructions OR Standard 922 demonstration per CAR 901.95)</p>
                   </RevealAnswer>
                 </div>
 
-                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
-                  <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 3: No ROM</p>
+                <div className="bg-white p-4 rounded-lg border-l-4 border-gray-300">
+                  <p className="font-semibold mb-2">SCENARIO 3</p>
                   <p className="text-sm mb-2"><strong>Situation:</strong> An 18-year-old L1C pilot with current recency wants to conduct BVLOS operations using a compliant platform, but hasn&apos;t applied for or received an RPAS Operator Certificate.</p>
                   <RevealAnswer buttonText="Show Result">
                     <p className="text-sm"><strong>Result: FAIL</strong> - Missing PROCEDURE requirement (must have RPAS Operator Certificate with ROM per CAR 901.88)</p>
                   </RevealAnswer>
                 </div>
 
-                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
-                  <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 4: Expired Recency</p>
+                <div className="bg-white p-4 rounded-lg border-l-4 border-gray-300">
+                  <p className="font-semibold mb-2">SCENARIO 4</p>
                   <p className="text-sm mb-2"><strong>Situation:</strong> A 25-year-old pilot holds an L1C certificate obtained 30 months ago, hasn&apos;t completed recency requirements, operates under an RPAS Operator Certificate with a compliant platform.</p>
                   <RevealAnswer buttonText="Show Result">
                     <p className="text-sm"><strong>Result: FAIL</strong> - Missing PILOT requirement (recency must be demonstrated within 24 months per CAR 901.89)</p>
                   </RevealAnswer>
                 </div>
 
-                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
-                  <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 5: Incomplete ROM</p>
+                <div className="bg-white p-4 rounded-lg border-l-4 border-gray-300">
+                  <p className="font-semibold mb-2">SCENARIO 5</p>
                   <p className="text-sm mb-2"><strong>Situation:</strong> An 18-year-old L1C pilot with current recency, using a compliant platform, has an RPAS Operator Certificate but the ROM doesn&apos;t include emergency procedures or a site survey process.</p>
                   <RevealAnswer buttonText="Show Result">
                     <p className="text-sm"><strong>Result: FAIL</strong> - Missing PROCEDURE requirement (ROM must include all required elements per CAR 901.217)</p>
                   </RevealAnswer>
                 </div>
 
-                <div className="bg-white p-4 rounded-lg border-l-4 border-green-500">
-                  <p className="font-semibold text-green-700 mb-2">✅ SCENARIO 6: All Requirements Met</p>
+                <div className="bg-white p-4 rounded-lg border-l-4 border-gray-300">
+                  <p className="font-semibold mb-2">SCENARIO 6</p>
                   <p className="text-sm mb-2"><strong>Situation:</strong> A 22-year-old pilot holds a valid L1C certificate with recency completed 6 months ago, operates under an RPAS Operator Certificate (DMP-issued) with a complete ROM including all required sections, using a DJI M300 RTK with manufacturer&apos;s declaration for BVLOS operations (no modifications).</p>
                   <RevealAnswer buttonText="Show Result">
                     <p className="text-sm"><strong>Result: PASS</strong> - All 3 Ps met! ✓ Pilot (18+, L1C cert, current recency) ✓ Procedure (RPAS Operator Certificate with compliant ROM) ✓ Platform (manufacturer declaration, no unauthorized mods)</p>
@@ -2775,12 +2536,12 @@ export default function L1C01AirLaw() {
             </div>
 
             <InstructorNote type="activity">
-              <p className="font-semibold mb-3">Standard 923 Decision-Making: Can You Fly?</p>
-              <p className="text-sm mb-4">Practice applying Standard 923 requirements to real-world scenarios. For each situation, determine if the operation is compliant:</p>
+              <p className="font-semibold mb-3">Standard 923 Decision-Making: Scenario Analysis</p>
+              <p className="text-sm mb-4">For each scenario below, determine if the operation is compliant with Standard 923 requirements:</p>
 
               <div className="space-y-4">
-                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
-                  <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 1: Poor Visibility</p>
+                <div className="bg-white p-4 rounded-lg border-l-4 border-gray-300">
+                  <p className="font-semibold mb-2">SCENARIO 1</p>
                   <p className="text-sm mb-2"><strong>Conditions:</strong></p>
                   <ul className="text-xs space-y-1 mb-2 ml-4">
                     <li>• Visibility: 2.5 statute miles</li>
@@ -2793,8 +2554,8 @@ export default function L1C01AirLaw() {
                   </RevealAnswer>
                 </div>
 
-                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
-                  <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 2: Low Ceiling</p>
+                <div className="bg-white p-4 rounded-lg border-l-4 border-gray-300">
+                  <p className="font-semibold mb-2">SCENARIO 2</p>
                   <p className="text-sm mb-2"><strong>Conditions:</strong></p>
                   <ul className="text-xs space-y-1 mb-2 ml-4">
                     <li>• Visibility: 5 statute miles</li>
@@ -2807,8 +2568,8 @@ export default function L1C01AirLaw() {
                   </RevealAnswer>
                 </div>
 
-                <div className="bg-white p-4 rounded-lg border-l-4 border-red-500">
-                  <p className="font-semibold text-red-700 mb-2">❌ SCENARIO 3: Distance Violation</p>
+                <div className="bg-white p-4 rounded-lg border-l-4 border-gray-300">
+                  <p className="font-semibold mb-2">SCENARIO 3</p>
                   <p className="text-sm mb-2"><strong>Conditions:</strong></p>
                   <ul className="text-xs space-y-1 mb-2 ml-4">
                     <li>• Visibility: 10 statute miles</li>
@@ -2821,8 +2582,8 @@ export default function L1C01AirLaw() {
                   </RevealAnswer>
                 </div>
 
-                <div className="bg-white p-4 rounded-lg border-l-4 border-yellow-500">
-                  <p className="font-semibold text-yellow-700 mb-2">⚠️ SCENARIO 4: Deteriorating Conditions</p>
+                <div className="bg-white p-4 rounded-lg border-l-4 border-gray-300">
+                  <p className="font-semibold mb-2">SCENARIO 4</p>
                   <p className="text-sm mb-2"><strong>Conditions at mission start:</strong></p>
                   <ul className="text-xs space-y-1 mb-2 ml-4">
                     <li>• Visibility: 4 statute miles</li>
@@ -2836,8 +2597,8 @@ export default function L1C01AirLaw() {
                   </RevealAnswer>
                 </div>
 
-                <div className="bg-white p-4 rounded-lg border-l-4 border-green-500">
-                  <p className="font-semibold text-green-700 mb-2">✅ SCENARIO 5: Compliant Operation</p>
+                <div className="bg-white p-4 rounded-lg border-l-4 border-gray-300">
+                  <p className="font-semibold mb-2">SCENARIO 5</p>
                   <p className="text-sm mb-2"><strong>Conditions:</strong></p>
                   <ul className="text-xs space-y-1 mb-2 ml-4">
                     <li>• Visibility: 5 statute miles (verified by METAR and visual confirmation)</li>
@@ -2852,8 +2613,8 @@ export default function L1C01AirLaw() {
                   </RevealAnswer>
                 </div>
 
-                <div className="bg-white p-4 rounded-lg border-l-4 border-green-500">
-                  <p className="font-semibold text-green-700 mb-2">✅ SCENARIO 6: Marginal but Legal</p>
+                <div className="bg-white p-4 rounded-lg border-l-4 border-gray-300">
+                  <p className="font-semibold mb-2">SCENARIO 6</p>
                   <p className="text-sm mb-2"><strong>Conditions:</strong></p>
                   <ul className="text-xs space-y-1 mb-2 ml-4">
                     <li>• Visibility: Exactly 3 statute miles (measured using section lines)</li>
