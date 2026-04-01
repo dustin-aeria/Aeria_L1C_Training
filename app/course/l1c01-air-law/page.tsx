@@ -1524,12 +1524,14 @@ export default function L1C01AirLaw() {
 
             <div className="bg-green-50 p-4 rounded-lg border border-green-300">
               <h4 className="font-semibold mb-2">Populated Area</h4>
-              <p className="text-sm">An area with <strong>more than 5 people per square kilometre</strong></p>
+              <p className="text-sm">An area where there is <strong>1 or more persons per 5,000 m²</strong></p>
+              <p className="text-xs mt-2 text-gray-600"><strong>Data Source:</strong> Statistics Canada most recent Census data</p>
             </div>
 
             <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-300">
               <h4 className="font-semibold mb-2">Sparsely Populated Area</h4>
-              <p className="text-sm">An area with <strong>more than 5 but not more than 25 people per square kilometre</strong></p>
+              <p className="text-sm">An area where there is <strong>less than 1 person per 5,000 m²</strong></p>
+              <p className="text-xs mt-2 text-gray-600"><strong>Data Source:</strong> Statistics Canada most recent Census data</p>
             </div>
 
             <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
@@ -1772,12 +1774,12 @@ export default function L1C01AirLaw() {
               <ul className="space-y-2 text-sm mb-3">
                 <li><strong>NRCAN Drone Site Selection Tool (DSST-2):</strong> Official government tool showing populated vs sparsely populated areas on a map. Available at: https://natural-resources.canada.ca/drones</li>
 
-                <li><strong>Statistics Canada Population Density Data:</strong> Provides people per square kilometer by dissemination area. Allows precise calculation for specific locations.</li>
+                <li><strong>Statistics Canada Population Density Data:</strong> Provides population data from Census that can be used to determine if an area meets the regulatory thresholds.</li>
 
-                <li><strong>Definitions:</strong>
+                <li><strong>Regulatory Definitions (from CAR 901.87):</strong>
                   <ul className="ml-4 mt-1">
-                    <li>• <strong>Populated Area:</strong> 1 or more persons per 5,000 m² (population density ≥ 200 per km²)</li>
-                    <li>• <strong>Sparsely Populated Area:</strong> Less than 1 person per 5,000 m² (population density &lt; 200 per km²)</li>
+                    <li>• <strong>Populated Area:</strong> 1 or more persons per 5,000 m²</li>
+                    <li>• <strong>Sparsely Populated Area:</strong> Less than 1 person per 5,000 m²</li>
                   </ul>
                 </li>
               </ul>
@@ -2242,10 +2244,10 @@ export default function L1C01AirLaw() {
                 <p className="mt-2 font-semibold">Access: natural-resources.canada.ca/drones → DSST-2</p>
               </div>
 
-              <p className="font-semibold mb-2">Population Density Definitions (from Part IX Division I):</p>
+              <p className="font-semibold mb-2">Population Density Definitions (from CAR 901.87 / Part IX Division I):</p>
               <ul className="space-y-1 text-sm mb-3">
-                <li><strong>Populated Area:</strong> 1 or more persons per 5,000 m² (≥ 200 per km²)</li>
-                <li><strong>Sparsely Populated Area:</strong> Less than 1 person per 5,000 m² (&lt; 200 per km²)</li>
+                <li><strong>Populated Area:</strong> 1 or more persons per 5,000 m²</li>
+                <li><strong>Sparsely Populated Area:</strong> Less than 1 person per 5,000 m²</li>
                 <li><strong>Data Source:</strong> Statistics Canada most recent Census data</li>
               </ul>
 
