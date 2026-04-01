@@ -784,6 +784,7 @@ export default function L1C01AirLaw() {
             </InstructorNote>
           </div>
 
+          <div className="mb-6">
             <InstructorNote type="keypoint">
               <p className="font-semibold mb-3">Understanding VFR Weather Minimums in Class G Airspace:</p>
 
