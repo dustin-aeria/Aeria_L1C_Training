@@ -526,7 +526,7 @@ export default function L1C01AirLaw() {
               <p className="font-semibold mb-2">Practice Question:</p>
               <p className="mb-2">What are RPAS altitudes derived from?</p>
               <RevealAnswer>
-                <p className="text-sm"><strong>Answer:</strong> Your drone is giving you true altitude. Your aircraft altitude is not a true altitude unless at are at a standard ISA temperature. Anything that deviates outside of ISA and traditional aircraft are no longer at a true altitude.</p>
+                <p className="text-sm"><strong>Answer:</strong> RPAS altitudes are derived from GPS, which provides true altitude above sea level (ASL). In contrast, manned aircraft use pressure altimeters which only show true altitude at standard ISA temperature. When conditions deviate from ISA, manned aircraft altimeters no longer display true altitude.</p>
               </RevealAnswer>
               <p className="font-semibold mb-2 mt-4">Discussion:</p>
               <p>What are the challenges combining RPAS (GPS) altitudes with traditional aircraft that use altimeters?</p>
@@ -1720,90 +1720,16 @@ export default function L1C01AirLaw() {
 
             <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
               <h4 className="font-semibold mb-2">Ground Risk Buffer</h4>
-              <p className="text-sm mb-3">The area immediately surrounding the contingency volume that, when measured horizontally from the perimeter of the contingency volume, is at least equal to the planned maximum altitude of the RPA for the flight</p>
+              <p className="text-sm mb-3">The horizontal area surrounding the contingency volume. The buffer must extend outward from the contingency volume perimeter by a distance at least equal to the maximum planned altitude of the flight (1:1 ratio).</p>
 
-              <div className="bg-white p-4 rounded border border-blue-100 text-xs space-y-3">
-                <p className="font-semibold mb-2">Ground Risk Buffer Calculation Examples:</p>
+              <div className="bg-white p-4 rounded border border-blue-100 text-sm space-y-2">
+                <p className="font-semibold">Simple Example:</p>
+                <ul className="ml-4 space-y-1">
+                  <li>• Maximum planned altitude: <strong>400 ft AGL</strong></li>
+                  <li>• Required ground risk buffer: <strong>400 ft horizontal</strong> from contingency volume edge</li>
+                  <li>• This 1:1 ratio ensures adequate safety margin</li>
+                </ul>
 
-                <div className="space-y-3">
-                  <div className="p-3 bg-gray-50 rounded">
-                    <p className="font-semibold mb-2">Example 1: Basic Calculation</p>
-                    <ul className="space-y-1 ml-3">
-                      <li>• Planned maximum altitude: <strong>400 ft AGL</strong></li>
-                      <li>• Minimum ground risk buffer: <strong>400 ft horizontal</strong> from contingency volume perimeter</li>
-                      <li>• Reasoning: Regulatory minimum = altitude (1:1 ratio)</li>
-                    </ul>
-                    <p className="mt-2 font-semibold">Total protected area = Flight Geography + Contingency Volume + 400 ft buffer</p>
-                  </div>
-
-                  <div className="p-3 bg-gray-50 rounded">
-                    <p className="font-semibold mb-2">Example 2: Wind Considerations (Conservative Approach)</p>
-                    <ul className="space-y-1 ml-3">
-                      <li>• Planned maximum altitude: <strong>300 ft AGL</strong></li>
-                      <li>• Wind conditions: <strong>20 kt sustained, gusting 30 kt</strong></li>
-                      <li>• RPAS glide ratio: <strong>3:1</strong> (loses 1 ft altitude per 3 ft horizontal)</li>
-                      <li>• Regulatory minimum buffer: <strong>300 ft</strong></li>
-                      <li>• Wind drift calculation: 30 kt = ~50 ft/sec. Time to descend from 300 ft at 10 ft/sec = 30 seconds</li>
-                      <li>• Potential wind drift: 50 ft/sec × 30 sec = <strong>1,500 ft</strong></li>
-                      <li>• Recommended buffer: <strong>1,500 ft</strong> (greater of regulatory min or wind drift)</li>
-                    </ul>
-                    <p className="mt-2 font-semibold text-yellow-700">⚠️ Professional practice: Calculate worst-case wind drift and use the larger value!</p>
-                  </div>
-
-                  <div className="p-3 bg-gray-50 rounded">
-                    <p className="font-semibold mb-2">Example 3: Fly-Away Scenario Planning</p>
-                    <ul className="space-y-1 ml-3">
-                      <li>• RPAS: <strong>DJI M300 RTK</strong></li>
-                      <li>• Maximum speed: <strong>50 kt (82 ft/sec)</strong></li>
-                      <li>• Battery endurance: <strong>15 minutes remaining</strong></li>
-                      <li>• Planned altitude: <strong>400 ft AGL</strong></li>
-                      <li>• Regulatory minimum: <strong>400 ft buffer</strong></li>
-                      <li>• Worst case fly-away: 82 ft/sec × 900 sec (15 min) = <strong>73,800 ft = 12.3 NM</strong></li>
-                      <li>• Practical buffer considering terrain: <strong>2 NM</strong> (account for obstacles forcing landing)</li>
-                    </ul>
-                    <p className="mt-2 font-semibold text-red-700">🚨 This shows why contingency procedures (geofencing, return-to-home, battery monitoring) are CRITICAL!</p>
-                  </div>
-
-                  <div className="p-3 bg-gray-50 rounded">
-                    <p className="font-semibold mb-2">Example 4: Mission Planning Integration</p>
-                    <p className="mb-2">Agricultural survey mission:</p>
-                    <ul className="space-y-1 ml-3">
-                      <li>• <strong>Flight Geography:</strong> 1 NM × 0.5 NM rectangular field pattern, 0-200 ft AGL</li>
-                      <li>• <strong>Contingency Volume:</strong> 200 ft buffer around flight geography (RTL path)</li>
-                      <li>• <strong>Ground Risk Buffer:</strong> Minimum 200 ft (= max altitude) from contingency volume perimeter</li>
-                      <li>• <strong>Wind adjustment:</strong> 15 kt winds → add 500 ft buffer = 700 ft total</li>
-                      <li>• <strong>Population check:</strong> Ensure no populated areas within ground risk buffer</li>
-                      <li>• <strong>Result:</strong> Total protected area requires ~1.3 NM × 0.8 NM clear zone</li>
-                    </ul>
-                  </div>
-
-                  <div className="p-3 bg-yellow-50 rounded border-l-4 border-yellow-500">
-                    <p className="font-semibold mb-2">Factors That Increase Ground Risk Buffer Size:</p>
-                    <ul className="space-y-1 ml-3">
-                      <li>✓ <strong>High winds:</strong> Increase drift potential during descent</li>
-                      <li>✓ <strong>Heavy payload:</strong> Affects glide ratio and descent rate</li>
-                      <li>✓ <strong>Low battery:</strong> Limits contingency options</li>
-                      <li>✓ <strong>Complex terrain:</strong> Mountains, buildings affect descent paths</li>
-                      <li>✓ <strong>Multiple RPAS:</strong> Larger collective protected area</li>
-                      <li>✓ <strong>Population density:</strong> Higher risk requires larger buffer</li>
-                      <li>✓ <strong>RPAS performance:</strong> Faster aircraft = larger potential impact area</li>
-                    </ul>
-                  </div>
-
-                  <div className="p-3 bg-green-50 rounded border-l-4 border-green-500">
-                    <p className="font-semibold mb-2">ROM Requirements for Ground Risk Buffer:</p>
-                    <ul className="space-y-1 ml-3 text-xs">
-                      <li>• Specify calculation method (regulatory minimum + wind factor)</li>
-                      <li>• Define when to use conservative buffers (high wind, populated areas)</li>
-                      <li>• Include pre-flight buffer verification checklist</li>
-                      <li>• Document how buffer is measured and enforced (geofencing?)</li>
-                      <li>• Specify who approves buffer calculations (Person Responsible for Operations)</li>
-                      <li>• Require buffer review when conditions change (wind increase, altitude change)</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <p className="font-semibold text-blue-700 mt-3">Key Principle: Ground Risk Buffer is your last line of defense against ground impact outside your operational area. Always err on the side of caution!</p>
               </div>
             </div>
 
@@ -2344,7 +2270,7 @@ export default function L1C01AirLaw() {
                   <ul className="space-y-2 text-xs">
                     <li>• <strong>Farm section lines:</strong> In prairie provinces, most sections are 1 mile × 1 mile. Quarter section = 0.5 SM. If you can see 6 quarter-sections, that&apos;s 3 SM (minimum!)</li>
                     <li>• <strong>Known landmarks:</strong> Identify towers, buildings, or features at known distances. Can you clearly see the tower 3 miles away?</li>
-                    <li>• <strong>Contrast test:</strong> At 3 SM, you should see distinct colors and shapes. At 1-2 SM, edges blur together.</li>
+                    <li>• <strong>Contrast test:</strong> At 3 SM or greater, you should clearly see distinct colors, shapes, and details of objects.</li>
                     <li>• <strong>Nearest METAR:</strong> If METAR says 3 SM but you assess visibility as worse, use the more conservative value.</li>
                   </ul>
                 </div>
@@ -3112,6 +3038,53 @@ export default function L1C01AirLaw() {
               <p className="mb-2">If a drone has a safety assurance from a manufacturer that is referred to as a PVD, operators will have a few more privileges. This means that the manufacturer has done a lot more work with Transport Canada to obtain that PVD.</p>
               <p>The first question operators should ask when a salesman is trying to sell a drone is: <strong>What are you doing for the safety assurance?</strong></p>
             </InstructorNote>
+          </div>
+
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold mb-4">Declaration Types - Quick Reference</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse border border-gray-300 bg-white">
+                <thead className="bg-blue-100">
+                  <tr>
+                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Declaration Type</th>
+                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">What It Means</th>
+                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Who Makes It</th>
+                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Required For</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-3 font-semibold">Standard 922<br/>(Safety Assurance)</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm">Manufacturer declares drone meets safety standards for L1C BVLOS operations</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm">Manufacturer</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm">All L1C BVLOS operations under CAR 901.87</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-4 py-3 font-semibold">Standard 923<br/>(Vision-Based DAA)</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm">Manufacturer declares drone has adequate visibility/markings for visual detection by other aircraft</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm">Manufacturer</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm">BVLOS ops using vision-based detect and avoid (most common L1C method)</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-3 font-semibold">Pre-Validated Declaration<br/>(PVD)</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm">Higher-level declaration with Transport Canada pre-validation. Provides additional operating privileges</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm">Manufacturer<br/>(with TC approval)</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm">• mRPAS over/near people<br/>• sRPAS over sparsely populated<br/>• Operations &lt;1 km from populated areas</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-4 py-3 font-semibold">TP 15530 Training Declaration</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm">Training organization declares their L1C program meets Transport Canada standards</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm">Training Organization</td>
+                    <td className="border border-gray-300 px-4 py-3 text-sm">Organizations offering L1C ground school and flight reviews</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="mt-4 bg-yellow-50 border border-yellow-300 rounded-lg p-4">
+              <p className="font-semibold mb-2">Key Takeaway for Operators:</p>
+              <p className="text-sm">Before purchasing a drone for L1C operations, verify the manufacturer has filed the required declarations (Standard 922 + 923 at minimum). Without these declarations, you cannot legally operate under Division VI and will need an SFOC instead.</p>
+            </div>
           </div>
         </CourseSection>
 
