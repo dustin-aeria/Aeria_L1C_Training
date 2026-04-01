@@ -3041,49 +3041,93 @@ export default function L1C01AirLaw() {
           </div>
 
           <div className="mb-6">
-            <h3 className="text-xl font-semibold mb-4">Declaration Types - Quick Reference</h3>
+            <h3 className="text-xl font-semibold mb-4">Standard 922 Safety Assurance Declarations</h3>
+            <p className="text-sm mb-4">Manufacturers declare compliance with one or more sections of Standard 922. Each declaration enables specific operating privileges:</p>
+
             <div className="overflow-x-auto">
-              <table className="w-full border-collapse border border-gray-300 bg-white">
-                <thead className="bg-blue-100">
+              <table className="w-full border-collapse border border-gray-300 bg-white text-sm">
+                <thead className="bg-blue-600 text-white">
                   <tr>
-                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Declaration Type</th>
-                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">What It Means</th>
-                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Who Makes It</th>
-                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Required For</th>
+                    <th className="border border-gray-300 px-3 py-2 text-left font-semibold">Standard 922 Section</th>
+                    <th className="border border-gray-300 px-3 py-2 text-left font-semibold">What It Covers</th>
+                    <th className="border border-gray-300 px-3 py-2 text-left font-semibold">Enables Operations</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border border-gray-300 px-4 py-3 font-semibold">Standard 922<br/>(Safety Assurance)</td>
-                    <td className="border border-gray-300 px-4 py-3 text-sm">Manufacturer declares drone meets safety standards for L1C BVLOS operations</td>
-                    <td className="border border-gray-300 px-4 py-3 text-sm">Manufacturer</td>
-                    <td className="border border-gray-300 px-4 py-3 text-sm">All L1C BVLOS operations under CAR 901.87</td>
+                    <td className="border border-gray-300 px-3 py-2 font-semibold">922.04<br/>Controlled Airspace</td>
+                    <td className="border border-gray-300 px-3 py-2">Drone can safely operate in controlled airspace with appropriate procedures</td>
+                    <td className="border border-gray-300 px-3 py-2">Advanced/L1C ops in controlled airspace (with ATC authorization)</td>
                   </tr>
                   <tr className="bg-gray-50">
-                    <td className="border border-gray-300 px-4 py-3 font-semibold">Standard 923<br/>(Vision-Based DAA)</td>
-                    <td className="border border-gray-300 px-4 py-3 text-sm">Manufacturer declares drone has adequate visibility/markings for visual detection by other aircraft</td>
-                    <td className="border border-gray-300 px-4 py-3 text-sm">Manufacturer</td>
-                    <td className="border border-gray-300 px-4 py-3 text-sm">BVLOS ops using vision-based detect and avoid (most common L1C method)</td>
+                    <td className="border border-gray-300 px-3 py-2 font-semibold">922.05<br/>Near People</td>
+                    <td className="border border-gray-300 px-3 py-2">Drone meets safety standards for operations near bystanders</td>
+                    <td className="border border-gray-300 px-3 py-2">Operations within 30 m horizontal of people not involved in operation</td>
                   </tr>
                   <tr>
-                    <td className="border border-gray-300 px-4 py-3 font-semibold">Pre-Validated Declaration<br/>(PVD)</td>
-                    <td className="border border-gray-300 px-4 py-3 text-sm">Higher-level declaration with Transport Canada pre-validation. Provides additional operating privileges</td>
-                    <td className="border border-gray-300 px-4 py-3 text-sm">Manufacturer<br/>(with TC approval)</td>
-                    <td className="border border-gray-300 px-4 py-3 text-sm">• mRPAS over/near people<br/>• sRPAS over sparsely populated<br/>• Operations &lt;1 km from populated areas</td>
+                    <td className="border border-gray-300 px-3 py-2 font-semibold">922.06<br/>Over People</td>
+                    <td className="border border-gray-300 px-3 py-2">Drone designed for safe overflight of people (impact protection)</td>
+                    <td className="border border-gray-300 px-3 py-2">VLOS operations directly over people</td>
                   </tr>
                   <tr className="bg-gray-50">
-                    <td className="border border-gray-300 px-4 py-3 font-semibold">TP 15530 Training Declaration</td>
-                    <td className="border border-gray-300 px-4 py-3 text-sm">Training organization declares their L1C program meets Transport Canada standards</td>
-                    <td className="border border-gray-300 px-4 py-3 text-sm">Training Organization</td>
-                    <td className="border border-gray-300 px-4 py-3 text-sm">Organizations offering L1C ground school and flight reviews</td>
+                    <td className="border border-gray-300 px-3 py-2 font-semibold">922.07<br/>Safety and Reliability</td>
+                    <td className="border border-gray-300 px-3 py-2">Overall system safety, failure modes, redundancy</td>
+                    <td className="border border-gray-300 px-3 py-2"><strong>Required for ALL L1C BVLOS operations</strong></td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-3 py-2 font-semibold">922.08<br/>Containment</td>
+                    <td className="border border-gray-300 px-3 py-2">Geofencing, return-to-home, staying within operational volume</td>
+                    <td className="border border-gray-300 px-3 py-2"><strong>Required for L1C BVLOS</strong> - prevents fly-aways</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-3 py-2 font-semibold">922.09<br/>C2 Link Reliability</td>
+                    <td className="border border-gray-300 px-3 py-2">Command and control link robustness, loss-link procedures</td>
+                    <td className="border border-gray-300 px-3 py-2">Advanced operations requiring reliable control</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-3 py-2 font-semibold">922.10<br/>DAA Systems</td>
+                    <td className="border border-gray-300 px-3 py-2">Detect and avoid capability (electronic or procedural)</td>
+                    <td className="border border-gray-300 px-3 py-2">Alternative to Standard 923 vision-based DAA</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-3 py-2 font-semibold">922.11<br/>Control Station Design</td>
+                    <td className="border border-gray-300 px-3 py-2">GCS ergonomics, pilot workload, human factors</td>
+                    <td className="border border-gray-300 px-3 py-2">Complex operations requiring enhanced GCS capabilities</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-3 py-2 font-semibold">922.12<br/>Environmental Envelope</td>
+                    <td className="border border-gray-300 px-3 py-2">Operating limits (wind, temperature, precipitation, icing)</td>
+                    <td className="border border-gray-300 px-3 py-2">Operations in challenging weather conditions</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
+            <div className="mt-4 grid md:grid-cols-2 gap-4">
+              <div className="bg-green-50 border border-green-300 rounded-lg p-4">
+                <p className="font-semibold mb-2">✓ Standard Declaration</p>
+                <ul className="text-sm space-y-1">
+                  <li>• Free submission to Transport Canada</li>
+                  <li>• 5 working days for approval</li>
+                  <li>• Manufacturer self-certifies compliance</li>
+                  <li>• TC may audit verification data later</li>
+                </ul>
+              </div>
+
+              <div className="bg-blue-50 border border-blue-300 rounded-lg p-4">
+                <p className="font-semibold mb-2">⭐ Pre-Validated Declaration (PVD)</p>
+                <ul className="text-sm space-y-1">
+                  <li>• Requires TC pre-approval</li>
+                  <li>• 60 working days processing</li>
+                  <li>• Higher safety assurance level</li>
+                  <li>• Enables higher-risk operations</li>
+                </ul>
+              </div>
+            </div>
+
             <div className="mt-4 bg-yellow-50 border border-yellow-300 rounded-lg p-4">
-              <p className="font-semibold mb-2">Key Takeaway for Operators:</p>
-              <p className="text-sm">Before purchasing a drone for L1C operations, verify the manufacturer has filed the required declarations (Standard 922 + 923 at minimum). Without these declarations, you cannot legally operate under Division VI and will need an SFOC instead.</p>
+              <p className="font-semibold mb-2">Key Takeaway for L1C Operators:</p>
+              <p className="text-sm">Your drone MUST have declarations for <strong>922.07 (Safety and Reliability)</strong> + <strong>922.08 (Containment)</strong> + <strong>Standard 923 (Vision DAA)</strong> minimum to conduct L1C BVLOS operations. Check TC&apos;s declaration registry before purchasing.</p>
             </div>
           </div>
         </CourseSection>
